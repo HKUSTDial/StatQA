@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Expenditure and Default Data,rownames,id,id,1319,False
+Expenditure and Default Data,card,cate,Was the application for a credit card accepted?,1319,False
+Expenditure and Default Data,reports,quant,Number of major derogatory reports.,1319,False
+Expenditure and Default Data,age,quant,Age,1319,False
+Expenditure and Default Data,income,quant,Yearly income,1319,False
+Expenditure and Default Data,share,quant,Ratio of monthly credit card expenditure to yearly income.,1319,False
+Expenditure and Default Data,expenditure,quant,Average monthly credit card expenditure.,1319,False
+Expenditure and Default Data,owner,cate,Does the individual own their home?,1319,False
+Expenditure and Default Data,selfemp,cate,Is the individual self-employed?,1319,False
+Expenditure and Default Data,dependents,cate,Number of dependents.,1319,False
+Expenditure and Default Data,months,quant,Months living at current address.,1319,False
+Expenditure and Default Data,majorcards,quant,Number of major credit cards held.,1319,False
+Expenditure and Default Data,active,quant,Number of active credit accounts.,1319,False

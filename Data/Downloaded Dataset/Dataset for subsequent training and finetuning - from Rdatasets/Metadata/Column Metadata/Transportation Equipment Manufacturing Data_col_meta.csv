@@ -1,0 +1,6 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Transportation Equipment Manufacturing Data,rownames,id,id,25,False
+Transportation Equipment Manufacturing Data,valueadded,quant,Aggregate output,25,False
+Transportation Equipment Manufacturing Data,capital,quant,Capital input,25,False
+Transportation Equipment Manufacturing Data,labor,quant,Aggregate labor input,25,False
+Transportation Equipment Manufacturing Data,firms,quant,Number of firms,25,False

@@ -1,0 +1,5 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Cigarette Consumption Data,rownames,other,rowsnames,46,False
+Cigarette Consumption Data,packs,quant,cigarette consumption in packs per person of smoking age (> 16 years) (in logarithm).,46,True
+Cigarette Consumption Data,price,quant,real price of cigarette in each state (in logarithm).,46,True
+Cigarette Consumption Data,income,quant,real disposable income (per capita) in each state (in logrithm).,46,True

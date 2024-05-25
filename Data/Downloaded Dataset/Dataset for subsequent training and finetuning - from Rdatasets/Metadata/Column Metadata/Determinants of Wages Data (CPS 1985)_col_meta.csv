@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Determinants of Wages Data (CPS 1985),rownames,id,id,534,False
+Determinants of Wages Data (CPS 1985),wage,quant,Wage (in dollars per hour).,534,False
+Determinants of Wages Data (CPS 1985),education,quant,Years of education.,534,False
+Determinants of Wages Data (CPS 1985),experience,quant, Years of potential work experience,534,False
+Determinants of Wages Data (CPS 1985),age,quant,Age in years.,534,False
+Determinants of Wages Data (CPS 1985),ethnicity,cate,"Ethnicity: cauc, hispanic, other",534,False
+Determinants of Wages Data (CPS 1985),region,cate,Does the individual live in the South or not,534,False
+Determinants of Wages Data (CPS 1985),gender,cate,Gender,534,False
+Determinants of Wages Data (CPS 1985),occupation,cate,Type of occupation,534,False
+Determinants of Wages Data (CPS 1985),sector,cate,sector,534,False
+Determinants of Wages Data (CPS 1985),union,cate,Does the individual work on a union job or not,534,False
+Determinants of Wages Data (CPS 1985),married,cate,Is the individual married or not,534,False

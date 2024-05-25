@@ -1,0 +1,11 @@
+**/__pycache__
+/__pycache__/*
+/Origin Dataset/*
+/Processed Dataset/*
+/Test Code/*
+/Manual Check/*
+/Tabular Data Generation/*
+**/gpt_config.txt
+/Model Answer/Processed Answer/*
+/Model Answer/Processed Answer (for task confusion analysis)/*
+/Integrated Dataset/Dataset with Prompt/Training Set/*

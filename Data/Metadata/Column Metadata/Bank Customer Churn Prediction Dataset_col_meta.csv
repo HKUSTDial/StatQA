@@ -1,0 +1,15 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Bank Customer Churn Prediction Dataset,RowNumber,id,Row number,10002,False
+Bank Customer Churn Prediction Dataset,CustomerId,id,Unique identifier for each bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Surname,other,Last name of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,CreditScore,quant,Credit score of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Geography,cate,Location or country of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Gender,cate,Gender of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Age,quant,Age of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Tenure,quant,Number of years the bank customer has been with the bank,10002,False
+Bank Customer Churn Prediction Dataset,Balance,quant,Bank account balance of the customer,10002,False
+Bank Customer Churn Prediction Dataset,NumOfProducts,quant,Number of bank products held by the customer,10002,False
+Bank Customer Churn Prediction Dataset,HasCrCard,cate,Whether the customer has a credit card,10002,False
+Bank Customer Churn Prediction Dataset,IsActiveMember,cate,Whether the customer is an active member,10002,False
+Bank Customer Churn Prediction Dataset,EstimatedSalary,quant,Estimated salary of the bank customer,10002,False
+Bank Customer Churn Prediction Dataset,Exited,cate,Whether the customer has exited the bank,10002,False

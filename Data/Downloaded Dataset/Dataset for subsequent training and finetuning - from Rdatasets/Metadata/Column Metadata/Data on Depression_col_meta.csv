@@ -1,0 +1,8 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Data on Depression,rownames,id,id,82,False
+Data on Depression,simplicity,quant,Measures subject's need to see the world in black and white.,82,False
+Data on Depression,fatalism,quant,Fatalism scale.,82,False
+Data on Depression,depression,quant,Beck self-report depression scale.,82,False
+Data on Depression,adjsimp,quant,Adjusted Simplicity: Simplicity adjusted (by regression) for other variables thought to influence depression.,82,False
+Data on Depression,adjfatal,quant,Adjusted Fatalism.,82,True
+Data on Depression,adjdep,quant,Adjusted Depression.,82,False

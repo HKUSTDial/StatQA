@@ -1,0 +1,6 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+U. S. State Public-School Expenditures,rownames,id,id,51,False
+U. S. State Public-School Expenditures,education,quant,Per-capita education expenditures,51,True
+U. S. State Public-School Expenditures,income,quant,Per-capita income,51,True
+U. S. State Public-School Expenditures,young,quant,Proportion under 18,51,False
+U. S. State Public-School Expenditures,urban,quant,Proportion urban,51,True

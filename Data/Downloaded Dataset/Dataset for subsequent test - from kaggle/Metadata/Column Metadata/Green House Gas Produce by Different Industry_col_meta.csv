@@ -1,0 +1,19 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Green House Gas Produce by Different Industry,Country,cate,Country,1186,False
+Green House Gas Produce by Different Industry,ISO2,other,ISO 2-letter country code,1186,False
+Green House Gas Produce by Different Industry,ISO3,cate,ISO 3-letter country code,1186,False
+Green House Gas Produce by Different Industry,Industry,cate,The type of industry releasing greenhouse gases,1186,False
+Green House Gas Produce by Different Industry,Gas_Type,cate,The type of greenhouse gas being released,1186,False
+Green House Gas Produce by Different Industry,F2010,quant,Greenhouse gas emissions for 2010,1186,False
+Green House Gas Produce by Different Industry,F2011,quant,Greenhouse gas emissions for 2011,1186,False
+Green House Gas Produce by Different Industry,F2012,quant,Greenhouse gas emissions for 2012,1186,False
+Green House Gas Produce by Different Industry,F2013,quant,Greenhouse gas emissions for 2013,1186,False
+Green House Gas Produce by Different Industry,F2014,quant,Greenhouse gas emissions for 2014,1186,False
+Green House Gas Produce by Different Industry,F2015,quant,Greenhouse gas emissions for 2015,1186,False
+Green House Gas Produce by Different Industry,F2016,quant,Greenhouse gas emissions for 2016,1186,False
+Green House Gas Produce by Different Industry,F2017,quant,Greenhouse gas emissions for 2017,1186,False
+Green House Gas Produce by Different Industry,F2018,quant,Greenhouse gas emissions for 2018,1186,False
+Green House Gas Produce by Different Industry,F2019,quant,Greenhouse gas emissions for 2019,1186,False
+Green House Gas Produce by Different Industry,F2020,quant,Greenhouse gas emissions for 2020,1186,False
+Green House Gas Produce by Different Industry,F2021,quant,Greenhouse gas emissions for 2021,1186,False
+Green House Gas Produce by Different Industry,F2022,quant,Greenhouse gas emissions for 2022,1186,False

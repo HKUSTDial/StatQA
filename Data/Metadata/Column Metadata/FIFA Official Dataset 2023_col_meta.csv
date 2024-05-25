@@ -1,0 +1,30 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+FIFA Official Dataset 2023,ID,id,A unique identifier for each player,17660,False
+FIFA Official Dataset 2023,Name,other,The name of the player,17660,False
+FIFA Official Dataset 2023,Age,quant,The age of the player at the time of data collection,17660,False
+FIFA Official Dataset 2023,Photo,other,A link or reference to the player's photograph,17660,False
+FIFA Official Dataset 2023,Nationality,cate,The nationality of the player,17660,False
+FIFA Official Dataset 2023,Flag,other,The national flag associated with the player's nationality,17660,False
+FIFA Official Dataset 2023,Overall,quant,The overall rating of the player's skills and abilities,17660,False
+FIFA Official Dataset 2023,Potential,quant,The potential rating representing the player's future development,17660,False
+FIFA Official Dataset 2023,Club,cate,The current club affiliation of the player,17660,False
+FIFA Official Dataset 2023,Club Logo,other,A link or reference to the logo of the player's club,17660,False
+FIFA Official Dataset 2023,Value,quant,The estimated market value of the player in pounds (£),17660,False
+FIFA Official Dataset 2023,Wage,quant,The player's weekly wage in pounds (£),17660,False
+FIFA Official Dataset 2023,Special,quant,A numerical value representing the player's special abilities,17660,False
+FIFA Official Dataset 2023,Preferred Foot,cate,The player's preferred foot for playing,17660,False
+FIFA Official Dataset 2023,International Reputation,cate,A rating indicating the player's international reputation,17660,False
+FIFA Official Dataset 2023,Weak Foot,cate,A rating representing the player's weaker foot abilities,17660,False
+FIFA Official Dataset 2023,Skill Moves,cate,The number of skill moves the player possesses,17660,False
+FIFA Official Dataset 2023,Work Rate,cate,The work rate of the player,17660,False
+FIFA Official Dataset 2023,Body Type,cate,The physical build or body type of the player,17660,False
+FIFA Official Dataset 2023,Real Face,cate,Indicates whether the player has a real face representation,17660,False
+FIFA Official Dataset 2023,Position,cate,The player's preferred playing position,17660,False
+FIFA Official Dataset 2023,Joined,other,The date when the player joined the current club,17660,False
+FIFA Official Dataset 2023,Loaned From,other,The club from which the player is currently on loan,17660,False
+FIFA Official Dataset 2023,Contract Valid Until,cate,The date until which the player's contract is valid,17660,False
+FIFA Official Dataset 2023,Height,quant,The height of the player in centimeters,17660,False
+FIFA Official Dataset 2023,Weight,quant,The weight of the player in pounds,17660,False
+FIFA Official Dataset 2023,Release Clause,quant,The release clause value of the player in pounds (£),17660,False
+FIFA Official Dataset 2023,Kit Number,cate,The player's kit number,17660,False
+FIFA Official Dataset 2023,Best Overall Rating,other,The player's highest overall rating,17660,False

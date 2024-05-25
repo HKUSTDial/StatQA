@@ -1,0 +1,11 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Los Angeles Library Monthly Statistics,Date,other,Date,72,False
+Los Angeles Library Monthly Statistics,Total Library Visitors,quant,Total number of Library Visitors,72,True
+Los Angeles Library Monthly Statistics,Total Program Attendees,quant,Total number of Program Attendees,72,False
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,quant,Total circulation of electronic media materials,72,True
+Los Angeles Library Monthly Statistics,Total Cardholders,quant,Total number of library cardholders,72,False
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),quant,Total number of computer usage sessions,72,False
+Los Angeles Library Monthly Statistics,New Cardholders,quant,The number of new library cardholders,72,False
+Los Angeles Library Monthly Statistics,# of Individuals Assisted in Pursuing Citizenship,quant,The number of individuals assisted in pursuing citizenship services at the library,72,False
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,quant,The number of homeless individuals served at The Source,72,False
+Los Angeles Library Monthly Statistics,# of Attendees at Children's and Teen Programming,quant,The number of attendees at children's and teen programming events held at the library,72,False

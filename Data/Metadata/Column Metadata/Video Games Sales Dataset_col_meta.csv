@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Video Games Sales Dataset,index,id,id,1907,False
+Video Games Sales Dataset,Rank,quant,The rank of the video game based on global sales volume. (Numerical),1907,False
+Video Games Sales Dataset,Game Title,other,The name of the video game. (String),1907,False
+Video Games Sales Dataset,Platform,cate,"The platform on which the game is available, such as PC, PS4, Xbox One, etc. (Categorical)",1907,False
+Video Games Sales Dataset,Year,other,The year in which the game was released. (Date),1907,False
+Video Games Sales Dataset,Genre,cate,"The genre of the game, such as action, adventure, racing, etc. (Categorical)",1907,False
+Video Games Sales Dataset,Publisher,cate,The company that published the game. (String),1907,False
+Video Games Sales Dataset,North America,quant,"The number of units sold in North America, in millions. (Numerical)",1907,False
+Video Games Sales Dataset,Europe,quant,"The number of units sold in Europe, in millions. (Numerical)",1907,False
+Video Games Sales Dataset,Japan,quant,"The number of units sold in Japan, in millions. (Numerical)",1907,False
+Video Games Sales Dataset,Rest of World,quant,"The number of units sold in the rest of the world, excluding North America, Europe, and Japan, in millions. (Numerical)",1907,False
+Video Games Sales Dataset,Global,quant,"The total number of units sold worldwide, in millions. (Numerical)",1907,False
+Video Games Sales Dataset,Review,quant,"The review score of the game, on a scale of 1 to 10. (Numerical)",1907,False

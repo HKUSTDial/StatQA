@@ -1,0 +1,22 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Terrorist Attacks Dataset,Entity,other,Entity or organization responsible for the terrorist attack,10517,False
+Terrorist Attacks Dataset,Code,other,Code or identifier associated with the entity,10517,False
+Terrorist Attacks Dataset,Year,other,Year in which the terrorist attack occurred,10517,False
+Terrorist Attacks Dataset,Terrorist attacks,quant,Number of terrorist attacks recorded,10517,False
+Terrorist Attacks Dataset,Terrorism deaths,quant,Number of deaths resulting from terrorist attacks,10517,False
+Terrorist Attacks Dataset,Attack method: Hijacking,quant,Indicates if the attack method involved hijacking,10517,False
+Terrorist Attacks Dataset,Attack method: Hostage Taking (Barricade Incident),quant,Indicates if the attack method involved hostage taking in barricade incidents,10517,False
+Terrorist Attacks Dataset,Attack method: Unarmed Assault,quant,Indicates if the attack method involved unarmed assault,10517,False
+Terrorist Attacks Dataset,Attack method: Facility/Infrastructure Attack,quant, Indicates if the attack method involved attacking facilities or infrastructure,10517,False
+Terrorist Attacks Dataset,Attack method: Hostage Taking (Kidnapping),quant,Indicates if the attack method involved hostage taking through kidnapping,10517,False
+Terrorist Attacks Dataset,Attack method: Assassination,quant,Assassination: Indicates if the attack method involved assassination,10517,False
+Terrorist Attacks Dataset,Attack method: Armed Assault,quant,Armed Assault: Indicates if the attack method involved armed assault,10517,False
+Terrorist Attacks Dataset,Attack method: Bombing/Explosion,quant,Bombing/Explosion: Indicates if the attack method involved bombing or explosion,10517,False
+Terrorist Attacks Dataset,Death Age 100+,quant,Number of deaths of individuals aged 100 or above,10517,False
+Terrorist Attacks Dataset,Death Age: 51-99 ,quant,Number of deaths of individuals aged between 51 and 99,10517,False
+Terrorist Attacks Dataset,Death Age : 21-50 ,quant,Number of deaths of individuals aged between 21 and 50,10517,False
+Terrorist Attacks Dataset,Death Age : 11-20 ,quant,Number of deaths of individuals aged between 11 and 20,10517,False
+Terrorist Attacks Dataset,Death Age : 6-10 ,quant,Number of deaths of individuals aged between 6 and 10,10517,False
+Terrorist Attacks Dataset,Death Age :  1-5,quant,Number of deaths of individuals aged between 1 and 5,10517,False
+Terrorist Attacks Dataset,Terrorist Death Type : Suicide,quant,Indicates if the terrorist died by suicide during the attack,10517,False
+Terrorist Attacks Dataset,Terrorist Death Type : Killed,quant,Indicates if the terrorist was killed during the attack,10517,False

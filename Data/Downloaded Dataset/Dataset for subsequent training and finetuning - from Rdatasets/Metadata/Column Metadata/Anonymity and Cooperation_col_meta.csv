@@ -1,0 +1,5 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Anonymity and Cooperation,rownames,id,id,20,False
+Anonymity and Cooperation,cooperation,quant,Number of cooperative choices (out of 120 in all).,20,True
+Anonymity and Cooperation,condition,cate,The condition of choice in the experiment: anonymous for anonymous choice; public for public choice.,20,False
+Anonymity and Cooperation,sex,cate,Gender,20,False

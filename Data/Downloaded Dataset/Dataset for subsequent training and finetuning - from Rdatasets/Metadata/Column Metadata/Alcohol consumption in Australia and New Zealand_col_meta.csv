@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Alcohol consumption in Australia and New Zealand,rownames,id,id,18,False
+Alcohol consumption in Australia and New Zealand,Beer,quant,liters of beer consumption per annum,18,True
+Alcohol consumption in Australia and New Zealand,Wine,quant,liters of wine consumption per annum,18,True
+Alcohol consumption in Australia and New Zealand,Spirit,quant,liters of Spirit consumption per annum,18,True
+Alcohol consumption in Australia and New Zealand,Country,cate,Country: Australia or New Zealand,18,False
+Alcohol consumption in Australia and New Zealand,Year,other,Year,18,False

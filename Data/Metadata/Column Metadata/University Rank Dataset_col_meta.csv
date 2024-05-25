@@ -1,0 +1,10 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+University Rank Dataset,rank,id,Rank,910,False
+University Rank Dataset,ranking-institution-title,other,Title or name of the ranking institution,910,False
+University Rank Dataset,location,other,where the university is located,910,False
+University Rank Dataset,Overall scores,cate,Overall scores,910,False
+University Rank Dataset,Research Quality Score,quant,Research Quality Score,910,False
+University Rank Dataset,Industry Score,quant,Industry Score,910,False
+University Rank Dataset,International Outlook,quant,Score representing the international outlook,910,False
+University Rank Dataset,Research Environment Score,quant,Score assessing the research environment,910,False
+University Rank Dataset,Teaching Score,quant,Teaching Score,910,False

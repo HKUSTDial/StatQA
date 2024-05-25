@@ -1,0 +1,9 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Fruits and Vegetables Prices Dataset,productname,other,Name of the produce item,15766,False
+Fruits and Vegetables Prices Dataset,date,other,The date of the pricing information,15766,False
+Fruits and Vegetables Prices Dataset,farmprice,quant,The price at which the produce is sold at the farm,15766,False
+Fruits and Vegetables Prices Dataset,atlantaretail,quant,Retail prices in Atlanta,15766,False
+Fruits and Vegetables Prices Dataset,chicagoretail,quant,Retail prices in Chicago,15766,False
+Fruits and Vegetables Prices Dataset,losangelesretail,quant,Retail prices in Los Angeles,15766,False
+Fruits and Vegetables Prices Dataset,newyorkretail,quant,Retail prices in New York,15766,False
+Fruits and Vegetables Prices Dataset,averagespread,quant,Percentage indicating the average markup between farm and retail prices,15766,False

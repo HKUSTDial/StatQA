@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+"House Prices in the City of Windsor, Canada",rownames,id,id,546,False
+"House Prices in the City of Windsor, Canada",price,quant,Sale price of a house.,546,False
+"House Prices in the City of Windsor, Canada",lotsize,quant,Lot size of a property in square feet.,546,False
+"House Prices in the City of Windsor, Canada",bedrooms,quant,Number of bedrooms.,546,False
+"House Prices in the City of Windsor, Canada",bathrooms,quant,Number of full bathrooms.,546,False
+"House Prices in the City of Windsor, Canada",stories,quant,Number of stories excluding basement.,546,False
+"House Prices in the City of Windsor, Canada",driveway,cate,Does the house have a driveway?,546,False
+"House Prices in the City of Windsor, Canada",recreation,cate,Does the house have a recreational room?,546,False
+"House Prices in the City of Windsor, Canada",fullbase,cate,Does the house have a full finished basement?,546,False
+"House Prices in the City of Windsor, Canada",gasheat,cate,Does the house use gas for hot water heating?,546,False
+"House Prices in the City of Windsor, Canada",aircon,cate,Is there central air conditioning?,546,False
+"House Prices in the City of Windsor, Canada",garage,cate,Number of garage places.,546,False
+"House Prices in the City of Windsor, Canada",prefer,cate,Is the house located in the preferred neighborhood of the city?,546,False

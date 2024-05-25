@@ -1,0 +1,3 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+GPA Study Hours Dataset,gpa,quant,Grade point average (GPA) of student,193,False
+GPA Study Hours Dataset,study_hours,quant,Number of hours students study per week,193,False

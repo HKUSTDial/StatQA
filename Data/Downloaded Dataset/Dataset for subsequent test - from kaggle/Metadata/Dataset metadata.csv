@@ -1,0 +1,461 @@
+dataset,dataset_description,url
+2023 Netflix Engagement Dataset,"Since launching our weekly Top 10 and Most Popular lists in 2021, Netflix has provided more information about what people are watching than any other streamer except YouTube. And now we believe it’s time to go further.
+
+Starting today we will publish What We Watched: A Netflix Engagement Report twice a year. This is a comprehensive report of what people watched on Netflix over a six month period1, including:
+
+Hours viewed for every title — original and licensed — watched for over 50,000 hours2;
+
+The premiere date3 for any Netflix TV series or film; and
+
+Whether a title was available globally.
+
+In total, this report covers more than 18,000 titles — representing 99% of all viewing on Netflix — and nearly 100 billion hours viewed.
+
+Over 60% of Netflix titles released between January and June 2023 appeared on our weekly Top 10 lists. So while this report is broader in scope, the trends reflected in it are very similar to those in the Top 10 lists, including:
+
+The strength of returning favorites like Ginny & Georgia, Alice in Borderland, The Marked Heart, Outer Banks, You, Queen Charlotte: A Bridgerton Story, XO Kitty and film sequels Murder Mystery 2 and Extraction 2;
+
+The popularity of new series like The Night Agent, The Diplomat, Beef, The Glory, Alpha Males, FUBAR and Fake Profile, which generate huge audiences and fandoms;
+
+The size of the audience of our films across every genre including The Mother, Luther: The Fallen Sun, You People, AKA, ?Que viva México! and Hunger;
+
+The enthusiasm for non-English stories, which generated 30% of all viewing;
+
+The staying power of titles on Netflix, which extends well beyond their premieres. All Quiet on the Western Front, for example, debuted in October 2022 and generated 80M hours viewed between January and June; and
+
+The demand for older, licensed titles, which generates tremendous value for our members and for rights holders.
+
+When reading the report it’s important to remember:
+
+Success on Netflix comes in all shapes and sizes, and is not determined by hours viewed alone. We have enormously successful movies and TV shows with both lower and higher hours viewed. It’s all about whether a movie or TV show thrilled its audience — and the size of that audience relative to the economics of the title; and
+
+To compare between titles it’s best to use our weekly Top 10 and Most Popular lists, which take into account run times and premiere dates.
+
+This is a big step forward for Netflix and our industry. We believe the viewing information in this report — combined with our weekly Top 10 and Most Popular lists — will give creators and our industry deeper insights into our audiences, and what resonates with them.",https://www.kaggle.com/datasets/willianoliveiragibin/netlifx-hour-2023
+Advertising Budget and Sales Dataset,"Description:
+The advertising dataset captures the sales revenue generated with respect to advertisement costs across multiple channels like radio, tv, and newspapers.
+
+It is required to understand the impact of ad budgets on the overall sales.
+
+Acknowledgement:
+The dataset is taken from Kaggle
+
+Objective:
+Understand the Dataset & cleanup (if required).
+Build Regression models to predict the sales w.r.t a single & multiple features.
+Also evaluate the models & compare their respective scores like R2, RMSE, etc.",https://www.kaggle.com/datasets/yasserh/advertising-sales-dataset?resource=download
+Bank Customer Churn Prediction Dataset,"Context
+It is the dataset of a U.S. bank customer for getting the information that , this particular customer will leave bank or not.
+
+Content
+Various Bank detail is given like CustomerID , surname, Credit score and many more.
+
+Acknowledgements
+This dataset is originated from a U.S. bank .
+
+Inspiration
+Lets work together on this dataset and learn basic level of prediction using different libraries.",https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction
+Crop Production Dataset,"This dataset provides a comprehensive record of annual crop production, including rice, wheat, and vegetables, spanning from 1996 to 2021.
+Note :
+Values in Million tones !",https://www.kaggle.com/datasets/abhijitdahatonde/crop-production-1996-to-2021
+Customer Personality Analysis Dataset,"Problem Statement
+
+Customer Personality Analysis is a detailed analysis of a company’s ideal customers. It helps a business to better understand its customers and makes it easier for them to modify products according to the specific needs, behaviors and concerns of different types of customers.
+
+Customer personality analysis helps a business to modify its product based on its target customers from different types of customer segments. For example, instead of spending money to market a new product to every customer in the company’s database, a company can analyze which customer segment is most likely to buy the product and then market the product only on that particular segment.
+
+Target
+Need to perform clustering to summarize customer segments.
+
+Acknowledgement
+The dataset for this project is provided by Dr. Omar Romero-Hernandez.",https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+Dataset for Admission in the University,"This dataset includes various information like GRE score, TOEFL score, university rating, SOP (Statement of Purpose), LOR (Letter of Recommendation), CGPA, research and chance of admit. In this dataset, 400 entries are included.
+
+GRE Scores ( out of 340 )
+TOEFL Scores ( out of 120 )
+University Rating ( out of 5 )
+Statement of Purpose (SOP) and Letter of Recommendation (LOR) Strength ( out of 5 )
+Undergraduate GPA ( out of 10 )
+Research Experience ( either 0 or 1 )
+Chance of Admit ( ranging from 0 to 1 ).",https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university
+Exercise and Fitness Metrics Dataset,"The ""Exercise and Fitness Metrics Dataset: Independent Variables and Weight Related Measures"" is a comprehensive dataset that captures various factors related to exercise, fitness, and weight management. The dataset includes a range of independent variables along with measurements of dream weight and actual weight.
+The exercise variable represents the type of exercise performed, while calories burned denotes the estimated number of calories burnt during the exercise session. Dream weight signifies the desired weight, and actual weight captures the measured weight with some natural variation.
+Additional independent variables provide insights into the individuals performing the exercises. Age represents the age of the individuals, and gender indicates their gender (Male or Female). Duration records the length of each exercise session, and heart rate represents the average heart rate during the session. BMI, a commonly used health indicator, offers information about body composition. Weather conditions during exercise sessions are recorded, and exercise intensity provides a rating of the intensity level.
+This dataset is valuable for analyzing relationships between exercise variables, calorie expenditure, weight-related measures, and other factors such as age, gender, duration, heart rate, BMI, weather conditions, and exercise intensity. It can be used for various purposes, including research in exercise science, fitness program development, weight management analysis, and correlation studies between exercise and health-related factors.",https://www.kaggle.com/datasets/aakashjoshi123/exercise-and-fitness-metrics-dataset
+FIFA Official Dataset 2023,"The Football Player Dataset from 2017 to 2023 provides comprehensive information about professional football players. The dataset contains a wide range of attributes, including player demographics, physical characteristics, playing statistics, contract details, and club affiliations. With over 17,000 records, this dataset offers a valuable resource for football analysts, researchers, and enthusiasts interested in exploring various aspects of the footballing world, as it allows for studying player attributes, performance metrics, market valuation, club analysis, player positioning, and player development over time.",https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data
+Fruits and Vegetables Prices Dataset,"Fruits and Vegetables Prices Dataset- Retail and Farm Prices for Various Products in Different Cities (1999 - 2019)
+Overview:
+This dataset comprehensively looks at retail and farm prices for various fresh produce items across different cities. The data spans from 1999 to 2019 and includes information on product names, dates, farm prices, and retail prices in major cities such as Atlanta, Chicago, Los Angeles, and New York.
+
+Content:
+The dataset encompasses a diverse range of popular produce items, including strawberries, romaine lettuce, red leaf lettuce, potatoes, oranges, iceberg lettuce, green leaf lettuce, celery, cauliflower, carrots, cantaloupe, broccoli crowns, broccoli bunches, avocados, etc.
+
+Fields:
+Product Name: Name of the produce item.
+Date: The date of the pricing information.
+Farm Price: The price at which the produce is sold at the farm.
+Retail Prices: Retail prices in major cities (Atlanta, Chicago, Los Angeles, New York).
+Average Spread: Percentage indicating the average markup between farm and retail prices.
+Use Cases:
+Researchers, analysts, and policymakers can use this dataset to explore and analyze trends in produce pricing, understand variations in retail and farm prices across different cities, and investigate factors influencing price spreads.
+
+Note:
+This dataset is suitable for exploratory data analysis, price trend studies, and research into the economic aspects of fresh produce distribution and consumption.",https://www.kaggle.com/datasets/everydaycodings/produce-prices-dataset
+GPA Study Hours Dataset,"A data frame with 193 rows and 2 columns. The columns represent the variables gpa and study_hours for a sample of 193 undergraduate students who took an introductory statistics course in 2012 at a private US university.
+
+Format: A data frame with 193 observations on the following 2 variables.
+
+gpa: Grade point average (GPA) of student.
+study_hours: Number of hours students study per week.
+Details: GPA ranges from 0 to 4 points, however one student reported a GPA > 4. This is a data error but this observation has been left in the dataset as it is used to illustrate issues with real survey data. Both variables are self reported, hence may not be accurate.
+
+Source: Collected at a private US university as part of an anonymous survey in an introductory statistics course.",https://www.kaggle.com/datasets/joebeachcapital/gpa-study-hours
+Grades of Students Dataset,"The dataset contains grades scored by students throughout their university tenure in various courses and their CGPA calculated based on their grades
+
+Columns Description
+-Seat No : The enrolled number of candidate that took the exams
+
+-CGPA : The cumulative GPA based on the four year total grade progress of each candidate
+
+All other columns are course codes in the format AB-XXX where AB are alphabets representing candidates' departments and XXX are numbers where first X represents the year the canditate took exam",https://www.kaggle.com/datasets/ssshayan/grades-of-students
+Green House Gas Produce by Different Industry,Green house is a very big problem in the world. It's increasing the temperature of the world. These happen because of different types of gas release by different industries in the world. This dataset contain data of different industry and types of gas release by those industry in different region in the earth. This dataset also contain some ISO test to measure the effect.,https://www.kaggle.com/datasets/rafsunahmad/green-house-gas-produce-by-different-industry
+Heart Failure Prediction Dataset,"Context
+Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.
+
+People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
+
+Source
+This dataset was created by combining different datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:
+
+Cleveland: 303 observations
+Hungarian: 294 observations
+Switzerland: 123 observations
+Long Beach VA: 200 observations
+Stalog (Heart) Data Set: 270 observations
+Total: 1190 observations
+Duplicated: 272 observations
+
+Final dataset: 918 observations
+
+Every dataset used can be found under the Index of heart disease datasets from UCI Machine Learning Repository on the following link: https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/",https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
+Housing Price Dataset,"Explore the fascinating world of housing price prediction with this synthetic dataset. Perfect for data science enthusiasts, machine learning practitioners, and Kaggle learners, this dataset offers a diverse collection of features, including square footage, bedrooms, bathrooms, neighborhood types, and the year of construction. Immerse yourself in the challenge of predicting house prices and enhance your skills in regression analysis.",https://www.kaggle.com/datasets/muhammadbinimran/housing-price-prediction-data
+Income and Happiness Score Dataset,"GDP per Country v self-reported happiness(An old paradox lives on)
+This dataset reflects the relationship between income and happiness of 111 countries
+
+Inspiration
+Why is there correlation between Happiness and GDP?",https://www.kaggle.com/datasets/levyedgar44/income-and-happiness-correction
+Jobs and Salaries Dataset,,https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
+Los Angeles Library Monthly Statistics,"Content
+Monthly statistics from the Library on Web visits, computer usage, e-media, etc.
+
+Context
+This is a dataset hosted by the city of Los Angeles. The organization has an open data platform found here and they update their information according the amount of data that is brought in. Explore Los Angeles's Data using Kaggle and all of the data sources available through the city of Los Angeles organization page!
+
+Update Frequency: This dataset is updated monthly.
+Acknowledgements
+This dataset is maintained using Socrata's API and Kaggle's API. Socrata has assisted countless organizations with hosting their open data and has been an integral part of the process of bringing more data to the public.
+
+Cover photo by Jaredd Craig on Unsplash
+Unsplash Images are distributed under a unique Unsplash License.",https://www.kaggle.com/datasets/cityofLA/los-angeles-library-monthly-statistics
+Lung Cancer Survey Dataset,,https://www.kaggle.com/datasets/ajisofyan/survey-lung-cancer
+Monroe County Car Crach Dataset,"The car crash dataset provides a detailed compilation of information related to common factors influencing road accidents, such as collision severity, weather conditions, road types, and contributing elements, offering valuable insights for the analysis and enhancement of overall road safety measures.",https://www.kaggle.com/datasets/jacksondivakarr/car-crash-dataset
+Netflix TV Shows and Movies Scores Dataset in IMDB,"The Netflix TV Shows and Movies dataset provides comprehensive information about various titles available on the popular streaming platform. The dataset includes details such as the title's name, its type (whether it is a TV show or a movie), a brief description of the content, the year it was released, age certification rating, runtime (for TV shows: length of episodes; for movies: duration), IMDb score, and IMDb votes.
+
+By analyzing this dataset, we can gain insights into the distribution of IMDb scores and ratings for both TV shows and movies available on Netflix. This information can help us understand the popularity and reception of titles based on user ratings.
+
+The dataset has been carefully curated to ensure accuracy and relevance. It excludes any null values in IMDb scores to maintain data integrity. Each entry also contains an ID that corresponds to JustWatch (a platform for legal streaming) as well as the respective title ID on IMDb.
+
+To visualize the distribution of IMDb scores effectively, we will be using histograms. Histograms categorize data into bins or intervals based on a chosen metric (in this case: IMDb score). The length of each bar within a bin represents the number of titles falling within that particular range of scores. With correct binning techniques, we can observe patterns and trends in how different shows and movies are rated by viewers.
+
+When creating your visualization using Tableau or any other tool you prefer, feel free to experiment with color schemes to enhance your chart's visual impact without overshadowing its analytical purpose. However, remember not to sacrifice clarity and simplicity in pursuit of creativity.
+
+We encourage you to take your time in crafting an insightful visualization over the next week. Once completed, share it on Tableau Public or through social media platforms like Twitter or LinkedIn using #B2VB hashtag while tagging ReadySetData and ItsElisaDavis for recognition. Don't forget to fill out our submission form on Back 2 Viz Basics website to officially participate in the challenge.
+
+Best of luck, and we look forward to seeing your visualization!
+
+Research Ideas
+Analyzing the distribution of IMDB scores and ratings for TV shows and movies on Netflix can help identify trends and patterns in audience preferences. This information can be valuable for content creators and producers in deciding what types of shows or movies to invest in.
+By examining the age certification ratings, it is possible to analyze the target audience for different TV shows and movies on Netflix. This information can be useful for advertisers who want to reach specific demographic groups or for parents who want to make informed decisions about what their children watch.
+Comparing IMDB scores and votes across different release years can provide insights into how the quality of content on Netflix has evolved over time. This analysis may reveal any shifts in audience preferences or changes in industry standards that have influenced viewers' perceptions and opinions",https://www.kaggle.com/datasets/thedevastator/netflix-imdb-scores
+Obesity or CVD Risk Dataset,"The data consist of the estimation of obesity levels in people from the countries of Mexico, Peru and Colombia, with ages between 14 and 61 and diverse eating habits and physical condition , data was collected using a web platform with a survey where anonymous users answered each question, then the information was processed obtaining 17 attributes and 2111 records.
+
+The attributes related with eating habits are: Frequent consumption of high caloric food (FAVC), Frequency of consumption of vegetables (FCVC), Number of main meals (NCP), Consumption of food between meals (CAEC), Consumption of water daily (CH20), and Consumption of alcohol (CALC). The attributes related with the physical condition are: Calories consumption monitoring (SCC), Physical activity frequency (FAF), Time using technology devices (TUE), Transportation used (MTRANS)
+variables obtained :
+Gender, Age, Height and Weight.
+
+NObesity values are:
+
+?Underweight Less than 18.5
+?Normal 18.5 to 24.9
+?Overweight 25.0 to 29.9
+?Obesity I 30.0 to 34.9
+?Obesity II 35.0 to 39.9
+?Obesity III Higher than 40
+
+The data contains numerical data and continous data, so it can be used for analysis based on algorithms of classification, prediction, segmentation and association. Data is available in CSV format.",https://www.kaggle.com/datasets/aravindpcoder/obesity-or-cvd-risk-classifyregressorcluster
+Pokedex Dataset,"Context
+With the rise of the popularity of machine learning, this is a good opportunity to share a wide database of the even more popular video-game Pokémon by Nintendo, Game freak, and Creatures, originally released in 1996.
+
+Pokémon started as a Role Playing Game (RPG), but due to its increasing popularity, its owners ended up producing many TV series, manga comics, and so on, as well as other types of video-games (like the famous Pokémon Go!).
+
+This dataset is focused on the stats and features of the Pokémon in the RPGs. Until now (08/01/2017) seven generations of Pokémon have been published. All in all, this dataset does not include the data corresponding to the last generation, since 1) I created the databased when the seventh generation was not released yet, and 2) this database is a modification+extension of the database ""721 Pokemon with stats"" by Alberto Barradas (https://www.kaggle.com/abcsds/pokemon), which does not include (of course) the latest generation either.
+
+Content
+This database includes 21 variables per each of the 721 Pokémon of the first six generations, plus the Pokémon ID and its name. These variables are briefly described next:
+
+Number. Pokémon ID in the Pokédex.
+Name. Name of the Pokémon.
+Type_1. Primary type.
+Type_2. Second type, in case the Pokémon has it.
+Total. Sum of all the base stats (Health Points, Attack, Defense, Special Attack, Special Defense, and Speed).
+HP. Base Health Points.
+Attack. Base Attack.
+Defense. Base Defense.
+Sp_Atk. Base Special Attack.
+Sp_Def. Base Special Defense.
+Speed. Base Speed.
+Generation. Number of the generation when the Pokémon was introduced.
+isLegendary. Boolean that indicates whether the Pokémon is Legendary or not.
+Color. Color of the Pokémon according to the Pokédex.
+hasGender. Boolean that indicates if the Pokémon can be classified as female or male.
+Pr_male. In case the Pokémon has Gender, the probability of its being male. The probability of being female is, of course, 1 minus this value.
+Egg_Group_1. Egg Group of the Pokémon.
+Egg_Group_2. Second Egg Group of the Pokémon, in case it has two.
+hasMegaEvolution. Boolean that indicates whether the Pokémon is able to Mega-evolve or not.
+Height_m. Height of the Pokémon, in meters.
+Weight_kg. Weight of the Pokémon, in kilograms.
+Catch_Rate. Catch Rate.
+Body_Style. Body Style of the Pokémon according to the Pokédex.
+Notes
+Please note that many Pokémon are multi-form, and also some of them can Mega-evolve. I wanted to keep the structure of the dataset as simple and general as possible, as well as the Number variable (the ID of the Pokémon) unique. Hence, in the cases of the multi-form Pokémon, or the ones capable of Mega-evolve, I just chose one of the forms, the one I (and my brother) considered the standard and/or the most common. The specific choice for each of this Pokémon are shown below:
+
+Mega-Evolutions are not considered as Pokémon.
+Kyogre, Groudon. Primal forms not considered.
+Deoxis. Only normal form considered.
+Wormadam. Only plant form considered.
+Rotom. Only normal form considered, the one with types Electric and Ghost.
+Giratina. Origin form considered.
+Shaymin. Land form considered.
+Darmanitan. Standard mode considered.
+Tornadus, Thundurus, Landorus. Incarnate form considered.
+Kyurem. Normal form considered, not white or black forms.
+Meloetta. Aria form considered.
+Mewstic. Both female and male forms are equal in the considered variables.
+Aegislash. Shield form considered.
+Pumpkaboo, Gourgeist. Average size considered.
+Zygarde. 50% form considered.
+Hoopa. Confined form considered.
+Acknowledgements
+As said at the beginning, this database was based on the Kaggle database ""721 Pokemon with stats"" by Alberto Barradas (https://www.kaggle.com/abcsds/pokemon). The other resources I mainly used are listed below:
+
+WikiDex (http://es.pokemon.wikia.com/wiki/WikiDex).
+Bulbapedia, the community driven Pokémon encyclopedia (http://bulbapedia.bulbagarden.net/wiki/Main_Page).
+Smogon University (http://www.smogon.com/).
+Possible future work
+This dataset can be used with different objectives, such as, Pokémon clustering, trying to find relations or dependencies between the variables, and also for supervised classification purposes, where the class could be the Primary Type, but also many of the other variables.
+
+Author
+Asier López Zorrilla",https://www.kaggle.com/datasets/alopez247/pokemon
+Rainfall Dataset of Barak Velly,"Title: Rainfall Dataset of Barak Valley, Assam
+
+Subtitle: Comprehensive Rainfall Data for Barak Valley, Assam on Kaggle
+
+Description:
+
+Welcome to the Rainfall Dataset of Barak Valley, Assam on Kaggle! This comprehensive dataset provides detailed information on rainfall patterns in the beautiful Barak Valley region of Assam, India.
+
+Barak Valley, nestled in the southern part of Assam, is known for its scenic landscapes, lush greenery, and diverse flora and fauna. The dataset captures rainfall data from various weather stations across the valley, enabling researchers, climate scientists, and enthusiasts to analyze and understand precipitation trends in the region.
+
+The dataset includes historical rainfall measurements recorded over several years, offering valuable insights into seasonal variations, annual averages, extreme weather events, and more. With this dataset, you can explore and visualize the rainfall patterns in Barak Valley, Assam, and gain a deeper understanding of its climatic conditions.
+
+Whether you are studying climate change, planning agricultural activities, or simply curious about the region's weather patterns, this dataset will serve as a valuable resource. Start your analysis, develop predictive models, or conduct research using this comprehensive rainfall dataset of Barak Valley, Assam.
+
+Features:
+
+Rainfall measurements from multiple weather stations in Barak Valley
+Historical data spanning several years
+Seasonal and annual rainfall averages
+Extreme weather events and anomalies
+Additional meteorological parameters (if available)
+Easy-to-use format for analysis and visualization
+Citation:
+
+Please cite this dataset as:
+
+[Rajkumar], [Abhijit]. ""Rainfall Dataset of Barak Valley, Assam"" [Year]. Kaggle Dataset. [URL]
+
+Acknowledgments:
+
+We would like to express our gratitude to the meteorological agencies, researchers, and data collectors who have contributed to this dataset. Their diligent efforts and dedication have made this resource possible.
+
+License:
+
+This dataset is provided under the [license name]. Please refer to the license file included in the dataset for more details.
+
+Feel free to explore, analyze, and make the most of this comprehensive rainfall dataset of Barak Valley, Assam! We hope it enhances your understanding of the region's weather patterns and aids in your research endeavors. If you have any questions or feedback, please don't hesitate to reach out. Happy analyzing!",https://www.kaggle.com/datasets/abhijitrajkumar/rainfall-dataset-of-barak-valley-assam
+Raman Ratings Dataset,"Context
+The Ramen Rater is a product review website for the hardcore ramen enthusiast (or ""ramenphile""), with over 2500 reviews to date. This dataset is an export of ""The Big List"" (of reviews), converted to a CSV format.
+
+Content
+Each record in the dataset is a single ramen product review. Review numbers are contiguous: more recently reviewed ramen varieties have higher numbers. Brand, Variety (the product name), Country, and Style (Cup? Bowl? Tray?) are pretty self-explanatory. Stars indicate the ramen quality, as assessed by the reviewer, on a 5-point scale; this is the most important column in the dataset!
+
+Note that this dataset does not include the text of the reviews themselves. For that, you should browse through https://www.theramenrater.com/ instead!
+
+Acknowledgements
+This dataset is republished as-is from the original BIG LIST on https://www.theramenrater.com/.
+
+Inspiration
+What ingredients or flavors are most commonly advertised on ramen package labels?
+How do ramen ratings compare against ratings for other food products (like, say, wine)?
+How is ramen manufacturing internationally distributed?",https://www.kaggle.com/datasets/residentmario/ramen-ratings
+Real Estate Valuation Dataset,,https://www.kaggle.com/datasets/gova26/real-estate-valuation-dataset
+Salary Dataset by Job Title and Country,"This dataset provides a comprehensive collection of salary information from various industries and regions across the globe. Sourced from reputable employment websites and surveys, it includes details on job titles, salaries, job sectors, geographic locations, and more. Analyze this data to gain insights into job market trends, compare compensation across different professions, and make informed decisions about your career or hiring strategies. The dataset is cleaned and preprocessed for ease of analysis and is available under an open license for research and data analysis purposes.
+
+Education Level:
+0 : High School
+1 : Bachelor Degree
+2 : Master Degree
+3 : Phd
+
+Currency : US Dollar
+
+Senior : It shows that is this employee has a senior position or no.(Binary)",https://www.kaggle.com/datasets/amirmahdiabbootalebi/salary-by-job-title-and-country
+Stroke Prediction Dataset,"According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.
+This dataset is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.",https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+Student Information and Grades Dataset,"This dataset encompasses various aspects related to student performance. Each entry is uniquely identified by an 'Id'. The dataset includes demographic information such as 'Student_Age' and 'Sex'. 'High_School_Type' categorizes the type of high school attended, while 'Scholarship' indicates whether the student has a scholarship. Details about 'Additional_Work' and involvement in 'Sports_activity' provide insights into extracurricular commitments.
+
+'Transportation' outlines the mode of commuting for each student. Academic aspects are captured through 'Weekly_Study_Hours', 'Attendance', and evaluations of 'Reading', 'Notes', and 'Listening_in_Class'. The culmination of these factors is reflected in the 'Grade' column, providing a comprehensive overview of student performance. This dataset serves as a valuable resource for exploring the multifaceted dynamics influencing academic outcomes.",https://www.kaggle.com/datasets/jacksondivakarr/student-classification-dataset
+Student Performance Prediction Dataset,"This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features and it was collected by using school reports and questionnaires.
+
+Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat.csv) and Portuguese language (por.csv). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks.",https://www.kaggle.com/datasets/henryshan/student-performance-prediction
+Students Math-Reading-Writing Performance Dataset,"Description: This dataset contains information on the performance of high school students in mathematics, including their grades and demographic information. The data was collected from three high schools in the United States.
+This dataset could be used for various research questions related to education, such as examining the impact of parental education or test preparation courses on student performance. It could also be used to develop machine learning models to predict student performance based on demographic and other factors.
+
+source: http://roycekimmons.com/tools/generated_data/exams",https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics
+Students New MRW Score Dataset,"Description: This dataset contains information on the performance of high school students in mathematics, including their grades and demographic information. The data was collected from three high schools in the United States.
+This dataset could be used for various research questions related to education, such as examining the impact of parental education or test preparation courses on student performance. It could also be used to develop machine learning models to predict student performance based on demographic and other factors.
+
+source: http://roycekimmons.com/tools/generated_data/exams",https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics
+Terrorist Attacks Dataset,This dataset contain terrorist attack data from 1970 to 2023.,https://www.kaggle.com/datasets/rafsunahmad/terrorist-attacks-data-since-1970-2023
+University Rank Dataset,This dataset contains rank of all the universities in the world and the ranking factors.,https://www.kaggle.com/datasets/rafsunahmad/world-all-university-ranking-factors
+US Christmas Tree Sales Dataset,"This dataset provides a comprehensive record of the annual Christmas tree sales in the United States from 2010 to 2016. The dataset consists of six columns which include relevant information about each year's sales data.
+
+The Year column indicates the specific year in which the Christmas tree sales data was recorded, allowing analysts to compare and track trends over time.
+
+The Type of tree column specifies the various species or types of Christmas trees that were sold during each particular year, enabling researchers to analyze market preferences and consumer choices.
+
+The Number of trees sold column represents the total quantity of Christmas trees that were purchased by customers in a given year. Identifying fluctuations in this metric can offer insights into changes in demand and market performance.
+
+The Average Tree Price column provides important information on pricing dynamics within the industry. By calculating and tracking this average price for each year, analysts can assess variations in consumer spending behavior as well as identify potential economic factors influencing purchasing decisions.
+
+Finally, the Sales column presents valuable data on total revenue generated from these Christmas tree sales annually. This metric offers a holistic perspective on market performance and business profitability within the holiday season.
+
+Overall, this detailed dataset serves as a reliable resource for researchers aiming to understand historical trends and patterns within the US Christmas tree industry from 2010 to 2016. By analyzing variations across years, types of trees, number of units sold, average prices, and total sales revenue statistics, professionals can gain meaningful insights into consumer preferences while also uncovering opportunities for growth or operational improvements within this festive market segment
+
+Example Analysis:
+
+a) Analyzing Revenue Over Time: Plotting a line graph with years on X-axis and sales revenue on Y-axis will help visualize if there is any increasing or decreasing trend in total revenue for all years combined.
+
+b) Comparing Average Tree Prices: Create a bar chart comparing the average prices of different tree types. This analysis can reveal insights into consumer preferences and price elasticity for specific tree species.
+
+c) Correlation Analysis: Explore the relationship between the number of trees sold and sales revenue by calculating correlation coefficients or creating a scatter plot. This will help identify if increased sales volume directly correlates to higher revenue.
+
+d) Seasonal Variations: Analyze seasonal patterns in the dataset by grouping data month-wise or quarter-wise. This can provide insights into peak buying periods, allowing businesses to optimize marketing strategies around these times.
+
+Conclusion:
+
+Research Ideas
+Analyzing the trends in Christmas tree sales over the years: By examining the number of trees sold, average tree price, and sales revenue for each year, this dataset can provide insights into consumer preferences and economic factors that influence Christmas tree purchasing patterns.
+Comparing the performance of different types of Christmas trees: The dataset includes information on the types or species of Christmas trees sold. This can be used to analyze which specific types of trees are more popular or generate higher sales revenue in a given year.
+Predicting future sales and pricing trends: By studying historical data from 2010 to 2016, this dataset can be used to develop predictive models that forecast future Christmas tree sales and average prices. This can be helpful for businesses in planning their inventory and pricing strategies for upcoming holiday seasons",https://www.kaggle.com/datasets/thedevastator/us-christmas-tree-sales-data
+Used Car Dataset,"?? Used Car Price Dataset: A dataset for predicting used car price ??
+Dive into the world of used cars with our dataset, perfect for predicting prices. It's a carefully selected set of data that car enthusiasts, analysts, and data scientists will find valuable. Whether you're curious or looking to analyze, this dataset is your guide to understanding the dynamics of how used cars are valued.
+
+Key Features:
+
+??? Rich Attributes: Explore a number of attributes, including mileage, model year, fuel type, transmission, and more, providing a 360-degree view of each vehicle's specifications.
+?? Depreciation Insights: Uncover patterns in vehicle depreciation over time and across different makes and models, empowering you to make informed predictions about future price trends.
+?? Technological Integration: Seamlessly integrate our dataset into your predictive modeling pipelines, harnessing the power of technology to foresee changes in the used car market.
+Potential Applications:
+
+?? Market Research: Conduct in-depth market research to identify trends, fluctuations, and hotspots in the used car industry.
+?? Predictive Modeling: Build robust machine learning models to predict resale values, assisting buyers, sellers, and dealerships in making informed decisions.
+?? Business Strategy: Inform business strategies for used car dealerships, insurance companies, and financial institutions by understanding the underlying factors influencing pricing.
+How to Use:
+
+????? Data Science Projects: Integrate this dataset into your data science projects to explore and analyze factors impacting used car prices.
+?? Predictive Modeling: Train machine learning models to predict resale values based on historical data and a wide array of vehicle attributes.
+?? Market Insights: Gain valuable insights into market dynamics, allowing you to stay ahead of trends and developments in the used car space.
+Dataset Description:
+1552 Rows, 15 Columns
+
+Attributes:
+
+car_name
+registration_year
+insurance_validity
+fuel_type
+seats
+kms_driven
+ownership
+transmission
+manufacturing_year
+mileage(kmpl)
+engine(cc)
+max_power(bhp)
+torque(Nm)
+price(in lakhs)
+Steps you can do:
+1. Data Preprocessing
+2. Data Visualization
+3. Explarotary Data Analysis
+4. Feature Selection and Transformation
+5. Train-Test-Split
+6. Model Creation (eg: Multiple Linear Regression)
+7. Model Prediction
+
+Give an upvote if it helps !!",https://www.kaggle.com/datasets/rishabhkarn/used-car-dataset
+Video Games Sales Dataset,"The elements covered in this well-curated dataset include: The ranking of the game based on global sales under the column 'Rank'. This metric provides perspective on how popular or successful a particular game has been across countries in comparison to others during its time. Noting that video games' popularity could vary greatly from one geography to another due to factors like cultural nuances, gamer preferences, etc., regional sales have been marked separately for North America (North America), Europe (Europe), Japan (Japan) as well as for other parts of the World excluding these three regions under the column 'Rest of World'.
+
+For easy identification among massive chunks of data, we've included each game's title (Game Title) along with additional categorization based on their genre (Genre). From action-packed adventures to strategic board-like scenarios or enchanted magic realms - classifications cover it all! In addition, detailed information about publishers can be found under 'Publisher', which grants insights about leading companies dominating market shares.
+
+Further details expand into mentioning platforms such as PS4, Xbox, PC where these games can be played under 'Platform'. A unique attribute covered in this database is ‘Review’. Given that critique ratings play an influential role in engaging new players into trying out a particular video game or boosting existing user morale regarding their choice; this numeric representation ranging typically from 1-10 vividly captures public opinion about them.
+
+Lastly, just for keeping tabs on ever-evolving gaming technology standards where newer versions often outshine predecessors irrespective of actual gameplay quality itself; having release years mentioned ('Year') proves beneficial for categorizing them chronologically. This helps correlate whether higher sales figures can sometimes merely be indicative of more people having access to necessary high-end gaming hardware during later periods.
+
+In essence, this dataset titled ‘Video Games Sales.csv’ holds immense potential for informative deep-dives into the Video Game industry's trends and paradigms, forming a solid foundation for market research, academic purposes or personal projects
+
+How to use the dataset
+This dataset provides extensive information about various video game titles, their sales performance across multiple regions, publisher details and game reviews. Follow the steps outlined below to make the most out of this remarkable dataset!
+
+1. Game Research & Evaluation:
+With columns such as 'Game Title', 'Genre' and 'Review', you can research on particular games or genres that interest you. You can evaluate a game based on its review scores, delving into what makes a top-rated game.
+
+2. Publisher Analysis:
+The 'Publisher' column lets you track which publishers are behind the most successful games in terms of sales and reviews. This analysis could be useful for people interested in business trends in gaming industry or trying to identify potential innovative publishers.
+
+3. Regional Market Trend Identification:
+You can use data from columns like ‘North America’, ‘Europe’, ‘Japan’ and ‘Rest of World’ to study regional market trends for certain genres or platforms; it might enable one to recognize patterns over time or cultural preferences with regard to video games.
+
+4. Global Sales Analysis:
+Using the 'Global' column, you could observe which games have been globally successful, going beyond regional preferences by genre or platform.
+
+5. Platform Insight:
+The platform on which a particular game is available is another significant factor (e.g., PC, PS4, Xbox). By utilizing the data contained in this dataset regarding platforms, one may learn how platform choice impacts global sales as well as discern any correlation between preferred platform types among specific regions.
+
+Remember that every statistical analysis begins with knowing your data - dive deep into each variable; explore patterns within variables before looking at correlations between different fields.
+
+Don't forget - when engaged with comprehensive datasets like these - creativity is your only limit! Happy analyzing!
+
+Research Ideas
+Trend Analysis: This dataset can be used to analyze the trends in video game preferences over the years based on genre, publisher, platform and region. It can provide interesting insights into how consumer tastes have evolved with time and which game genres are becoming more popular.
+
+Sales Forecasting: Using historical sales data from different regions, we can build statistical models for predicting future sales of upcoming video games. This would be valuable for stakeholders in the production and distribution of video games such as developers, publishers and retailers.
+
+Game Evaluation & Strategy Planning: By examining a correlation between review scores and global sales across various platforms or among particular genres, companies could identify which aspects are commended by gamers most often - thus pushing developers to focus more on them when planning new game titles. Also it could help strategists plan marketing campaigns targeted at specific regions where certain type of games tend to sell more.
+
+Competition Analysis: They potentially might use this data set to benchmark their performance against competitors by comparing factors such as review scores and total global sales.
+
+Consumer Behaviour Insights: The dataset can be used to understand gamer behaviour patterns across different geographies like North America, Europe, Japan etc., helping marketers carve effective regional promotional strategies or decide where to launch next.
+
+This is indeed a powerful set of data that sheds light on many key aspects of the gaming industry!",https://www.kaggle.com/datasets/thedevastator/global-video-game-sales-and-reviews

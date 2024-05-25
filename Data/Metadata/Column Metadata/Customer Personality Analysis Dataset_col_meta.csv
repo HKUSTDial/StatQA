@@ -1,0 +1,30 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Customer Personality Analysis Dataset,ID,id,Customer's unique identifier,2240,FALSE
+Customer Personality Analysis Dataset,Year_Birth,other,Customer's birth year,2240,FALSE
+Customer Personality Analysis Dataset,Education,cate,Customer's education level,2240,FALSE
+Customer Personality Analysis Dataset,Marital_Status,cate,Customer's marital status,2240,FALSE
+Customer Personality Analysis Dataset,Income,quant,Customer's yearly household income,2240,FALSE
+Customer Personality Analysis Dataset,Kidhome,quant,Number of children in customer's household,2240,FALSE
+Customer Personality Analysis Dataset,Teenhome,quant,Number of teenagers in customer's household,2240,FALSE
+Customer Personality Analysis Dataset,Dt_Customer,other,Date of customer's enrollment with the company,2240,FALSE
+Customer Personality Analysis Dataset,Recency,quant,Number of days since customer's last purchase,2240,FALSE
+Customer Personality Analysis Dataset,MntWines,quant,Amount spent on wine in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,MntFruits,quant,Amount spent on fruits in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,MntMeatProducts,quant,Amount spent on meat in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,MntFishProducts,quant,Amount spent on fish in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,MntSweetProducts,quant,Amount spent on sweets in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,MntGoldProds,quant,Amount spent on gold in last 2 years,2240,FALSE
+Customer Personality Analysis Dataset,NumDealsPurchases,quant,Number of purchases made with a discount,2240,FALSE
+Customer Personality Analysis Dataset,NumWebPurchases,quant,Number of purchases made through the company’s website,2240,FALSE
+Customer Personality Analysis Dataset,NumCatalogPurchases,quant,Number of purchases made using a catalogue,2240,FALSE
+Customer Personality Analysis Dataset,NumStorePurchases,quant,Number of purchases made directly in stores,2240,FALSE
+Customer Personality Analysis Dataset,NumWebVisitsMonth,quant,Number of visits to company’s website in the last month,2240,FALSE
+Customer Personality Analysis Dataset,AcceptedCmp3,cate,"1 if customer accepted the offer in the 3rd campaign, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,AcceptedCmp4,cate,"1 if customer accepted the offer in the 4th campaign, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,AcceptedCmp5,cate,"1 if customer accepted the offer in the 5th campaign, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,AcceptedCmp1,cate,"1 if customer accepted the offer in the 1st campaign, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,AcceptedCmp2,cate,"1 if customer accepted the offer in the 2nd campaign, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,Complain,cate,"1 if the customer complained in the last 2 years, 0 otherwise",2240,FALSE
+Customer Personality Analysis Dataset,Z_CostContact,quant,Cost Contact,2240,FALSE
+Customer Personality Analysis Dataset,Z_Revenue,quant,Revenue,2240,FALSE
+Customer Personality Analysis Dataset,Response,cate,"1 if customer accepted the offer in the last campaign, 0 otherwise",2240,FALSE

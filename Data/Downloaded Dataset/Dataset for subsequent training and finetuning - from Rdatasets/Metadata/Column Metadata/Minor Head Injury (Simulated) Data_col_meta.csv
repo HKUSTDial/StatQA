@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Minor Head Injury (Simulated) Data,rownames,id,id,3121,False
+Minor Head Injury (Simulated) Data,age.65,cate,Whether over 65 years old,3121,False
+Minor Head Injury (Simulated) Data,amnesia.before,cate,Whether experience amnesia before,3121,False
+Minor Head Injury (Simulated) Data,basal.skull.fracture,cate,Whether suffer from a basal skull fracture,3121,False
+Minor Head Injury (Simulated) Data,GCS.decrease,cate,Whether experience Glasgow Coma Scale decrease,3121,False
+Minor Head Injury (Simulated) Data,GCS.13,cate,initial Glasgow Coma Scale,3121,False
+Minor Head Injury (Simulated) Data,GCS.15.2hours,cate,Glasgow Coma Scale after 2 hours,3121,False
+Minor Head Injury (Simulated) Data,high.risk,cate,high risk for neurological intervention or not high-risk,3121,False
+Minor Head Injury (Simulated) Data,loss.of.consciousness,cate,lose consciousness or not,3121,False
+Minor Head Injury (Simulated) Data,open.skull.fracture,cate,have open skull fracture or not,3121,False
+Minor Head Injury (Simulated) Data,vomiting,cate,does the individual vomit?,3121,False
+Minor Head Injury (Simulated) Data,clinically.important.brain.injury,cate,Is there any important brain injury revealed on CT?,3121,False

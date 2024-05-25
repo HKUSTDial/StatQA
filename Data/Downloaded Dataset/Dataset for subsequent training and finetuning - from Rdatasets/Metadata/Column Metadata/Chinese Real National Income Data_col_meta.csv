@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Chinese Real National Income Data,rownames,id,id,37,False
+Chinese Real National Income Data,agriculture,quant,national income in agriculture sector.,37,False
+Chinese Real National Income Data,commerce,quant,national income in commerce sector.,37,False
+Chinese Real National Income Data,construction,quant,national income in construction sector.,37,False
+Chinese Real National Income Data,industry,quant,national income in industry sector.,37,False
+Chinese Real National Income Data,transport,quant,national income in transport sector.,37,False

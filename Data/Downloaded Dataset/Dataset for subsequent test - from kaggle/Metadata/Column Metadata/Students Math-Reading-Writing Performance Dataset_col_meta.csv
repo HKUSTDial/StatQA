@@ -1,0 +1,9 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Students Math-Reading-Writing Performance Dataset,gender,cate,The gender of the student (male/female),1000,False
+Students Math-Reading-Writing Performance Dataset,race/ethnicity,cate,"The student's racial or ethnic background (Asian, African-American, Hispanic, etc.)",1000,False
+Students Math-Reading-Writing Performance Dataset,parental level of education,cate,The highest level of education attained by the student's parent(s) or guardian(s),1000,False
+Students Math-Reading-Writing Performance Dataset,lunch,cate,Whether the student receives free or reduced-price lunch (yes/no),1000,False
+Students Math-Reading-Writing Performance Dataset,test preparation course,cate,Whether the student completed a test preparation course (yes/no),1000,False
+Students Math-Reading-Writing Performance Dataset,math score,quant,The student's score on a standardized mathematics test,1000,True
+Students Math-Reading-Writing Performance Dataset,reading score,quant,The student's score on a standardized reading test,1000,False
+Students Math-Reading-Writing Performance Dataset,writing score,quant,The student's score on a standardized writing test,1000,False

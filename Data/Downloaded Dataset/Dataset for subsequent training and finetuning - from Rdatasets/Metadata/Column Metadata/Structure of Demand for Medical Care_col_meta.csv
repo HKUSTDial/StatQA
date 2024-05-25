@@ -1,0 +1,17 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Structure of Demand for Medical Care,rownames,id,id,5574,False
+Structure of Demand for Medical Care,med,quant,annual medical expenditures in constant dollars excluding dental and outpatient mental,5574,False
+Structure of Demand for Medical Care,lc,quant,coinsurance,5574,False
+Structure of Demand for Medical Care,idp,cate,Whether the individual holds an individual deductible plan,5574,False
+Structure of Demand for Medical Care,lpi,quant,annual participation incentive payment,5574,False
+Structure of Demand for Medical Care,fmde,quant,max of medical deductible expenditure,5574,False
+Structure of Demand for Medical Care,physlim,cate,whether have physical limitation,5574,False
+Structure of Demand for Medical Care,ndisease,quant,number of chronic diseases,5574,False
+Structure of Demand for Medical Care,health,quant,self rate health,5574,False
+Structure of Demand for Medical Care,linc,quant,log annual family income,5574,False
+Structure of Demand for Medical Care,lfam,quant,log of family size,5574,False
+Structure of Demand for Medical Care,educdec,quant,years of schooling of household head,5574,False
+Structure of Demand for Medical Care,age,quant,age,5574,False
+Structure of Demand for Medical Care,sex,cate,gender,5574,False
+Structure of Demand for Medical Care,child,cate,whether the individual is a child under 18 or not,5574,False
+Structure of Demand for Medical Care,black,cate,whether the individual is household head black or not,5574,False

@@ -1,0 +1,12 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+GrowthDJ Determinants of Economic Growth,rownames,id,id,121,False
+GrowthDJ Determinants of Economic Growth,oil,cate,Is the country an oil-producing country?,121,False
+GrowthDJ Determinants of Economic Growth,inter,cate,Does the country have better quality data?,121,False
+GrowthDJ Determinants of Economic Growth,oecd,cate,Is the country a member of the OECD?,121,False
+GrowthDJ Determinants of Economic Growth,gdp60,quant,Per capita GDP in 1960,121,False
+GrowthDJ Determinants of Economic Growth,gdp85,quant,Per capita GDP in 1985,121,False
+GrowthDJ Determinants of Economic Growth,gdpgrowth,quant,Average growth rate of per capita GDP,121,False
+GrowthDJ Determinants of Economic Growth,popgrowth,quant,Average growth rate of working-age population,121,False
+GrowthDJ Determinants of Economic Growth,invest,quant,Average ratio of investment (including Government Investment) to GDP,121,True
+GrowthDJ Determinants of Economic Growth,school,quant,Average fraction of working-age population enrolled in secondary school,121,False
+GrowthDJ Determinants of Economic Growth,literacy60,quant,Fraction of the population over 15 years old that is able to read and write in 1960,121,False

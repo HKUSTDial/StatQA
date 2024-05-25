@@ -1,0 +1,17 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Airbag and other influences on accident fatalities,rownames,id,id,26217,False
+Airbag and other influences on accident fatalities,dvcat,cate,Levels of estimated impact speeds,26217,False
+Airbag and other influences on accident fatalities,weight,quant,Observation weights,26217,False
+Airbag and other influences on accident fatalities,dead,cate,Passengers were alive or dead in the accident,26217,False
+Airbag and other influences on accident fatalities,airbag,cate,If airbag equipped,26217,False
+Airbag and other influences on accident fatalities,seatbelt,cate,If passengers were belted by seatbelt in the accident,26217,False
+Airbag and other influences on accident fatalities,frontal,cate,If the accident was a frontal(1) or non-frontal(0) impact,26217,False
+Airbag and other influences on accident fatalities,sex,cate,The gender of driver (f for female and m for male),26217,False
+Airbag and other influences on accident fatalities,ageOFocc,quant,Age of occupant in years,26217,False
+Airbag and other influences on accident fatalities,yearacc,other,Year of accident,26217,False
+Airbag and other influences on accident fatalities,yearVeh,other,Year of model of vehicle,26217,False
+Airbag and other influences on accident fatalities,abcat,other,Did one or more (driver or passenger) airbag(s) deploy? This factor has levels deploy nodeploy unavail.,26217,False
+Airbag and other influences on accident fatalities,occRole,other,,26217,False
+Airbag and other influences on accident fatalities,deploy,cate,If airbag(s) availble and depolyed: 0 if an airbag was unavailable or did not deploy; 1 if one or more bags deployed.,26217,False
+Airbag and other influences on accident fatalities,injSeverity,quant,"Severity of injury. 1:possible injury, 2:no incapacity, 3:incapacity, 4:killed; 5:unknown, 6:prior death",26217,False
+Airbag and other influences on accident fatalities,caseid,other,id,26217,False

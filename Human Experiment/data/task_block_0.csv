@@ -1,0 +1,39 @@
+dataset,refined_question,relevant_column,task,difficulty,results,prompt,ground_truth
+Crop Production Dataset,Are the variations in yearly crop yields in the United States similar to those in Bangladesh?,"[{""column_header"": ""United States"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Bangladesh"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 11.46874, \""p value\"": 0.01474}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 6.7422, \""p value\"": 0.00942}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 26.73523, \""p value\"": 0.00207}"", ""conclusion"": ""Variance significantly difference between them""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Are the variations in yearly crop yields in the United States similar to those in Bangladesh?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""United States"", ""Bangladesh""], ""methods"": [""Mood Variance Test"", ""Levene Test"", ""Bartlett Test"", ""F-Test for Variance""]}"
+GPA Study Hours Dataset,Is the distribution of the grade point average (GPA) for students approximately normal?,"[{""column_header"": ""gpa"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 2.10425, \\\""crit\\\"": 0.565}\""}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 0.04022}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": 0.001}"", ""conclusion"": ""Non-normally distributed""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: gpa; data_type: quantitative; num_of_rows: 193; is_normality: False.
+column_header: study_hours; data_type: quantitative; num_of_rows: 193; is_normality: False.
+### Statistical Question: Is the distribution of the grade point average (GPA) for students approximately normal?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""gpa""], ""methods"": [""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]}"

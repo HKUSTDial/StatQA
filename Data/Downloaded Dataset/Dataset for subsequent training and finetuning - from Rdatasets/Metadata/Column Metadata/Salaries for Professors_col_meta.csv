@@ -1,0 +1,8 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Salaries for Professors,rownames,id,id,397,False
+Salaries for Professors,rank,cate,Professor rank level: AssocProf AsstProf Prof.,397,False
+Salaries for Professors,discipline,cate,Type of discipline,397,False
+Salaries for Professors,yrs.since.phd,quant,years since PhD.,397,False
+Salaries for Professors,yrs.service,quant,years of service.,397,False
+Salaries for Professors,sex,cate,Gender,397,False
+Salaries for Professors,salary,quant,Salary,397,False

@@ -1,0 +1,30 @@
+'''Global variable of path'''
+
+chart_dir = 'Chart/'
+radar_dir = 'Radar Chart/'
+confusion_matrix_dir = 'Confusion Matrix/'
+
+meta_dir = 'Data/Metadata/'
+col_meta_dir = 'Column Metadata/'
+dataset_dir = 'Data/Origin Dataset/'
+processed_dir = 'Data/Processed Dataset/'
+info_dir = 'Data/Extracted Information/'
+manual_dir = 'Manual Filtered Information/'
+
+prequestion_dir = 'Preliminary Question/'
+refine_dir = 'GPT Refined Question/'
+gpt_question_dir = 'GPT Refined Question/'
+
+integ_dataset_path = 'Data/Integrated Dataset/'
+prompt_dataset_path = 'Dataset with Prompt/'
+model_ans_path = 'Model Answer/'
+orgin_ans_path = 'Origin Answer/'
+processed_ans_path = 'Processed Answer/'
+task_perf_path = 'Task Performance/'
+direct_path = 'Direct/'
+checked_direct_path = 'Checked/'
+conclusion_path = 'Extracted Conclusion/'
+
+balance_path = 'Balanced Benchmark/'
+training_set_path = 'Training Set/'
+test_set_path = 'Test Set/'

@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Sugar-cane Disease Data,rownames,id,id,180,False
+Sugar-cane Disease Data,n,quant,The total number of shoots in each plot.,180,False
+Sugar-cane Disease Data,r,quant,The number of diseased shoots.,180,False
+Sugar-cane Disease Data,x,quant,"The number of pieces of the stems, out of 50, planted in each plot.",180,False
+Sugar-cane Disease Data,var,quant,the variety of sugar cane in each plot.,180,False
+Sugar-cane Disease Data,block,cate,type of blocks,180,False

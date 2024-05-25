@@ -1,0 +1,12 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Monroe County Car Crach Dataset,Year,other,Year of the car crash,53943,False
+Monroe County Car Crach Dataset,Month,other,Month of the car crash,53943,False
+Monroe County Car Crach Dataset,Day,other,Day of the car crash,53943,False
+Monroe County Car Crach Dataset,Weekend?,cate,Indicator of whether the crash occurred on a weekend,53943,False
+Monroe County Car Crach Dataset,Hour,quant,Hour of the day when the crash occurred,53943,False
+Monroe County Car Crach Dataset,Collision Type,cate, Type of collision that occurred,53943,False
+Monroe County Car Crach Dataset,Injury Type,cate,Type of injury sustained in the crash,53943,False
+Monroe County Car Crach Dataset,Primary Factor,cate,Primary factor contributing to the crash,53943,False
+Monroe County Car Crach Dataset,Reported_Location,other,Location where the crash was reported,53943,False
+Monroe County Car Crach Dataset,Latitude,other,Latitude coordinate of the crash location,53943,False
+Monroe County Car Crach Dataset,Longitude,other,Longitude coordinate of the crash location,53943,False

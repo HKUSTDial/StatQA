@@ -1,0 +1,23 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Labor Force Participation Data,rownames,id,id,753,False
+Labor Force Participation Data,participation,cate,Did the individual participate in the labor force,753,False
+Labor Force Participation Data,hours,quant,Wife's hours of work,753,False
+Labor Force Participation Data,youngkids,quant,Number of children less than 6 years old in household.,753,False
+Labor Force Participation Data,oldkids,quant,Number of children between ages 6 and 18 in household.,753,False
+Labor Force Participation Data,age,quant,Wife's age in years.,753,False
+Labor Force Participation Data,education,quant,Wife's education in years.,753,False
+Labor Force Participation Data,wage,quant,Wife's average hourly wage,753,False
+Labor Force Participation Data,repwage,quant,Wife's wage reported at the time,753,False
+Labor Force Participation Data,hhours,quant,Husband's hours worked,753,False
+Labor Force Participation Data,hage,quant,Husband's age in years.,753,False
+Labor Force Participation Data,heducation,quant,Husband's education in years.,753,False
+Labor Force Participation Data,hwage,quant,Husband's wage,753,False
+Labor Force Participation Data,fincome,quant,Family income,753,False
+Labor Force Participation Data,tax,quant,Marginal tax rate facing the wife,753,False
+Labor Force Participation Data,meducation,quant,Wife's mother's educational attainment in years.,753,False
+Labor Force Participation Data,feducation,quant,Wife's father's educational attainment in years.,753,False
+Labor Force Participation Data,unemp,quant,Unemployment rate in county of residence,753,False
+Labor Force Participation Data,city,cate,Does the individual live in a large city?,753,False
+Labor Force Participation Data,experience,quant,Actual years of wife's previous labor market experience.,753,False
+Labor Force Participation Data,college,cate,Did the individual attend college?,753,False
+Labor Force Participation Data,hcollege,cate,Did the individual's husband attend college?,753,False

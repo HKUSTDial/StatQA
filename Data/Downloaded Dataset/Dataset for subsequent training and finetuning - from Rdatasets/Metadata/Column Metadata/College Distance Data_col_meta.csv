@@ -1,0 +1,16 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+College Distance Data,rownames,id,id,4739,False
+College Distance Data,gender,cate,Student's gender,4739,False
+College Distance Data,ethnicity,cate,"Ethnicity (African-American, Hispanic or other)",4739,False
+College Distance Data,score,quant,base year composite test score. ,4739,False
+College Distance Data,fcollege,cate,Is the student's father a college graduate?,4739,False
+College Distance Data,mcollege,cate,Is the studnet's mother a college graduate?,4739,False
+College Distance Data,home,cate,Does the family of the student own their home?,4739,False
+College Distance Data,urban,cate,Is the school in an urban area or not.,4739,False
+College Distance Data,unemp,quant,county unemployment rate.,4739,False
+College Distance Data,wage,quant,state hourly wage in manufacturing,4739,False
+College Distance Data,distance,quant,distance from 4-year college (in 10 miles).,4739,False
+College Distance Data,tuition,quant,average state 4-year college tuition (in 1000 USD).,4739,False
+College Distance Data,education,quant,number of years of education.,4739,False
+College Distance Data,income,cate, Is the family income above USD 25000 per year or not,4739,False
+College Distance Data,region,cate,region,4739,False

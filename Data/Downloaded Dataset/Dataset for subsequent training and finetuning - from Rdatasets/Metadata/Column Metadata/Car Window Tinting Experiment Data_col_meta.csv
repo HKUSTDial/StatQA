@@ -1,0 +1,11 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Car Window Tinting Experiment Data,rownames,id,id,182,False
+Car Window Tinting Experiment Data,case,id,id,182,False
+Car Window Tinting Experiment Data,id,id,id,182,False
+Car Window Tinting Experiment Data,age,cate,Age in years of experiment participant,182,False
+Car Window Tinting Experiment Data,sex,cate,Gender of experiment participant,182,False
+Car Window Tinting Experiment Data,tint,cate,Levels representing degree of tinting,182,False
+Car Window Tinting Experiment Data,target,cate,"Target condition, locon: low contrast, hicon: high contrast",182,False
+Car Window Tinting Experiment Data,it,quant,"Inspection time, the time required to perform a simple discrimination task (in milliseconds)",182,False
+Car Window Tinting Experiment Data,csoa,quant,"Critical stimulus onset asynchrony, the time to recognize an alphanumeric target (in milliseconds)",182,False
+Car Window Tinting Experiment Data,agegp,cate,Age group,182,False

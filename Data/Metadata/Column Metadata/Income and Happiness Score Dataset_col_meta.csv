@@ -1,0 +1,12 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Income and Happiness Score Dataset,country,other,The name of the country,111,False
+Income and Happiness Score Dataset,adjusted_satisfaction,quant,Adjusted self-reported happiness score,111,True
+Income and Happiness Score Dataset,avg_satisfaction,quant,Average self-reported happiness score,111,True
+Income and Happiness Score Dataset,std_satisfaction,quant,Standard deviation of self-reported happiness scores,111,True
+Income and Happiness Score Dataset,avg_income,quant,Average income of individuals in the country,111,False
+Income and Happiness Score Dataset,median_income,quant,Median income of individuals in the country,111,False
+Income and Happiness Score Dataset,income_inequality,quant,Measure of income inequality within the country,111,False
+Income and Happiness Score Dataset,region,cate,The geographical region to which the country belongs,111,False
+Income and Happiness Score Dataset,happyScore,quant,Overall happiness score of the country,111,False
+Income and Happiness Score Dataset,GDP,quant,Gross Domestic Product,111,False
+Income and Happiness Score Dataset,country.1,other,The name of the country,111,False

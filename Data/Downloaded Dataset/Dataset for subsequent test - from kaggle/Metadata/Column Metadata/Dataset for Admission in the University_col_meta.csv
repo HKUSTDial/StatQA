@@ -1,0 +1,10 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Dataset for Admission in the University,Serial No.,id,Row number,400,False
+Dataset for Admission in the University,GRE Score,quant,GRE (Graduate Record Examination) scores of applicants,400,False
+Dataset for Admission in the University,TOEFL Score,quant,TOEFL (Test of English as a Foreign Language) scores of applicants,400,False
+Dataset for Admission in the University,University Rating,cate,Rating of the university where the applicant obtained their undergraduate degree,400,False
+Dataset for Admission in the University,SOP,quant,Strength of the applicant's Statement of Purpose,400,False
+Dataset for Admission in the University,LOR ,quant,Letter of Recommendation,400,False
+Dataset for Admission in the University,CGPA,quant,Grade Point Average (GPA) of the applicant during their undergraduate studies,400,True
+Dataset for Admission in the University,Research,cate,Indicates whether the applicant has research experience,400,False
+Dataset for Admission in the University,Chance of Admit ,quant,Probability of the applicant being admitted to the university,400,False

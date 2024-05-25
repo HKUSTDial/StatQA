@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Heart Failure Prediction Dataset,Age,quant,age of the patient [years],918,False
+Heart Failure Prediction Dataset,Sex,cate,"sex of the patient [M: Male, F: Female]",918,False
+Heart Failure Prediction Dataset,ChestPainType,cate,"chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]",918,False
+Heart Failure Prediction Dataset,RestingBP,quant,resting blood pressure [mm Hg],918,False
+Heart Failure Prediction Dataset,Cholesterol,quant,serum cholesterol [mm/dl],918,False
+Heart Failure Prediction Dataset,FastingBS,cate,"fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]",918,False
+Heart Failure Prediction Dataset,RestingECG,cate,"resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]",918,False
+Heart Failure Prediction Dataset,MaxHR,quant,maximum heart rate achieved [Numeric value between 60 and 202],918,False
+Heart Failure Prediction Dataset,ExerciseAngina,cate,"exercise-induced angina [Y: Yes, N: No]",918,False
+Heart Failure Prediction Dataset,Oldpeak,quant,oldpeak = ST [Numeric value measured in depression],918,False
+Heart Failure Prediction Dataset,ST_Slope,cate,"the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]",918,False
+Heart Failure Prediction Dataset,HeartDisease,cate,"HeartDisease: output class [1: heart disease, 0: Normal]",918,False

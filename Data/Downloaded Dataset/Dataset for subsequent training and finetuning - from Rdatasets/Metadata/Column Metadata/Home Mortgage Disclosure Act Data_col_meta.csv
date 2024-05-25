@@ -1,0 +1,16 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Home Mortgage Disclosure Act Data,rownames,id,id,2380,False
+Home Mortgage Disclosure Act Data,deny,cate,Was the mortgage denied?,2380,False
+Home Mortgage Disclosure Act Data,pirat,quant,Payments to income ratio.,2380,False
+Home Mortgage Disclosure Act Data,hirat,quant,Housing expense to income ratio.,2380,False
+Home Mortgage Disclosure Act Data,lvrat,quant,Loan to value ratio.,2380,False
+Home Mortgage Disclosure Act Data,chist,quant,Credit history: Number of consumer payments.,2380,False
+Home Mortgage Disclosure Act Data,mhist,quant,Credit history: Number of mortgage payments.,2380,False
+Home Mortgage Disclosure Act Data,phist,cate,Whether have public bad credit record or not,2380,False
+Home Mortgage Disclosure Act Data,unemp,quant, unemployment rate in applicant's industry.,2380,False
+Home Mortgage Disclosure Act Data,selfemp,cate,Is the individual self-employed?,2380,False
+Home Mortgage Disclosure Act Data,insurance,cate,Was the individual denied mortgage insurance?,2380,False
+Home Mortgage Disclosure Act Data,condomin,cate,Is the unit a condominium?,2380,False
+Home Mortgage Disclosure Act Data,afam,cate,Is the individual African-American?,2380,False
+Home Mortgage Disclosure Act Data,single,cate,Is the individual single?,2380,False
+Home Mortgage Disclosure Act Data,hschool,cate,Does the individual have a high-school diploma?,2380,False

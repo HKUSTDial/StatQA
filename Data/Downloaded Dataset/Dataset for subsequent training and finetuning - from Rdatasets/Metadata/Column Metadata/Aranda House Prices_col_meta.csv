@@ -1,0 +1,5 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Aranda House Prices,rownames,id,id,15,False
+Aranda House Prices,area,quant,the floor area of a house,15,True
+Aranda House Prices,bedrooms,quant,the number of bedrooms of a house,15,False
+Aranda House Prices,sale.price,quant,the sale price in thousands of Australian dollars of a house,15,True

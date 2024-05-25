@@ -1,0 +1,16 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Medicaid Utilization Data,rownames,id,id,996,False
+Medicaid Utilization Data,visits,quant,Number of doctor visits.,996,False
+Medicaid Utilization Data,exposure,quant,Length of observation period for ambulatory care (days).,996,False
+Medicaid Utilization Data,children,quant,Total number of children in the household.,996,False
+Medicaid Utilization Data,age,quant,Age of the respondent.,996,False
+Medicaid Utilization Data,income,quant,Annual household income,996,False
+Medicaid Utilization Data,health1,quant,The first principal component of three health-status variables,996,False
+Medicaid Utilization Data,health2,quant,The second principal component of three health-status variables,996,False
+Medicaid Utilization Data,access,cate,Availability of health services.,996,False
+Medicaid Utilization Data,married,cate,Is the individual married?,996,False
+Medicaid Utilization Data,gender,cate,Gender,996,False
+Medicaid Utilization Data,ethnicity,cate,Ethnicity ,996,False
+Medicaid Utilization Data,school,quant,Number of years completed in school.,996,False
+Medicaid Utilization Data,enroll,cate,Is the individual enrolled in a demonstration program?,996,False
+Medicaid Utilization Data,program,cate,"Type of managed care demonstration program: Aid to Families with Dependent Children (afdc"") or non-institutionalized Supplementary Security Income (""ssi"").""",996,False

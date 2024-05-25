@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",rownames,id,id,31,False
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",returns,quant,real annual returns on stocks,31,False
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",growth,quant,"annual growth rate of output, measured by real GNP",31,False
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",inflation,quant,"inflation rate, measured as growth of price rate ",31,False
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",growth2,quant,annual growth2 rate,31,False
+"Benderly and Zwick Data - Inflation, Growth and Stock Returns",inflation2,quant,inflation2 rate,31,False

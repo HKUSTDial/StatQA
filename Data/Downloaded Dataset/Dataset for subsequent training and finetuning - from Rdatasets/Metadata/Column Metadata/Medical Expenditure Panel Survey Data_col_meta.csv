@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Medical Expenditure Panel Survey Data,rownames,id,id,8802,False
+Medical Expenditure Panel Survey Data,health,cate,Is the self-reported health status healty?,8802,False
+Medical Expenditure Panel Survey Data,age,quant,age,8802,False
+Medical Expenditure Panel Survey Data,limit,cate,Is there any limitation or not?,8802,False
+Medical Expenditure Panel Survey Data,gender,cate,gender,8802,False
+Medical Expenditure Panel Survey Data,insurance,cate,Does the individual have a health insurance?,8802,False
+Medical Expenditure Panel Survey Data,married,cate,Is the individual married?,8802,False
+Medical Expenditure Panel Survey Data,selfemp,cate,Is the individual self-employed?,8802,False
+Medical Expenditure Panel Survey Data,family,quant,family size.,8802,False
+Medical Expenditure Panel Survey Data,region,cate,region,8802,False
+Medical Expenditure Panel Survey Data,ethnicity,cate,ethnicity,8802,False
+Medical Expenditure Panel Survey Data,education,cate,highest degree attained,8802,False

@@ -1,0 +1,17 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Student Information and Grades Dataset,Unnamed: 0,id,id,145,False
+Student Information and Grades Dataset,Id,id,id,145,False
+Student Information and Grades Dataset,Student_Age,quant,Student Age,145,False
+Student Information and Grades Dataset,Sex,cate,Gender,145,False
+Student Information and Grades Dataset,High_School_Type,cate,categorizes the type of high school attended,145,False
+Student Information and Grades Dataset,Scholarship,cate,indicates whether the student has a scholarship,145,False
+Student Information and Grades Dataset,Additional_Work,cate,Indicates if the student is involved in additional work,145,False
+Student Information and Grades Dataset,Sports_activity,cate,Indicates if the student is involved in sports activities,145,False
+Student Information and Grades Dataset,Transportation,cate,outlines the mode of commuting for each student,145,False
+Student Information and Grades Dataset,Weekly_Study_Hours,quant,Number of hours spent studying per week,145,False
+Student Information and Grades Dataset,Attendance,cate,Attendance record,145,False
+Student Information and Grades Dataset,Reading,cate,Evaluation of the student's reading skills,145,False
+Student Information and Grades Dataset,Notes,cate,Evaluation of the student's note-taking skills,145,False
+Student Information and Grades Dataset,Listening_in_Class,cate,Evaluation of the student's listening skills in class,145,False
+Student Information and Grades Dataset,Project_work,cate,Indicates if the student is involved in project work,145,False
+Student Information and Grades Dataset,Grade,cate,Overall grade or academic performance of the student,145,False

@@ -1,0 +1,24 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Pokedex Dataset,Number,id,Pokemon ID in the Pokedex.,721,False
+Pokedex Dataset,Name,other,Name of the Pokemon.,721,False
+Pokedex Dataset,Type_1,cate,Primary type.,721,False
+Pokedex Dataset,Type_2,cate,"Second type, in case the Pokemon has it.",721,False
+Pokedex Dataset,Total,quant,"Sum of all the base stats (Health Points, Attack, Defense, Special Attack, Special Defense, and Speed).",721,False
+Pokedex Dataset,HP,quant,Base Health Points.,721,False
+Pokedex Dataset,Attack,quant,Base Attack.,721,False
+Pokedex Dataset,Defense,quant,Base Defense.,721,False
+Pokedex Dataset,Sp_Atk,quant,Base Special Attack.,721,False
+Pokedex Dataset,Sp_Def,quant,Base Special Defense.,721,False
+Pokedex Dataset,Speed,quant,Base Speed.,721,False
+Pokedex Dataset,Generation,cate,Number of the generation when the Pokemon was introduced.,721,False
+Pokedex Dataset,isLegendary,cate,Boolean that indicates whether the Pokemon is Legendary or not.,721,False
+Pokedex Dataset,Color,cate,Color of the Pokemon according to the Pokedex.,721,False
+Pokedex Dataset,hasGender,cate,Boolean that indicates if the Pokemon can be classified as female or male.,721,False
+Pokedex Dataset,Pr_Male,quant,"In case the Pokemon has Gender, the probability of its being male. The probability of being female is, of course, 1 minus this value.",721,False
+Pokedex Dataset,Egg_Group_1,cate,Egg Group of the Pokemon.,721,False
+Pokedex Dataset,Egg_Group_2,cate,"Second Egg Group of the Pokemon, in case it has two.",721,False
+Pokedex Dataset,hasMegaEvolution,cate,Boolean that indicates whether the Pokemon is able to Mega-evolve or not.,721,False
+Pokedex Dataset,Height_m,quant,"Height of the Pokemon, in meters.",721,False
+Pokedex Dataset,Weight_kg,quant,"Weight of the Pokemon, in kilograms.",721,False
+Pokedex Dataset,Catch_Rate,quant,Catch Rate.,721,False
+Pokedex Dataset,Body_Style,cate,Body Style of the Pokemon according to the Pokédex.,721,False

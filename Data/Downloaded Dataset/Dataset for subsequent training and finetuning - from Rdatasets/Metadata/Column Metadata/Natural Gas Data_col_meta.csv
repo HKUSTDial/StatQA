@@ -1,0 +1,12 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Natural Gas Data,rownames,id,id,138,False
+Natural Gas Data,state,other,State abbreviation.,138,False
+Natural Gas Data,statecode,id,id,138,False
+Natural Gas Data,year,other,year,138,False
+Natural Gas Data,consumption,quant,Consumption of natural gas by the residential sector.,138,False
+Natural Gas Data,price,quant,Price of natural gas,138,False
+Natural Gas Data,eprice,quant,Price of electricity.,138,False
+Natural Gas Data,oprice,quant,Price of distillate fuel oil.,138,False
+Natural Gas Data,lprice,quant,Price of liquefied petroleum gas.,138,False
+Natural Gas Data,heating,quant,Heating degree days.,138,False
+Natural Gas Data,income,quant,Real per-capita personal income.,138,True

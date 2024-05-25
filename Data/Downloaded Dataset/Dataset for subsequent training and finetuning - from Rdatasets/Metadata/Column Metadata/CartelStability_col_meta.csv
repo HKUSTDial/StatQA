@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+CartelStability,rownames,id,id,328,False
+CartelStability,price,quant,weekly index of price of shipping a ton of grain by rail.,328,False
+CartelStability,cartel,cate,Whether a railroad cartel is operative or not,328,False
+CartelStability,quantity,quant,total tonnage of grain shipped in the week.,328,False
+CartelStability,season,cate,"To match the weekly data, the calendar has been divided into 13 periods, each approximately 4 weeks long.",328,False
+CartelStability,ice,cate,Whether the Great Lakes is innavigable because of ice or not,328,False

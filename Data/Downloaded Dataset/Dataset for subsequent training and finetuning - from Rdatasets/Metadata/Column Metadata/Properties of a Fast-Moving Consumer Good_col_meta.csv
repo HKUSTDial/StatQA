@@ -1,0 +1,5 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Properties of a Fast-Moving Consumer Good,rownames,id,id,108,False
+Properties of a Fast-Moving Consumer Good,distribution,quant,Distribution.,108,False
+Properties of a Fast-Moving Consumer Good,share,quant,Market share.,108,False
+Properties of a Fast-Moving Consumer Good,price,quant,Price.,108,False

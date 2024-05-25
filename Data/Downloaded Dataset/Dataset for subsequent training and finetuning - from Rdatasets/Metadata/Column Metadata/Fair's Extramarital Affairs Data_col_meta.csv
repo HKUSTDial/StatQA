@@ -1,0 +1,11 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Fair's Extramarital Affairs Data,rownames,id,id,601,False
+Fair's Extramarital Affairs Data,affairs,quant,How often engaged in extramarital sexual intercourse during the past year?,601,False
+Fair's Extramarital Affairs Data,gender,cate,gender,601,False
+Fair's Extramarital Affairs Data,age,quant,age,601,False
+Fair's Extramarital Affairs Data,yearsmarried,quant,years married,601,False
+Fair's Extramarital Affairs Data,children,cate,Are there children in the marriage?,601,False
+Fair's Extramarital Affairs Data,religiousness,quant,degree of religiousness,601,False
+Fair's Extramarital Affairs Data,education,quant,level of education,601,False
+Fair's Extramarital Affairs Data,occupation,cate,occupation,601,False
+Fair's Extramarital Affairs Data,rating,quant,self rating of marriage,601,False

@@ -1,0 +1,11 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Manufacturing Costs Data,rownames,id,id,25,False
+Manufacturing Costs Data,cost,quant,Cost index.,25,True
+Manufacturing Costs Data,capitalcost,quant,Capital cost share.,25,True
+Manufacturing Costs Data,laborcost,quant,Labor cost share.,25,True
+Manufacturing Costs Data,energycost,quant,Energy cost share.,25,True
+Manufacturing Costs Data,materialscost,quant,Materials cost share.,25,False
+Manufacturing Costs Data,capitalprice,quant,Capital price.,25,True
+Manufacturing Costs Data,laborprice,quant,Labor price.,25,True
+Manufacturing Costs Data,energyprice,quant,Energy price.,25,False
+Manufacturing Costs Data,materialsprice,quant,Materials price.,25,True

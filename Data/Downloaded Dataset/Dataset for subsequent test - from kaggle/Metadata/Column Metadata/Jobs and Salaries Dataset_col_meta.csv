@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Jobs and Salaries Dataset,work_year,quant," The year in which the data was recorded. This field indicates the temporal context of the data, important for understanding salary trends over time.",9355,False
+Jobs and Salaries Dataset,job_title,cate," The specific title of the job role, like 'Data Scientist', 'Data Engineer', or 'Data Analyst'. This column is crucial for understanding the salary distribution across various specialized roles within the data field.",9355,False
+Jobs and Salaries Dataset,job_category,cate," A classification of the job role into broader categories for easier analysis. This might include areas like 'Data Analysis', 'Machine Learning', 'Data Engineering', etc.",9355,False
+Jobs and Salaries Dataset,salary_currency,cate," The currency in which the salary is paid, such as USD, EUR, etc. This is important for currency conversion and understanding the actual value of the salary in a global context.",9355,False
+Jobs and Salaries Dataset,salary,quant, The annual gross salary of the role in the local currency. This raw salary figure is key for direct regional salary comparisons.,9355,False
+Jobs and Salaries Dataset,salary_in_usd,quant, The annual gross salary converted to United States Dollars (USD). This uniform currency conversion aids in global salary comparisons and analyses.,9355,False
+Jobs and Salaries Dataset,employee_residence,cate, The country of residence of the employee. This data point can be used to explore geographical salary differences and cost-of-living variations.,9355,False
+Jobs and Salaries Dataset,experience_level,cate," Classifies the professional experience level of the employee. Common categories might include 'Entry-level', 'Mid-level', 'Senior', and 'Executive', providing insight into how experience influences salary in data-related roles.",9355,False
+Jobs and Salaries Dataset,employment_type,cate," Specifies the type of employment, such as 'Full-time', 'Part-time', 'Contract', etc. This helps in analyzing how different employment arrangements affect salary structures.",9355,False
+Jobs and Salaries Dataset,work_setting,cate," The work setting or environment, like 'Remote', 'In-person', or 'Hybrid'. This column reflects the impact of work settings on salary levels in the data industry.",9355,False
+Jobs and Salaries Dataset,company_location,cate, The country where the company is located. It helps in analyzing how the location of the company affects salary structures.,9355,False
+Jobs and Salaries Dataset,company_size,cate," The size of the employer company, often categorized into small (S), medium (M), and large (L) sizes. This allows for analysis of how company size influences salary.",9355,False

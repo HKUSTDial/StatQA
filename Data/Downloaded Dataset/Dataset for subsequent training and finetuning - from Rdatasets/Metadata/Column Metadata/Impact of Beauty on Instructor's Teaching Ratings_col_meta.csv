@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Impact of Beauty on Instructor's Teaching Ratings,rownames,id,id,463,False
+Impact of Beauty on Instructor's Teaching Ratings,minority,cate,Does the instructor belong to a minority?,463,False
+Impact of Beauty on Instructor's Teaching Ratings,age,cate,age of the professor,463,False
+Impact of Beauty on Instructor's Teaching Ratings,gender,cate,gender of the professor,463,False
+Impact of Beauty on Instructor's Teaching Ratings,credits,cate,"Is the course a single-credit elective""",463,False
+Impact of Beauty on Instructor's Teaching Ratings,beauty,quant,rating of the instructor's physical appearance by a panel of six students,463,False
+Impact of Beauty on Instructor's Teaching Ratings,eval,quant,course overall teaching evaluation score,463,False
+Impact of Beauty on Instructor's Teaching Ratings,division,cate,Is the course an upper or lower division course? (Lower division courses are mainly large freshman and sophomore courses)?,463,False
+Impact of Beauty on Instructor's Teaching Ratings,native,cate,Is the instructor a native English speaker?,463,False
+Impact of Beauty on Instructor's Teaching Ratings,tenure,cate,Is the instructor on tenure track?,463,False
+Impact of Beauty on Instructor's Teaching Ratings,students,quant,number of students that participated in the evaluation.,463,False
+Impact of Beauty on Instructor's Teaching Ratings,allstudents,quant,number of students enrolled in the course.,463,False
+Impact of Beauty on Instructor's Teaching Ratings,prof,id,id,463,False

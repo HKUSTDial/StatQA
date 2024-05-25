@@ -1,0 +1,44 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Grades of Students Dataset,Seat No.,id,The enrolled number of candidate that took the exams,571,False
+Grades of Students Dataset,PH-121,cate,Grade scored by the candidate in the Physics course-121,571,False
+Grades of Students Dataset,HS-101,cate,Grade scored by the candidate in the History course-101,571,False
+Grades of Students Dataset,CY-105,cate,Grade scored by the candidate in the Chemistry course-105,571,False
+Grades of Students Dataset,HS-105/12,cate,Grade scored by the candidate in the History course-105 (specific to year 12),571,False
+Grades of Students Dataset,MT-111,cate,Grade scored by the candidate in the Mathematics course-111,571,False
+Grades of Students Dataset,CS-105,cate,Grade scored by the candidate in the Computer Science course-105,571,False
+Grades of Students Dataset,CS-106,cate,Grade scored by the candidate in the Computer Science course-106,571,False
+Grades of Students Dataset,EL-102,cate,Grade scored by the candidate in the English Literature course-102,571,False
+Grades of Students Dataset,EE-119,cate,Grade scored by the candidate in the Electrical Engineering course-119,571,False
+Grades of Students Dataset,ME-107,cate,Grade scored by the candidate in the Mechanical Engineering course-119,571,False
+Grades of Students Dataset,CS-107,cate,Grade scored by the candidate in the Computer Science course-107,571,False
+Grades of Students Dataset,HS-205/20,cate,Grade scored by the candidate in the History course-205 (specific to year 20),571,False
+Grades of Students Dataset,MT-222,cate,Grade scored by the candidate in the Mathematics course-222,571,False
+Grades of Students Dataset,EE-222,cate,Grade scored by the candidate in the Electrical Engineering course-222,571,False
+Grades of Students Dataset,MT-224,cate,Grade scored by the candidate in the Mathematics course-224,571,False
+Grades of Students Dataset,CS-210,cate,Grade scored by the candidate in the Computer Science course-210,571,False
+Grades of Students Dataset,CS-211,cate,Grade scored by the candidate in the Computer Science course-211,571,False
+Grades of Students Dataset,CS-203,cate,Grade scored by the candidate in the Computer Science course-203,571,False
+Grades of Students Dataset,CS-214,cate,Grade scored by the candidate in the Computer Science course-214,571,False
+Grades of Students Dataset,EE-217,cate,Grade scored by the candidate in the Electrical Engineering course-217,571,False
+Grades of Students Dataset,CS-212,cate,Grade scored by the candidate in the Computer Science course-212,571,False
+Grades of Students Dataset,CS-215,cate,Grade scored by the candidate in the Computer Science course-215,571,False
+Grades of Students Dataset,MT-331,cate,Grade scored by the candidate in the Mathematics course-331,571,False
+Grades of Students Dataset,EF-303,cate,Grade scored by the candidate in the Exercise and Fitness course-303,571,False
+Grades of Students Dataset,HS-304,cate,Grade scored by the candidate in the History course-304,571,False
+Grades of Students Dataset,CS-301,cate,Grade scored by the candidate in the Computer Science course-301,571,False
+Grades of Students Dataset,CS-302,cate,Grade scored by the candidate in the Computer Science course-302,571,False
+Grades of Students Dataset,TC-383,cate,Grade scored by the candidate in the Technical Communication course-383,571,False
+Grades of Students Dataset,MT-442,cate,Grade scored by the candidate in the Mathematics course-442,571,False
+Grades of Students Dataset,EL-332,cate,Grade scored by the candidate in the English Literature course-332,571,False
+Grades of Students Dataset,CS-318,cate,Grade scored by the candidate in the Computer Science course-318,571,False
+Grades of Students Dataset,CS-306,cate,Grade scored by the candidate in the Computer Science course-306,571,False
+Grades of Students Dataset,CS-312,cate,Grade scored by the candidate in the Computer Science course-312,571,False
+Grades of Students Dataset,CS-317,cate,Grade scored by the candidate in the Computer Science course-317,571,False
+Grades of Students Dataset,CS-403,cate,Grade scored by the candidate in the Computer Science course-403,571,False
+Grades of Students Dataset,CS-421,cate,Grade scored by the candidate in the Computer Science course-421,571,False
+Grades of Students Dataset,CS-406,cate,Grade scored by the candidate in the Computer Science course-406,571,False
+Grades of Students Dataset,CS-414,cate,Grade scored by the candidate in the Computer Science course-414,571,False
+Grades of Students Dataset,CS-419,cate,Grade scored by the candidate in the Computer Science course-419,571,False
+Grades of Students Dataset,CS-423,cate,Grade scored by the candidate in the Computer Science course-423,571,False
+Grades of Students Dataset,CS-412,cate,Grade scored by the candidate in the Computer Science course-412,571,False
+Grades of Students Dataset,CGPA,quant,The cumulative GPA based on the four year total grade progress of each candidate,571,False

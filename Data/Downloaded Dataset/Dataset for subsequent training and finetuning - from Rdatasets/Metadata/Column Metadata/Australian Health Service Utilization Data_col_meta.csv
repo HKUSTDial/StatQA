@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Australian Health Service Utilization Data,rownames,id,id,5190,False
+Australian Health Service Utilization Data,visits,quant,Number of doctor visits in past 2 weeks.,5190,False
+Australian Health Service Utilization Data,gender,cate,Gender,5190,False
+Australian Health Service Utilization Data,age,quant,Individual's standarized age in years,5190,False
+Australian Health Service Utilization Data,income,quant,Individual's annual income in tens of thousands of dollars.,5190,False
+Australian Health Service Utilization Data,illness,quant,Individual's number of illnesses in pase two weeks,5190,False
+Australian Health Service Utilization Data,reduced,quant,Number of days of reduced activity in past 2 weeks due to illness or injury.,5190,False
+Australian Health Service Utilization Data,health,quant,General health questionnaire score using Goldberg's method.,5190,False
+Australian Health Service Utilization Data,private,cate,Whether the individual have private health insurance or not,5190,False
+Australian Health Service Utilization Data,freepoor,cate,Whether the individual have free government health insurance due to low income or not,5190,False
+Australian Health Service Utilization Data,freerepat,cate,"Whether the individual have free government health insurance due to old age disability or veteran status, or not",5190,False
+Australian Health Service Utilization Data,nchronic,cate,Whether the individual have a chronic condition not limiting activity,5190,False
+Australian Health Service Utilization Data,lchronic,cate,Whether the individual have a chronic condition limiting activity,5190,False

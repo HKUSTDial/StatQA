@@ -1,0 +1,10 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Cost Function of Electricity Producers 1970,rownames,id,id,158,False
+Cost Function of Electricity Producers 1970,cost,quant,total cost.,158,False
+Cost Function of Electricity Producers 1970,output,quant,total output.,158,False
+Cost Function of Electricity Producers 1970,labor,quant,wage rate.,158,False
+Cost Function of Electricity Producers 1970,laborshare,quant,cost share for labor.,158,False
+Cost Function of Electricity Producers 1970,capital,quant,cost share for labor.,158,False
+Cost Function of Electricity Producers 1970,capitalshare,quant,cost share for capital.,158,False
+Cost Function of Electricity Producers 1970,fuel,quant,fuel price.,158,False
+Cost Function of Electricity Producers 1970,fuelshare,quant,cost share for fuel.,158,False

@@ -1,0 +1,9 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Real Estate Valuation Dataset,No,id,Row name,414,False
+Real Estate Valuation Dataset,X1 transaction date,other,transaction date,414,False
+Real Estate Valuation Dataset,X2 house age,quant,house age,414,False
+Real Estate Valuation Dataset,X3 distance to the nearest MRT station,quant,distance to the nearest MRT station,414,False
+Real Estate Valuation Dataset,X4 number of convenience stores,quant,number of convenience stores,414,False
+Real Estate Valuation Dataset,X5 latitude,other,latitude,414,False
+Real Estate Valuation Dataset,X6 longitude,other,longitude,414,False
+Real Estate Valuation Dataset,Y house price of unit area,quant,house price of unit area,414,False

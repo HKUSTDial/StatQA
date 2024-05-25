@@ -1,0 +1,16 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Rainfall Dataset of Barak Velly,DISTRICT,cate,District name,128,False
+Rainfall Dataset of Barak Velly,YEAR,other,Year,128,False
+Rainfall Dataset of Barak Velly,JAN,quant,Rainfall measurements for January,128,False
+Rainfall Dataset of Barak Velly,FEB,quant,Rainfall measurements for February,128,False
+Rainfall Dataset of Barak Velly,MAR,quant,Rainfall measurements for March,128,False
+Rainfall Dataset of Barak Velly,APR,quant,Rainfall measurements for April,128,False
+Rainfall Dataset of Barak Velly,MAY,quant,Rainfall measurements for May,128,False
+Rainfall Dataset of Barak Velly,JUN,quant,Rainfall measurements for June,128,False
+Rainfall Dataset of Barak Velly,JUL,quant,Rainfall measurements for July,128,False
+Rainfall Dataset of Barak Velly,AUG,quant,Rainfall measurements for August,128,False
+Rainfall Dataset of Barak Velly,SEP,quant,Rainfall measurements for September,128,False
+Rainfall Dataset of Barak Velly,OCT,quant,Rainfall measurements for October,128,False
+Rainfall Dataset of Barak Velly,NOV,quant,Rainfall measurements for November,128,False
+Rainfall Dataset of Barak Velly,DEC,quant,Rainfall measurements for December,128,False
+Rainfall Dataset of Barak Velly,ANU,quant,Annual rainfall measurement,128,False

@@ -1,0 +1,10 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+2023 Netflix Engagement Dataset,Title,other,The title of the TV series or film,16677,False
+2023 Netflix Engagement Dataset,Available Globally?,cate,Whether the title is available for streaming globally,16677,False
+2023 Netflix Engagement Dataset,Release Date,other,The premiere date of the title,16677,False
+2023 Netflix Engagement Dataset,Hours Viewed,quant,The total number of hours watched for each title over a six-month period,16677,False
+2023 Netflix Engagement Dataset,Number of Ratings,quant,The count of ratings received by the title,16677,False
+2023 Netflix Engagement Dataset,Rating,quant,The average rating of the title,16677,False
+2023 Netflix Engagement Dataset,Genre,other,The genre or category of the title,16677,False
+2023 Netflix Engagement Dataset,Key Words,other,Keywords associated with the title,16677,False
+2023 Netflix Engagement Dataset,Description,other,A brief description or summary of the title,16677,False

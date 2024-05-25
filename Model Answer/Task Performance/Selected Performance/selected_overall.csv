@@ -1,0 +1,14 @@
+model,overall_score_rate,Correlation Analysis,Distribution Compliance Test,Contingency Table Test,Variance Test,Descriptive Statistics
+overall-llama2_7b_stats-prompt,0.16079,0.00595,0.07422,0.09322,0.18443,0.3861
+overall-llama2_13b_stats-prompt,0.20292,0.08333,0.07031,0.16525,0.11475,0.52896
+overall-llama3_8b_stats-prompt,0.36113,0.26786,0.20312,0.29237,0.15984,0.83012
+overall-llama3_8b_instruct_one-shot-CoT,0.28289,0.2619,0.16797,0.16102,0.09836,0.69498
+
+overall-gpt-3.5-turbo_stats-prompt,0.49355,0.625,0.35547,0.38983,0.2623,0.85714
+overall-gpt-4_stats-prompt,0.53224,0.64881,0.4375,0.49576,0.20082,0.89575
+overall-gpt-4o_stats-prompt,0.64832,0.6131,0.65234,0.59322,0.46311,0.89189
+
+overall-llama3_8b_stats-prompt,0.36113,0.26786,0.20312,0.29237,0.15984,0.83012
+overall-gpt-4o_stats-prompt,0.64832,0.6131,0.65234,0.59322,0.46311,0.89189
+overall-llama3_8b_sft_zero-shot,0.77128,0.79762,0.65234,0.88559,0.55328,0.97297
+overall-human_Stats Background_Open-book,0.53448,0.47059,0.23077,0.65217,0.375,0.92308

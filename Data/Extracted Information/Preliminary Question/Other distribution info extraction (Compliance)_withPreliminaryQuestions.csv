@@ -1,0 +1,141 @@
+Dataset Name,Column,Distribution,Kolmogorov-Smirnov Test,question,difficulty
+Advertising Budget and Sales Dataset,TV Ad Budget ($),Uniform,"{""p value"": 0.67083, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that TV Ad Budget ($) data follows?,easy
+Advertising Budget and Sales Dataset,TV Ad Budget ($),Uniform,"{""p value"": 0.67083, ""conclusion"": ""Compliance""}",Could the Uniform distribution serve as an accurate representation for TV Ad Budget ($) data?,easy
+Advertising Budget and Sales Dataset,TV Ad Budget ($),Uniform,"{""p value"": 0.67083, ""conclusion"": ""Compliance""}",Does TV Ad Budget ($) reflect the properties of a Uniform distribution?,easy
+Advertising Budget and Sales Dataset,TV Ad Budget ($),Uniform,"{""p value"": 0.67083, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for TV Ad Budget ($)?,easy
+Advertising Budget and Sales Dataset,TV Ad Budget ($),Uniform,"{""p value"": 0.67083, ""conclusion"": ""Compliance""}",Could it be proper to say that TV Ad Budget ($) data presents a Uniform distribution?,easy
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),Uniform,"{""p value"": 0.29864, ""conclusion"": ""Compliance""}",Is it possible for Radio Ad Budget ($) data to have been drawn from a Uniform distribution?,easy
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),Uniform,"{""p value"": 0.29864, ""conclusion"": ""Compliance""}",Does Radio Ad Budget ($) reflect the properties of a Uniform distribution?,easy
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),Uniform,"{""p value"": 0.29864, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Radio Ad Budget ($)?,easy
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),Uniform,"{""p value"": 0.29864, ""conclusion"": ""Compliance""}",Does the data distribution of Radio Ad Budget ($) comply with the Uniform model?,easy
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),Uniform,"{""p value"": 0.29864, ""conclusion"": ""Compliance""}",Whether the data of Radio Ad Budget ($) is subject to Uniform distribution?,easy
+Bank Customer Churn Prediction Dataset,EstimatedSalary,Uniform,"{""p value"": 0.84811, ""conclusion"": ""Compliance""}",Is the observed distribution of EstimatedSalary similar to a Uniform distribution?,easy
+Bank Customer Churn Prediction Dataset,EstimatedSalary,Uniform,"{""p value"": 0.84811, ""conclusion"": ""Compliance""}","Based on the statistical test, can we consider EstimatedSalary to exhibit a Uniform distribution?",easy
+Bank Customer Churn Prediction Dataset,EstimatedSalary,Uniform,"{""p value"": 0.84811, ""conclusion"": ""Compliance""}",Could it be proper to say that EstimatedSalary data presents a Uniform distribution?,easy
+Bank Customer Churn Prediction Dataset,EstimatedSalary,Uniform,"{""p value"": 0.84811, ""conclusion"": ""Compliance""}",Does it proper to model the data of EstimatedSalary by a Uniform distribution?,easy
+Bank Customer Churn Prediction Dataset,EstimatedSalary,Uniform,"{""p value"": 0.84811, ""conclusion"": ""Compliance""}",Does EstimatedSalary reflect the properties of a Uniform distribution?,easy
+Crop Production Dataset,Nigeria,Uniform,"{""p value"": 0.44019, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Nigeria?,easy
+Crop Production Dataset,Nigeria,Uniform,"{""p value"": 0.44019, ""conclusion"": ""Compliance""}",Is Nigeria demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Nigeria data?,easy
+Crop Production Dataset,Nigeria,Uniform,"{""p value"": 0.44019, ""conclusion"": ""Compliance""}",Is the observed distribution of Nigeria similar to a Uniform distribution?,easy
+Crop Production Dataset,Nigeria,Uniform,"{""p value"": 0.44019, ""conclusion"": ""Compliance""}",Does Nigeria reflect the properties of a Uniform distribution?,easy
+Crop Production Dataset,Nigeria,Uniform,"{""p value"": 0.44019, ""conclusion"": ""Compliance""}",Is the distribution of data values in Nigeria consistent with a Uniform distribution?,easy
+Crop Production Dataset,Pakistan,Uniform,"{""p value"": 0.41493, ""conclusion"": ""Compliance""}",Whether the data of Pakistan is subject to Uniform distribution?,easy
+Crop Production Dataset,Pakistan,Uniform,"{""p value"": 0.41493, ""conclusion"": ""Compliance""}",Does Pakistan reflect the properties of a Uniform distribution?,easy
+Crop Production Dataset,Pakistan,Uniform,"{""p value"": 0.41493, ""conclusion"": ""Compliance""}",Does the pattern of Pakistan resemble a Uniform distribution?,easy
+Crop Production Dataset,Pakistan,Uniform,"{""p value"": 0.41493, ""conclusion"": ""Compliance""}",Does it proper to model the data of Pakistan by a Uniform distribution?,easy
+Crop Production Dataset,Pakistan,Uniform,"{""p value"": 0.41493, ""conclusion"": ""Compliance""}",Do the data in Pakistan exhibit a Uniform distribution?,easy
+Crop Production Dataset,Japan,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Do the data in Japan exhibit a Uniform distribution?,easy
+Crop Production Dataset,Japan,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is the observed distribution of Japan similar to a Uniform distribution?,easy
+Crop Production Dataset,Japan,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Japan data follows?,easy
+Crop Production Dataset,Japan,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is the distribution of data values in Japan consistent with a Uniform distribution?,easy
+Crop Production Dataset,Japan,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does it proper to model the data of Japan by a Uniform distribution?,easy
+Crop Production Dataset,United States,Uniform,"{""p value"": 0.70499, ""conclusion"": ""Compliance""}",Is it possible for United States data to have been drawn from a Uniform distribution?,easy
+Crop Production Dataset,United States,Uniform,"{""p value"": 0.70499, ""conclusion"": ""Compliance""}",Is United States demonstrating as Uniform distribution?Is the Uniform distribution a good fit for United States data?,easy
+Crop Production Dataset,United States,Uniform,"{""p value"": 0.70499, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the United States data?,easy
+Crop Production Dataset,United States,Uniform,"{""p value"": 0.70499, ""conclusion"": ""Compliance""}",Is the distribution of data values in United States consistent with a Uniform distribution?,easy
+Crop Production Dataset,United States,Uniform,"{""p value"": 0.70499, ""conclusion"": ""Compliance""}",Does United States reflect the properties of a Uniform distribution?,easy
+Crop Production Dataset,Philippines,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Philippines data follows?,easy
+Crop Production Dataset,Philippines,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Do the data in Philippines exhibit a Uniform distribution?,easy
+Crop Production Dataset,Philippines,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Whether the data of Philippines is subject to Uniform distribution?,easy
+Crop Production Dataset,Philippines,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Could it be proper to say that Philippines data presents a Uniform distribution?,easy
+Crop Production Dataset,Philippines,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is Philippines demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Philippines data?,easy
+Crop Production Dataset,Myanmar,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is it possible for Myanmar data to have been drawn from a Uniform distribution?,easy
+Crop Production Dataset,Myanmar,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Myanmar data?,easy
+Crop Production Dataset,Myanmar,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Myanmar?,easy
+Crop Production Dataset,Myanmar,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Do the data in Myanmar exhibit a Uniform distribution?,easy
+Crop Production Dataset,Myanmar,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Myanmar data follows?,easy
+Crop Production Dataset,Thailand,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is the observed distribution of Thailand similar to a Uniform distribution?,easy
+Crop Production Dataset,Thailand,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Whether the data of Thailand is subject to Uniform distribution?,easy
+Crop Production Dataset,Thailand,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Thailand?,easy
+Crop Production Dataset,Thailand,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does the pattern of Thailand resemble a Uniform distribution?,easy
+Crop Production Dataset,Thailand,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does the data distribution of Thailand comply with the Uniform model?,easy
+Crop Production Dataset,Vietnam,Uniform,"{""p value"": 0.49821, ""conclusion"": ""Compliance""}",Whether the data of Vietnam is subject to Uniform distribution?,easy
+Crop Production Dataset,Vietnam,Uniform,"{""p value"": 0.49821, ""conclusion"": ""Compliance""}",Does the data distribution of Vietnam comply with the Uniform model?,easy
+Crop Production Dataset,Vietnam,Uniform,"{""p value"": 0.49821, ""conclusion"": ""Compliance""}",Could it be proper to say that Vietnam data presents a Uniform distribution?,easy
+Crop Production Dataset,Vietnam,Uniform,"{""p value"": 0.49821, ""conclusion"": ""Compliance""}",Is the distribution of data values in Vietnam consistent with a Uniform distribution?,easy
+Crop Production Dataset,Vietnam,Uniform,"{""p value"": 0.49821, ""conclusion"": ""Compliance""}",Is it possible for Vietnam data to have been drawn from a Uniform distribution?,easy
+Crop Production Dataset,Indonesia,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does Indonesia conform to a Uniform distribution?,easy
+Crop Production Dataset,Indonesia,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Does it proper to model the data of Indonesia by a Uniform distribution?,easy
+Crop Production Dataset,Indonesia,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Is the observed distribution of Indonesia similar to a Uniform distribution?,easy
+Crop Production Dataset,Indonesia,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Could it be proper to say that Indonesia data presents a Uniform distribution?,easy
+Crop Production Dataset,Indonesia,Uniform,"{""p value"": 0.90625, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Indonesia?,easy
+Crop Production Dataset,Bangladesh,Uniform,"{""p value"": 0.67606, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Bangladesh?,easy
+Crop Production Dataset,Bangladesh,Uniform,"{""p value"": 0.67606, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Bangladesh?,easy
+Crop Production Dataset,Bangladesh,Uniform,"{""p value"": 0.67606, ""conclusion"": ""Compliance""}",Is Bangladesh demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Bangladesh data?,easy
+Crop Production Dataset,Bangladesh,Uniform,"{""p value"": 0.67606, ""conclusion"": ""Compliance""}",Is it possible for Bangladesh data to have been drawn from a Uniform distribution?,easy
+Crop Production Dataset,Bangladesh,Uniform,"{""p value"": 0.67606, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Bangladesh data?,easy
+Crop Production Dataset,India,Uniform,"{""p value"": 0.87982, ""conclusion"": ""Compliance""}",Does India conform to a Uniform distribution?,easy
+Crop Production Dataset,India,Uniform,"{""p value"": 0.87982, ""conclusion"": ""Compliance""}",Could the Uniform distribution serve as an accurate representation for India data?,easy
+Crop Production Dataset,India,Uniform,"{""p value"": 0.87982, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for India?,easy
+Crop Production Dataset,India,Uniform,"{""p value"": 0.87982, ""conclusion"": ""Compliance""}",Does the data distribution of India comply with the Uniform model?,easy
+Crop Production Dataset,India,Uniform,"{""p value"": 0.87982, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the India data?,easy
+Crop Production Dataset,China,Uniform,"{""p value"": 0.31466, ""conclusion"": ""Compliance""}",Could the Uniform distribution serve as an accurate representation for China data?,easy
+Crop Production Dataset,China,Uniform,"{""p value"": 0.31466, ""conclusion"": ""Compliance""}",Could it be proper to say that China data presents a Uniform distribution?,easy
+Crop Production Dataset,China,Uniform,"{""p value"": 0.31466, ""conclusion"": ""Compliance""}",Does China conform to a Uniform distribution?,easy
+Crop Production Dataset,China,Uniform,"{""p value"": 0.31466, ""conclusion"": ""Compliance""}",Is the observed distribution of China similar to a Uniform distribution?,easy
+Crop Production Dataset,China,Uniform,"{""p value"": 0.31466, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that China data follows?,easy
+Customer Personality Analysis Dataset,Recency,Uniform,"{""p value"": 0.3097, ""conclusion"": ""Compliance""}",Is it possible for Recency data to have been drawn from a Uniform distribution?,easy
+Customer Personality Analysis Dataset,Recency,Uniform,"{""p value"": 0.3097, ""conclusion"": ""Compliance""}","Based on the statistical test, can we consider Recency to exhibit a Uniform distribution?",easy
+Customer Personality Analysis Dataset,Recency,Uniform,"{""p value"": 0.3097, ""conclusion"": ""Compliance""}",Does Recency reflect the properties of a Uniform distribution?,easy
+Customer Personality Analysis Dataset,Recency,Uniform,"{""p value"": 0.3097, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Recency?,easy
+Customer Personality Analysis Dataset,Recency,Uniform,"{""p value"": 0.3097, ""conclusion"": ""Compliance""}",Does the data distribution of Recency comply with the Uniform model?,easy
+Exercise and Fitness Metrics Dataset,Calories Burn,Uniform,"{""p value"": 0.48904, ""conclusion"": ""Compliance""}",Do the data in Calories Burn exhibit a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Calories Burn,Uniform,"{""p value"": 0.48904, ""conclusion"": ""Compliance""}",Is Calories Burn demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Calories Burn data?,easy
+Exercise and Fitness Metrics Dataset,Calories Burn,Uniform,"{""p value"": 0.48904, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Calories Burn data?,easy
+Exercise and Fitness Metrics Dataset,Calories Burn,Uniform,"{""p value"": 0.48904, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Calories Burn data follows?,easy
+Exercise and Fitness Metrics Dataset,Calories Burn,Uniform,"{""p value"": 0.48904, ""conclusion"": ""Compliance""}",Does Calories Burn reflect the properties of a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Dream Weight,Uniform,"{""p value"": 0.57832, ""conclusion"": ""Compliance""}",Whether the data of Dream Weight is subject to Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Dream Weight,Uniform,"{""p value"": 0.57832, ""conclusion"": ""Compliance""}",Is the observed distribution of Dream Weight similar to a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Dream Weight,Uniform,"{""p value"": 0.57832, ""conclusion"": ""Compliance""}",Is Dream Weight demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Dream Weight data?,easy
+Exercise and Fitness Metrics Dataset,Dream Weight,Uniform,"{""p value"": 0.57832, ""conclusion"": ""Compliance""}",Does Dream Weight reflect the properties of a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Dream Weight,Uniform,"{""p value"": 0.57832, ""conclusion"": ""Compliance""}",Do the data in Dream Weight exhibit a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Heart Rate,Uniform,"{""p value"": 0.07183, ""conclusion"": ""Compliance""}",Is it possible for Heart Rate data to have been drawn from a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Heart Rate,Uniform,"{""p value"": 0.07183, ""conclusion"": ""Compliance""}",Does Heart Rate conform to a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,Heart Rate,Uniform,"{""p value"": 0.07183, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Heart Rate data?,easy
+Exercise and Fitness Metrics Dataset,Heart Rate,Uniform,"{""p value"": 0.07183, ""conclusion"": ""Compliance""}",Does the data distribution of Heart Rate comply with the Uniform model?,easy
+Exercise and Fitness Metrics Dataset,Heart Rate,Uniform,"{""p value"": 0.07183, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Heart Rate?,easy
+Exercise and Fitness Metrics Dataset,BMI,Uniform,"{""p value"": 0.41909, ""conclusion"": ""Compliance""}",Is it possible for BMI data to have been drawn from a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,BMI,Uniform,"{""p value"": 0.41909, ""conclusion"": ""Compliance""}",Is the observed distribution of BMI similar to a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,BMI,Uniform,"{""p value"": 0.41909, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the BMI data?,easy
+Exercise and Fitness Metrics Dataset,BMI,Uniform,"{""p value"": 0.41909, ""conclusion"": ""Compliance""}",Does BMI reflect the properties of a Uniform distribution?,easy
+Exercise and Fitness Metrics Dataset,BMI,Uniform,"{""p value"": 0.41909, ""conclusion"": ""Compliance""}",Could it be proper to say that BMI data presents a Uniform distribution?,easy
+Income and Happiness Score Dataset,GDP,Uniform,"{""p value"": 0.10726, ""conclusion"": ""Compliance""}",Does GDP reflect the properties of a Uniform distribution?,easy
+Income and Happiness Score Dataset,GDP,Uniform,"{""p value"": 0.10726, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for GDP?,easy
+Income and Happiness Score Dataset,GDP,Uniform,"{""p value"": 0.10726, ""conclusion"": ""Compliance""}",Does the data distribution of GDP comply with the Uniform model?,easy
+Income and Happiness Score Dataset,GDP,Uniform,"{""p value"": 0.10726, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the GDP data?,easy
+Income and Happiness Score Dataset,GDP,Uniform,"{""p value"": 0.10726, ""conclusion"": ""Compliance""}",Could the Uniform distribution serve as an accurate representation for GDP data?,easy
+Los Angeles Library Monthly Statistics,Total Library Visitors,Uniform,"{""p value"": 0.09749, ""conclusion"": ""Compliance""}",Does it proper to model the data of Total Library Visitors by a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total Library Visitors,Uniform,"{""p value"": 0.09749, ""conclusion"": ""Compliance""}",Is the distribution of data values in Total Library Visitors consistent with a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total Library Visitors,Uniform,"{""p value"": 0.09749, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Total Library Visitors data follows?,easy
+Los Angeles Library Monthly Statistics,Total Library Visitors,Uniform,"{""p value"": 0.09749, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Total Library Visitors?,easy
+Los Angeles Library Monthly Statistics,Total Library Visitors,Uniform,"{""p value"": 0.09749, ""conclusion"": ""Compliance""}",Do the data in Total Library Visitors exhibit a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,Uniform,"{""p value"": 0.09344, ""conclusion"": ""Compliance""}",Is it possible for Total eMedia Circulation data to have been drawn from a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,Uniform,"{""p value"": 0.09344, ""conclusion"": ""Compliance""}",Is the distribution of data values in Total eMedia Circulation consistent with a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,Uniform,"{""p value"": 0.09344, ""conclusion"": ""Compliance""}",Is Total eMedia Circulation demonstrating as Uniform distribution?Is the Uniform distribution a good fit for Total eMedia Circulation data?,easy
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,Uniform,"{""p value"": 0.09344, ""conclusion"": ""Compliance""}","Based on the statistical test, can we consider Total eMedia Circulation to exhibit a Uniform distribution?",easy
+Los Angeles Library Monthly Statistics,Total eMedia Circulation,Uniform,"{""p value"": 0.09344, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Total eMedia Circulation data?,easy
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),Uniform,"{""p value"": 0.16129, ""conclusion"": ""Compliance""}",Whether the data of Total Computer Usage (Wireless + PC Sessions) is subject to Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),Uniform,"{""p value"": 0.16129, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that Total Computer Usage (Wireless + PC Sessions) data follows?,easy
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),Uniform,"{""p value"": 0.16129, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Total Computer Usage (Wireless + PC Sessions)?,easy
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),Uniform,"{""p value"": 0.16129, ""conclusion"": ""Compliance""}",Does Total Computer Usage (Wireless + PC Sessions) reflect the properties of a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,Total Computer Usage (Wireless + PC Sessions),Uniform,"{""p value"": 0.16129, ""conclusion"": ""Compliance""}",Does the pattern of Total Computer Usage (Wireless + PC Sessions) resemble a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,Uniform,"{""p value"": 0.82272, ""conclusion"": ""Compliance""}",Is it possible for # of Homeless Individuals Served at The Source data to have been drawn from a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,Uniform,"{""p value"": 0.82272, ""conclusion"": ""Compliance""}",Is it a Uniform distribution that # of Homeless Individuals Served at The Source data follows?,easy
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,Uniform,"{""p value"": 0.82272, ""conclusion"": ""Compliance""}",Is the observed distribution of # of Homeless Individuals Served at The Source similar to a Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,Uniform,"{""p value"": 0.82272, ""conclusion"": ""Compliance""}",Whether the data of # of Homeless Individuals Served at The Source is subject to Uniform distribution?,easy
+Los Angeles Library Monthly Statistics,# of Homeless Individuals Served at The Source,Uniform,"{""p value"": 0.82272, ""conclusion"": ""Compliance""}",Could the Uniform distribution serve as an accurate representation for # of Homeless Individuals Served at The Source data?,easy
+US Christmas Tree Sales Dataset,Number of trees sold,Uniform,"{""p value"": 0.77361, ""conclusion"": ""Compliance""}",Could it be proper to say that Number of trees sold data presents a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Number of trees sold,Uniform,"{""p value"": 0.77361, ""conclusion"": ""Compliance""}",Does Number of trees sold reflect the properties of a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Number of trees sold,Uniform,"{""p value"": 0.77361, ""conclusion"": ""Compliance""}",Whether the data of Number of trees sold is subject to Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Number of trees sold,Uniform,"{""p value"": 0.77361, ""conclusion"": ""Compliance""}",Does Number of trees sold conform to a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Number of trees sold,Uniform,"{""p value"": 0.77361, ""conclusion"": ""Compliance""}",Is the distribution of data values in Number of trees sold consistent with a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Average Tree Price,Uniform,"{""p value"": 0.20895, ""conclusion"": ""Compliance""}",Is the observed distribution of Average Tree Price similar to a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Average Tree Price,Uniform,"{""p value"": 0.20895, ""conclusion"": ""Compliance""}",Does statistical analysis suggest a Uniform distribution of the Average Tree Price data?,easy
+US Christmas Tree Sales Dataset,Average Tree Price,Uniform,"{""p value"": 0.20895, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Average Tree Price?,easy
+US Christmas Tree Sales Dataset,Average Tree Price,Uniform,"{""p value"": 0.20895, ""conclusion"": ""Compliance""}",Does Average Tree Price reflect the properties of a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Average Tree Price,Uniform,"{""p value"": 0.20895, ""conclusion"": ""Compliance""}",Could it be proper to say that Average Tree Price data presents a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Sales,Uniform,"{""p value"": 0.05189, ""conclusion"": ""Compliance""}",Does Sales conform to a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Sales,Uniform,"{""p value"": 0.05189, ""conclusion"": ""Compliance""}",Is the Uniform distribution a suitable representation for the data in Sales?,easy
+US Christmas Tree Sales Dataset,Sales,Uniform,"{""p value"": 0.05189, ""conclusion"": ""Compliance""}",Does Sales reflect the properties of a Uniform distribution?,easy
+US Christmas Tree Sales Dataset,Sales,Uniform,"{""p value"": 0.05189, ""conclusion"": ""Compliance""}",Can we confirm the Uniform distribution hypothesis for Sales?,easy
+US Christmas Tree Sales Dataset,Sales,Uniform,"{""p value"": 0.05189, ""conclusion"": ""Compliance""}",Is it possible for Sales data to have been drawn from a Uniform distribution?,easy

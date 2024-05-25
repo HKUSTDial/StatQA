@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Exercise and Fitness Metrics Dataset,ID,id,Row number,3864,False
+Exercise and Fitness Metrics Dataset,Exercise,cate,Type of exercise performed,3864,False
+Exercise and Fitness Metrics Dataset,Calories Burn,quant,Estimated number of calories burned during the exercise session,3864,False
+Exercise and Fitness Metrics Dataset,Dream Weight,quant,Desired weight,3864,False
+Exercise and Fitness Metrics Dataset,Actual Weight,quant,Measured weight,3864,False
+Exercise and Fitness Metrics Dataset,Age,quant,Age,3864,False
+Exercise and Fitness Metrics Dataset,Gender,cate,Gender,3864,False
+Exercise and Fitness Metrics Dataset,Duration,quant,Length of each exercise session,3864,False
+Exercise and Fitness Metrics Dataset,Heart Rate,quant,Heart Rate,3864,False
+Exercise and Fitness Metrics Dataset,BMI,quant,Body Mass Index,3864,False
+Exercise and Fitness Metrics Dataset,Weather Conditions,cate,Weather Conditions,3864,False
+Exercise and Fitness Metrics Dataset,Exercise Intensity,cate,Rating of the intensity level of the exercise,3864,False

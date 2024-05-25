@@ -1,0 +1,16 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+California Test Score Data,rownames,id,id,420,False
+California Test Score Data,district,other,District code.,420,False
+California Test Score Data,school,other,School name,420,False
+California Test Score Data,county,other,county,420,False
+California Test Score Data,grades,other,Grade span of district.,420,False
+California Test Score Data,students,quant,Number of total enrollment students,420,False
+California Test Score Data,teachers,quant,Number of teachers,420,False
+California Test Score Data,calworks,quant,Percent qualifying for CalWorks (income assistance).,420,False
+California Test Score Data,lunch,quant,Percent qualifying for reduced-price lunch.,420,False
+California Test Score Data,computer,quant,Number of computers.,420,False
+California Test Score Data,expenditure,quant,Expenditure per student.,420,False
+California Test Score Data,income,quant,District average income (in USD 1000).,420,False
+California Test Score Data,english,quant,Percent of English learners.,420,False
+California Test Score Data,read,quant,Average reading score.,420,True
+California Test Score Data,math,quant,Average math score.,420,True

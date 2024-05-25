@@ -1,0 +1,4 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Television Rights for Olympic Games,rownames,id,id,10,False
+Television Rights for Olympic Games,rights,quant,time series of television rights (in million USD),10,False
+Television Rights for Olympic Games,network,cate,television network.,10,False

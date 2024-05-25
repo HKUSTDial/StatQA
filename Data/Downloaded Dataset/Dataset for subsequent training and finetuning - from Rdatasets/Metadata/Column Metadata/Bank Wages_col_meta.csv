@@ -1,0 +1,6 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Bank Wages,rownames,id,id,474,False
+Bank Wages,job,cate,"Job category: custodial, admin and manage",474,False
+Bank Wages,education,quant,Education in years.,474,False
+Bank Wages,gender,cate,Gender,474,False
+Bank Wages,minority,cate,Whether the employee a member of a minority or not,474,False

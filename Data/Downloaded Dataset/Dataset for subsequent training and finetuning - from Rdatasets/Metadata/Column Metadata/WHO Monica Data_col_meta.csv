@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+WHO Monica Data,rownames,id,id,6367,False
+WHO Monica Data,outcome,cate,"mortality outcome, a factor with levels live, dead",6367,False
+WHO Monica Data,sex,cate,gender,6367,False
+WHO Monica Data,age,quant,age at onset,6367,False
+WHO Monica Data,yronset,cate,year of onset,6367,False
+WHO Monica Data,premi,cate,previous myocardial infarction event,6367,False
+WHO Monica Data,smstat,cate,smoking status,6367,False
+WHO Monica Data,diabetes,cate,Whether suffers from diabetes,6367,False
+WHO Monica Data,highbp,cate,Whether suffers from high blood pressure,6367,False
+WHO Monica Data,hichol,cate,Whether suffers from high cholesterol,6367,False
+WHO Monica Data,angina,cate,Whether suffers from angina,6367,False
+WHO Monica Data,stroke,cate,Whether suffers from stroke,6367,False
+WHO Monica Data,hosp,cate,"Whether hospitalized: y = hospitalized, n = not hospitalized",6367,False

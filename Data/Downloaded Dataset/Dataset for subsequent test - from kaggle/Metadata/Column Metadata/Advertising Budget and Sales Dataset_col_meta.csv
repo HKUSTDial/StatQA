@@ -1,0 +1,6 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Advertising Budget and Sales Dataset,Unnamed: 0,id,Row number,200,False
+Advertising Budget and Sales Dataset,TV Ad Budget ($),quant,Budget allocated for tv advertising,200,False
+Advertising Budget and Sales Dataset,Radio Ad Budget ($),quant,Budget allocated for radio advertising,200,False
+Advertising Budget and Sales Dataset,Newspaper Ad Budget ($),quant,Budget allocated for newspaper advertisin,200,False
+Advertising Budget and Sales Dataset,Sales ($),quant,Sales revenue generated,200,False

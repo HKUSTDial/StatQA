@@ -1,0 +1,7 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Housing Price Dataset,SquareFeet,quant,The square footage of the property,50000,False
+Housing Price Dataset,Bedrooms,quant,The number of bedrooms,50000,False
+Housing Price Dataset,Bathrooms,quant,The number of bathrooms,50000,False
+Housing Price Dataset,Neighborhood,cate,The type or location of the neighborhood where the property is situated,50000,False
+Housing Price Dataset,YearBuilt,other,The year in which the property was constructed,50000,False
+Housing Price Dataset,Price,quant,Price,50000,False

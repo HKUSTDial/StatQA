@@ -1,0 +1,23 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Obesity or CVD Risk Dataset,Gender,cate,Gender,2111,False
+Obesity or CVD Risk Dataset,Age,quant,Age,2111,False
+Obesity or CVD Risk Dataset,Height,quant,Height of the individual,2111,False
+Obesity or CVD Risk Dataset,Weight,quant,Weight of the individual,2111,False
+Obesity or CVD Risk Dataset,family_history_with_overweight,cate,Presence of family history with overweight,2111,False
+Obesity or CVD Risk Dataset,FAVC,cate,Frequent consumption of high caloric food,2111,False
+Obesity or CVD Risk Dataset,FCVC,quant,Frequency of consumption of vegetables,2111,False
+Obesity or CVD Risk Dataset,NCP,quant,Number of main meals,2111,False
+Obesity or CVD Risk Dataset,CAEC,cate,Consumption of food between meals,2111,False
+Obesity or CVD Risk Dataset,SMOKE,cate,Smoking status,2111,False
+Obesity or CVD Risk Dataset,CH2O,quant,Consumption of water daily,2111,False
+Obesity or CVD Risk Dataset,SCC,cate,Calories consumption monitoring,2111,False
+Obesity or CVD Risk Dataset,FAF,quant,Physical activity frequency,2111,False
+Obesity or CVD Risk Dataset,TUE,quant,Time using technology devices,2111,False
+Obesity or CVD Risk Dataset,CALC,cate,Consumption of alcohol,2111,False
+Obesity or CVD Risk Dataset,MTRANS,cate,Transportation used,2111,False
+Obesity or CVD Risk Dataset,NObeyesdad,cate,"?Underweight Less than 18.5
+?Normal 18.5 to 24.9
+?Overweight 25.0 to 29.9
+?Obesity I 30.0 to 34.9
+?Obesity II 35.0 to 39.9
+?Obesity III Higher than 40",2111,False

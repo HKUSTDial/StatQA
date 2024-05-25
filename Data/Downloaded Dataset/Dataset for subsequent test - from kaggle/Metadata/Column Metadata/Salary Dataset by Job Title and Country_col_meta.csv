@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Salary Dataset by Job Title and Country,Age,quant,Age,6684,False
+Salary Dataset by Job Title and Country,Gender,cate,Gender,6684,False
+Salary Dataset by Job Title and Country,Education Level,cate,"Education Level:
+0 : High School
+1 : Bachelor Degree
+2 : Master Degree
+3 : Phd",6684,False
+Salary Dataset by Job Title and Country,Job Title,cate,Job Title,6684,False
+Salary Dataset by Job Title and Country,Years of Experience,quant,Number of years of work experience,6684,False
+Salary Dataset by Job Title and Country,Salary,quant,Salary,6684,False
+Salary Dataset by Job Title and Country,Country,cate,Country of employment,6684,False
+Salary Dataset by Job Title and Country,Race,cate,Race or ethnicity of the individual,6684,False
+Salary Dataset by Job Title and Country,Senior,cate,Indicator of whether the individual holds a senior position,6684,False

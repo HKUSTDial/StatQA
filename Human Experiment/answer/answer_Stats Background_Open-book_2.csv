@@ -1,0 +1,1180 @@
+dataset,refined_question,relevant_column,task,difficulty,results,prompt,ground_truth,selected_methods,selected_columns
+Crop Production Dataset,Are the distributions of annual crop production in the Philippines and Myanmar closely aligned?,"[{""column_header"": ""Philippines"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Myanmar"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test"", ""result"": ""{\""p value\"": 0.22857}"", ""conclusion"": ""Distribution not significantly different""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Are the distributions of annual crop production in the Philippines and Myanmar closely aligned?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Philippines"", ""Myanmar""], ""methods"": [""Kolmogorov-Smirnov Test""]}","[""Kolmogorov-Smirnov Test""]","[""Philippines"", ""Myanmar""]"
+Crop Production Dataset,Are the levels of variability in annual crop production in Thailand and Bangladesh similar?,"[{""column_header"": ""Thailand"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Bangladesh"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -0.28868, \""p value\"": 0.77283}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 1.76207, \""p value\"": 0.23264}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 0.57928, \""p value\"": 0.4466}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 4.12725, \""p value\"": 0.08847}"", ""conclusion"": ""Variance not significantly difference between them""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Are the levels of variability in annual crop production in Thailand and Bangladesh similar?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Thailand"", ""Bangladesh""], ""methods"": [""Mood Variance Test"", ""Levene Test"", ""Bartlett Test"", ""F-Test for Variance""]}","[""Bartlett Test"", ""F-Test for Variance""]","[""Thailand"", ""Bangladesh""]"
+Crop Production Dataset,Is the variability of annual crop production in Japan not significantly different from that in India?,"[{""column_header"": ""Japan"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""India"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 5.82676, \""p value\"": 0.0523}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 11.71782, \""p value\"": 0.00062}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 80.5638, \""p value\"": 0.00011}"", ""conclusion"": ""Variance significantly difference between them""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Is the variability of annual crop production in Japan not significantly different from that in India?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Japan"", ""India""], ""methods"": [""Mood Variance Test"", ""Levene Test"", ""Bartlett Test"", ""F-Test for Variance""]}","[""F-Test for Variance"", ""Bartlett Test""]","[""India"", ""Japan""]"
+Customer Personality Analysis Dataset,Is the amount spent on wine in the last 2 years suitable for methods assuming normality?,"[{""column_header"": ""MntWines"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 122.77772, \\\""crit\\\"": 0.575}\""}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": 0.001}"", ""conclusion"": ""Non-normally distributed""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: Is the amount spent on wine in the last 2 years suitable for methods assuming normality?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""MntWines""], ""methods"": [""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]}","[""Anderson-Darling Test"", ""Shapiro-Wilk Test of Normality"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]","[""MntWines""]"
+Customer Personality Analysis Dataset,Do household income and the number of teenagers in the customer's household follow a similar distribution curve?,"[{""column_header"": ""Income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Teenhome"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Distribution significantly different""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: Do household income and the number of teenagers in the customer's household follow a similar distribution curve?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Income"", ""Teenhome""], ""methods"": [""Kolmogorov-Smirnov Test""]}","[""Kolmogorov-Smirnov Test""]","[""Income"", ""Teenhome""]"
+Customer Personality Analysis Dataset,What is the likelihood that the number of teenagers in a customer's household follows a normal distribution?,"[{""column_header"": ""Teenhome"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 336.63557, \\\""crit\\\"": 0.575}\""}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": 0.001}"", ""conclusion"": ""Non-normally distributed""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: What is the likelihood that the number of teenagers in a customer's household follows a normal distribution?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Teenhome""], ""methods"": [""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]}","[""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]","[""Teenhome""]"
+Customer Personality Analysis Dataset,What is the degree of peakedness for the variable representing the cost of contact (Z_CostContact)?,"[{""column_header"": ""Z_CostContact"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Kurtosis"", ""result"": ""0"", ""conclusion"": ""0""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: What is the degree of peakedness for the variable representing the cost of contact (Z_CostContact)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Z_CostContact""], ""methods"": [""Kurtosis""]}","[""Kurtosis""]","[""Z_CostContact""]"
+FIFA Official Dataset 2023,Do the variances of the player's overall skills and abilities and their release clause value in pounds (拢) exhibit statistical similarity?,"[{""column_header"": ""Overall"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Release Clause"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 1569.32136, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 17660; is_normality: False.
+column_header: Name; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Photo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Nationality; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Flag; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Overall; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Potential; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Club; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Club Logo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Value; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Wage; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Special; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Preferred Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: International Reputation; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Weak Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Skill Moves; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Work Rate; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Body Type; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Real Face; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Position; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Joined; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Loaned From; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Contract Valid Until; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Height; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Weight; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Release Clause; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Kit Number; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Best Overall Rating; data_type: other; num_of_rows: 17660; is_normality: False.
+### Statistical Question: Do the variances of the player's overall skills and abilities and their release clause value in pounds (拢) exhibit statistical similarity?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Overall"", ""Release Clause""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Mood Variance Test"", ""Levene Test""]","[""Overall"", ""Release Clause""]"
+FIFA Official Dataset 2023,Is the variability in players' potential ratings comparable to that of their special abilities?,"[{""column_header"": ""Potential"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Special"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 24343.22446, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 17660; is_normality: False.
+column_header: Name; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Photo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Nationality; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Flag; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Overall; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Potential; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Club; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Club Logo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Value; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Wage; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Special; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Preferred Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: International Reputation; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Weak Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Skill Moves; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Work Rate; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Body Type; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Real Face; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Position; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Joined; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Loaned From; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Contract Valid Until; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Height; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Weight; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Release Clause; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Kit Number; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Best Overall Rating; data_type: other; num_of_rows: 17660; is_normality: False.
+### Statistical Question: Is the variability in players' potential ratings comparable to that of their special abilities?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Potential"", ""Special""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Levene Test"", ""Mood Variance Test""]","[""Potential"", ""Special""]"
+Grades of Students Dataset,What is the most frequently occurring value in the grades scored by candidates in the Physics course-121 (PH-121)?,"[{""column_header"": ""PH-121"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Mode"", ""result"": ""A-"", ""conclusion"": ""A-""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Seat No.; data_type: id; num_of_rows: 571; is_normality: False.
+column_header: PH-121; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: HS-101; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CY-105; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: HS-105/12; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: MT-111; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-105; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-106; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EL-102; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EE-119; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: ME-107; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-107; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: HS-205/20; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: MT-222; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EE-222; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: MT-224; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-210; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-211; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-203; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-214; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EE-217; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-212; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-215; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: MT-331; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EF-303; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: HS-304; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-301; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-302; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: TC-383; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: MT-442; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: EL-332; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-318; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-306; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-312; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-317; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-403; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-421; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-406; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-414; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-419; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-423; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CS-412; data_type: categorical; num_of_rows: 571; is_normality: False.
+column_header: CGPA; data_type: quantitative; num_of_rows: 571; is_normality: False.
+### Statistical Question: What is the most frequently occurring value in the grades scored by candidates in the Physics course-121 (PH-121)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""PH-121""], ""methods"": [""Mode""]}","[""Mode""]","[""PH-121""]"
+Green House Gas Produce by Different Industry,What is the magnitude of the peak for greenhouse gas emissions in 2015 (F2015)?,"[{""column_header"": ""F2015"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Kurtosis"", ""result"": ""95.77956"", ""conclusion"": ""95.77956""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Country; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: ISO2; data_type: other; num_of_rows: 1186; is_normality: False.
+column_header: ISO3; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: Industry; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: Gas_Type; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: F2010; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2011; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2012; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2013; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2014; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2015; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2016; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2017; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2018; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2019; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2020; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2021; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2022; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+### Statistical Question: What is the magnitude of the peak for greenhouse gas emissions in 2015 (F2015)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""F2015""], ""methods"": [""Kurtosis""]}","[""Range""]","[""F2015""]"
+Heart Failure Prediction Dataset,Are the observed occurrences of chest pain type and exercise-induced angina frequencies in line with the assumption of independence?,"[{""column_header"": ""ChestPainType"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""ExerciseAngina"", ""is_strata"": false, ""is_control"": false}]",Contingency Table Test,medium,"[{""method"": ""Chi-square Independence Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Not independent""}, {""method"": ""Fisher Exact Test"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Age; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Sex; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: ChestPainType; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingBP; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Cholesterol; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: FastingBS; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingECG; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: MaxHR; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ExerciseAngina; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: Oldpeak; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ST_Slope; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: HeartDisease; data_type: categorical; num_of_rows: 918; is_normality: False.
+### Statistical Question: Are the observed occurrences of chest pain type and exercise-induced angina frequencies in line with the assumption of independence?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""ChestPainType"", ""ExerciseAngina""], ""methods"": [""Chi-square Independence Test""]}","[""Chi-square Independence Test""]","[""ChestPainType"", ""ExerciseAngina""]"
+Heart Failure Prediction Dataset,"Could you tell me the range of serum cholesterol values, from the smallest to the largest?","[{""column_header"": ""Cholesterol"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Range"", ""result"": ""603"", ""conclusion"": ""603""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Age; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Sex; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: ChestPainType; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingBP; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Cholesterol; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: FastingBS; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingECG; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: MaxHR; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ExerciseAngina; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: Oldpeak; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ST_Slope; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: HeartDisease; data_type: categorical; num_of_rows: 918; is_normality: False.
+### Statistical Question: Could you tell me the range of serum cholesterol values, from the smallest to the largest?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Cholesterol""], ""methods"": [""Range""]}","[""Range""]","[""Cholesterol""]"
+Heart Failure Prediction Dataset,"What is the partial correlation between the oldpeak, representing ST depression measured in numeric values, and serum cholesterol levels, considering the maximum heart rate achieved?","[{""column_header"": ""Oldpeak"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Cholesterol"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""MaxHR"", ""is_strata"": false, ""is_control"": true}]",Correlation Analysis,easy,"[{""method"": ""Partial Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.09178, \""p value\"": 0.00541}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Age; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Sex; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: ChestPainType; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingBP; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Cholesterol; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: FastingBS; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingECG; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: MaxHR; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ExerciseAngina; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: Oldpeak; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ST_Slope; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: HeartDisease; data_type: categorical; num_of_rows: 918; is_normality: False.
+### Statistical Question: What is the partial correlation between the oldpeak, representing ST depression measured in numeric values, and serum cholesterol levels, considering the maximum heart rate achieved?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Oldpeak"", ""Cholesterol"", ""MaxHR""], ""methods"": [""Partial Correlation Coefficient""]}","[""Range"", ""Partial Correlation Coefficient""]","[""ST_Slope"", ""Cholesterol"", ""Oldpeak""]"
+Los Angeles Library Monthly Statistics,Does the fluctuation in the overall distribution of electronic media resources resemble the fluctuation in the attendance numbers at library events for children and teens?,"[{""column_header"": ""Total eMedia Circulation"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""# of Attendees at Children's and Teen Programming"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 44.85921, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 126.27132, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 1381.14504, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Date; data_type: other; num_of_rows: 72; is_normality: False.
+column_header: Total Library Visitors; data_type: quantitative; num_of_rows: 72; is_normality: True.
+column_header: Total Program Attendees; data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: Total eMedia Circulation; data_type: quantitative; num_of_rows: 72; is_normality: True.
+column_header: Total Cardholders; data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: Total Computer Usage (Wireless + PC Sessions); data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: New Cardholders; data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: # of Individuals Assisted in Pursuing Citizenship; data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: # of Homeless Individuals Served at The Source; data_type: quantitative; num_of_rows: 72; is_normality: False.
+column_header: # of Attendees at Children's and Teen Programming; data_type: quantitative; num_of_rows: 72; is_normality: False.
+### Statistical Question: Does the fluctuation in the overall distribution of electronic media resources resemble the fluctuation in the attendance numbers at library events for children and teens?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Total eMedia Circulation"", ""# of Attendees at Children's and Teen Programming""], ""methods"": [""Mood Variance Test"", ""Levene Test"", ""Bartlett Test"", ""F-Test for Variance""]}","[""Levene Test"", ""Mood Variance Test""]","[""Total eMedia Circulation"", ""Total Program Attendees""]"
+Monroe County Car Crach Dataset,"How does the standard deviation of the variable ""Hour"" reflect the variability in the timing of crashes throughout the day?","[{""column_header"": ""Hour"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Standard Deviation"", ""result"": ""531.64909"", ""conclusion"": ""531.64909""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: other; num_of_rows: 53943; is_normality: False.
+column_header: Month; data_type: other; num_of_rows: 53943; is_normality: False.
+column_header: Day; data_type: other; num_of_rows: 53943; is_normality: False.
+column_header: Weekend?; data_type: categorical; num_of_rows: 53943; is_normality: False.
+column_header: Hour; data_type: quantitative; num_of_rows: 53943; is_normality: False.
+column_header: Collision Type; data_type: categorical; num_of_rows: 53943; is_normality: False.
+column_header: Injury Type; data_type: categorical; num_of_rows: 53943; is_normality: False.
+column_header: Primary Factor; data_type: categorical; num_of_rows: 53943; is_normality: False.
+column_header: Reported_Location; data_type: other; num_of_rows: 53943; is_normality: False.
+column_header: Latitude; data_type: other; num_of_rows: 53943; is_normality: False.
+column_header: Longitude; data_type: other; num_of_rows: 53943; is_normality: False.
+### Statistical Question: How does the standard deviation of the variable ""Hour"" reflect the variability in the timing of crashes throughout the day?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Hour""], ""methods"": [""Standard Deviation""]}","[""Standard Deviation""]","[""Hour""]"
+Obesity or CVD Risk Dataset,How strong is the association between an individual's height and their daily water consumption (CH2O)?,"[{""column_header"": ""Height"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""CH2O"", ""is_strata"": false, ""is_control"": false}]",Correlation Analysis,easy,"[{""method"": ""Pearson Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.21338}"", ""conclusion"": ""Not strongly correlated""}, {""method"": ""Spearman Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.22524}"", ""conclusion"": ""Not strongly correlated""}, {""method"": ""Kendall Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.15948}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Gender; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: Height; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: Weight; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: family_history_with_overweight; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FAVC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FCVC; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: NCP; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: CAEC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: SMOKE; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: CH2O; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: SCC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FAF; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: TUE; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: CALC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: MTRANS; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: NObeyesdad; data_type: categorical; num_of_rows: 2111; is_normality: False.
+### Statistical Question: How strong is the association between an individual's height and their daily water consumption (CH2O)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Height"", ""CH2O""], ""methods"": [""Pearson Correlation Coefficient"", ""Spearman Correlation Coefficient"", ""Kendall Correlation Coefficient""]}","[""Pearson Correlation Coefficient""]","[""CH2O"", ""Height""]"
+Obesity or CVD Risk Dataset,"Do the observed frequency of food consumption between meals (CAEC) correspond to the variations in NObeyesdad categories, including underweight (less than 18.5), normal (18.5 to 24.9), overweight (25.0 to 29.9), obesity I (30.0 to 34.9), obesity II (35.0 to 39.9), and obesity III (higher than 40)?","[{""column_header"": ""CAEC"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""NObeyesdad"", ""is_strata"": false, ""is_control"": false}]",Contingency Table Test,medium,"[{""method"": ""Chi-square Independence Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Not independent""}, {""method"": ""Fisher Exact Test"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Gender; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: Height; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: Weight; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: family_history_with_overweight; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FAVC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FCVC; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: NCP; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: CAEC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: SMOKE; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: CH2O; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: SCC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: FAF; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: TUE; data_type: quantitative; num_of_rows: 2111; is_normality: False.
+column_header: CALC; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: MTRANS; data_type: categorical; num_of_rows: 2111; is_normality: False.
+column_header: NObeyesdad; data_type: categorical; num_of_rows: 2111; is_normality: False.
+### Statistical Question: Do the observed frequency of food consumption between meals (CAEC) correspond to the variations in NObeyesdad categories, including underweight (less than 18.5), normal (18.5 to 24.9), overweight (25.0 to 29.9), obesity I (30.0 to 34.9), obesity II (35.0 to 39.9), and obesity III (higher than 40)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""CAEC"", ""NObeyesdad""], ""methods"": [""Chi-square Independence Test""]}","[""Chi-square Independence Test""]","[""CAEC"", ""family_history_with_overweight""]"
+Pokedex Dataset,How does the interaction between Base Special Attack (Sp_Atk) and the probability of a Pokemon being male (Pr_Male) change when considering Base Attack?,"[{""column_header"": ""Sp_Atk"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Pr_Male"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Attack"", ""is_strata"": false, ""is_control"": true}]",Correlation Analysis,easy,"[{""method"": ""Partial Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.05463, \""p value\"": 0.1665}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Number; data_type: id; num_of_rows: 721; is_normality: False.
+column_header: Name; data_type: other; num_of_rows: 721; is_normality: False.
+column_header: Type_1; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Type_2; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Total; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: HP; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Attack; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Defense; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Sp_Atk; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Sp_Def; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Speed; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Generation; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: isLegendary; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Color; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: hasGender; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Pr_Male; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Egg_Group_1; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Egg_Group_2; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: hasMegaEvolution; data_type: categorical; num_of_rows: 721; is_normality: False.
+column_header: Height_m; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Weight_kg; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Catch_Rate; data_type: quantitative; num_of_rows: 721; is_normality: False.
+column_header: Body_Style; data_type: categorical; num_of_rows: 721; is_normality: False.
+### Statistical Question: How does the interaction between Base Special Attack (Sp_Atk) and the probability of a Pokemon being male (Pr_Male) change when considering Base Attack?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Sp_Atk"", ""Pr_Male"", ""Attack""], ""methods"": [""Partial Correlation Coefficient""]}","[""Mantel-Haenszel Test""]","[""Sp_Atk"", ""Pr_Male"", ""Attack""]"
+Rainfall Dataset of Barak Velly,Do the levels of variability in rainfall measurements for July resemble those in August?,"[{""column_header"": ""JUL"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""AUG"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -0.04021, \""p value\"": 0.96792}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 0.75024, \""p value\"": 0.38729}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 1.62758, \""p value\"": 0.20204}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 11.07511, \""p value\"": 0.00102}"", ""conclusion"": ""Variance significantly difference between them""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: DISTRICT; data_type: categorical; num_of_rows: 128; is_normality: False.
+column_header: YEAR; data_type: other; num_of_rows: 128; is_normality: False.
+column_header: JAN; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: FEB; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: MAR; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: APR; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: MAY; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: JUN; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: JUL; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: AUG; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: SEP; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: OCT; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: NOV; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: DEC; data_type: quantitative; num_of_rows: 128; is_normality: False.
+column_header: ANU; data_type: quantitative; num_of_rows: 128; is_normality: False.
+### Statistical Question: Do the levels of variability in rainfall measurements for July resemble those in August?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""JUL"", ""AUG""], ""methods"": [""Mood Variance Test"", ""Levene Test"", ""Bartlett Test"", ""F-Test for Variance""]}","[""Levene Test"", ""Mood Variance Test""]","[""JUL"", ""AUG""]"
+Real Estate Valuation Dataset,Is there evidence to suggest that the distribution of house age (X2) is not normal?,"[{""column_header"": ""X2 house age"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 7.32794, \\\""crit\\\"": 0.571}\""}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 2e-05}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": 0.001}"", ""conclusion"": ""Non-normally distributed""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: No; data_type: id; num_of_rows: 414; is_normality: False.
+column_header: X1 transaction date; data_type: other; num_of_rows: 414; is_normality: False.
+column_header: X2 house age; data_type: quantitative; num_of_rows: 414; is_normality: False.
+column_header: X3 distance to the nearest MRT station; data_type: quantitative; num_of_rows: 414; is_normality: False.
+column_header: X4 number of convenience stores; data_type: quantitative; num_of_rows: 414; is_normality: False.
+column_header: X5 latitude; data_type: other; num_of_rows: 414; is_normality: False.
+column_header: X6 longitude; data_type: other; num_of_rows: 414; is_normality: False.
+column_header: Y house price of unit area; data_type: quantitative; num_of_rows: 414; is_normality: False.
+### Statistical Question: Is there evidence to suggest that the distribution of house age (X2) is not normal?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""X2 house age""], ""methods"": [""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]}","[""Kolmogorov-Smirnov Test for Normality"", ""Anderson-Darling Test"", ""Lilliefors Test""]","[""X2 house age""]"
+Stroke Prediction Dataset,Can the Kolmogorov-Smirnov test detect any differences between the distributions of average glucose levels in the blood and body mass index?,"[{""column_header"": ""avg_glucose_level"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""bmi"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Distribution significantly different""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: id; data_type: id; num_of_rows: 5110; is_normality: False.
+column_header: gender; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 5110; is_normality: False.
+column_header: hypertension; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: heart_disease; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: ever_married; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: work_type; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: Residence_type; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: avg_glucose_level; data_type: quantitative; num_of_rows: 5110; is_normality: False.
+column_header: bmi; data_type: quantitative; num_of_rows: 5110; is_normality: False.
+column_header: smoking_status; data_type: categorical; num_of_rows: 5110; is_normality: False.
+column_header: stroke; data_type: categorical; num_of_rows: 5110; is_normality: False.
+### Statistical Question: Can the Kolmogorov-Smirnov test detect any differences between the distributions of average glucose levels in the blood and body mass index?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""avg_glucose_level"", ""bmi""], ""methods"": [""Kolmogorov-Smirnov Test""]}","[""Kolmogorov-Smirnov Test""]","[""avg_glucose_level"", ""bmi""]"
+Student Performance Prediction Dataset,How does the relationship between family educational support (famsup) and nursery attendance change when considering the different gender segments?,"[{""column_header"": ""famsup"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""nursery"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""sex"", ""is_strata"": true, ""is_control"": false}]",Contingency Table Test,easy,"[{""method"": ""Mantel-Haenszel Test"", ""result"": ""{\""p value\"": 0.57017}"", ""conclusion"": ""Independent""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: How does the relationship between family educational support (famsup) and nursery attendance change when considering the different gender segments?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""famsup"", ""nursery"", ""sex""], ""methods"": [""Mantel-Haenszel Test""]}","[""Mantel-Haenszel Test""]","[""famsup"", ""nursery"", ""sex""]"
+Student Performance Prediction Dataset,How is the relationship between the second period grade (G2) and weekend alcohol consumption (Walc) influenced by the level of going out with friends (goout)?,"[{""column_header"": ""G2"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Walc"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""goout"", ""is_strata"": false, ""is_control"": true}]",Correlation Analysis,easy,"[{""method"": ""Partial Correlation Coefficient"", ""result"": ""{\""coefficient\"": -0.14586, \""p value\"": 0.00019}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: How is the relationship between the second period grade (G2) and weekend alcohol consumption (Walc) influenced by the level of going out with friends (goout)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""G2"", ""Walc"", ""goout""], ""methods"": [""Partial Correlation Coefficient""]}","[""Mantel-Haenszel Test""]","[""goout"", ""Walc"", ""G2""]"
+Student Performance Prediction Dataset,How does the influence of family size on the desire for higher education vary across different gender groups?,"[{""column_header"": ""famsize"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""higher"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""sex"", ""is_strata"": true, ""is_control"": false}]",Contingency Table Test,easy,"[{""method"": ""Mantel-Haenszel Test"", ""result"": ""{\""p value\"": 0.79462}"", ""conclusion"": ""Independent""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: How does the influence of family size on the desire for higher education vary across different gender groups?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""famsize"", ""higher"", ""sex""], ""methods"": [""Mantel-Haenszel Test""]}","[""Mantel-Haenszel Test""]","[""sex"", ""famsize"", ""higher""]"
+Student Performance Prediction Dataset,Is the variability in free time after school similar to that in weekend alcohol consumption?,"[{""column_header"": ""freetime"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Walc"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -7.12106, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 36.21832, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: Is the variability in free time after school similar to that in weekend alcohol consumption?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""freetime"", ""Walc""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Levene Test"", ""Mood Variance Test""]","[""freetime"", ""paid""]"
+Student Performance Prediction Dataset,Is there a similarity in the variability of free time after school and current health status?,"[{""column_header"": ""freetime"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""health"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -11.81603, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 97.89291, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: Is there a similarity in the variability of free time after school and current health status?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""freetime"", ""health""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Mood Variance Test"", ""Levene Test""]","[""freetime"", ""health""]"
+Student Performance Prediction Dataset,Is there a statistically significant difference in the relationship between receiving paid extra classes within the course subject and having internet access at home when stratified by the availability of extra educational support?,"[{""column_header"": ""paid"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""internet"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""schoolsup"", ""is_strata"": true, ""is_control"": false}]",Contingency Table Test,easy,"[{""method"": ""Mantel-Haenszel Test"", ""result"": ""{\""p value\"": 0.40375}"", ""conclusion"": ""Independent""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: Is there a statistically significant difference in the relationship between receiving paid extra classes within the course subject and having internet access at home when stratified by the availability of extra educational support?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""paid"", ""internet"", ""schoolsup""], ""methods"": [""Mantel-Haenszel Test""]}","[""Mantel-Haenszel Test""]","[""famsup"", ""internet"", ""paid""]"
+Student Performance Prediction Dataset,What is the range of values for the variable representing the education level of the father (Fedu)?,"[{""column_header"": ""Fedu"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Range"", ""result"": ""4.0"", ""conclusion"": ""4.0""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 649; is_normality: False.
+column_header: school; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: sex; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: age; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: address; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsize; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Pstatus; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Medu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Fedu; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Mjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: Fjob; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: reason; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: guardian; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: traveltime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: studytime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: failures; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: schoolsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famsup; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: paid; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: activities; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: nursery; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: higher; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: internet; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: romantic; data_type: categorical; num_of_rows: 649; is_normality: False.
+column_header: famrel; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: freetime; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: goout; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Dalc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: Walc; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: health; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: absences; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G1; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G2; data_type: quantitative; num_of_rows: 649; is_normality: False.
+column_header: G3; data_type: quantitative; num_of_rows: 649; is_normality: False.
+### Statistical Question: What is the range of values for the variable representing the education level of the father (Fedu)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Fedu""], ""methods"": [""Range""]}","[""Range""]","[""Fedu""]"
+Terrorist Attacks Dataset,"What is the range of variation for the age at death, specifically for individuals aged between 51 and 99?","[{""column_header"": ""Death Age: 51-99 "", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Range"", ""result"": ""52.0"", ""conclusion"": ""52.0""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Entity; data_type: other; num_of_rows: 10517; is_normality: False.
+column_header: Code; data_type: other; num_of_rows: 10517; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 10517; is_normality: False.
+column_header: Terrorist attacks; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Terrorism deaths; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Hijacking; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Hostage Taking (Barricade Incident); data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Unarmed Assault; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Facility/Infrastructure Attack; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Hostage Taking (Kidnapping); data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Assassination; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Armed Assault; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Attack method: Bombing/Explosion; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age 100+; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age: 51-99 ; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age : 21-50 ; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age : 11-20 ; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age : 6-10 ; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Death Age :  1-5; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Terrorist Death Type : Suicide; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+column_header: Terrorist Death Type : Killed; data_type: quantitative; num_of_rows: 10517; is_normality: False.
+### Statistical Question: What is the range of variation for the age at death, specifically for individuals aged between 51 and 99?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Death Age: 51-99 ""], ""methods"": [""Range""]}","[""Range""]","[""Death Age: 51-99 ""]"
+US Christmas Tree Sales Dataset,How strong is the link between the average cost of Christmas trees and the overall income derived from the sales of these trees during the festive season?,"[{""column_header"": ""Average Tree Price"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Sales"", ""is_strata"": false, ""is_control"": false}]",Correlation Analysis,medium,"[{""method"": ""Pearson Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Spearman Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kendall Correlation Coefficient"", ""result"": ""{\""coefficient\"": -0.01099}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: index; data_type: id; num_of_rows: 14; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 14; is_normality: False.
+column_header: Type of tree; data_type: categorical; num_of_rows: 14; is_normality: False.
+column_header: Number of trees sold; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Average Tree Price; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Sales; data_type: quantitative; num_of_rows: 14; is_normality: True.
+### Statistical Question: How strong is the link between the average cost of Christmas trees and the overall income derived from the sales of these trees during the festive season?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Average Tree Price"", ""Sales""], ""methods"": [""Kendall Correlation Coefficient""]}","[""Pearson Correlation Coefficient""]","[""Average Tree Price"", ""Sales""]"
+US Christmas Tree Sales Dataset,Do the values in the Average Tree Price column exhibit characteristics of a normal distribution?,"[{""column_header"": ""Average Tree Price"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 0.49676, \\\""crit\\\"": 0.497}\""}"", ""conclusion"": ""Normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": 0.18366}"", ""conclusion"": ""Normally distributed""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 0.59088}"", ""conclusion"": ""Normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: index; data_type: id; num_of_rows: 14; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 14; is_normality: False.
+column_header: Type of tree; data_type: categorical; num_of_rows: 14; is_normality: False.
+column_header: Number of trees sold; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Average Tree Price; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Sales; data_type: quantitative; num_of_rows: 14; is_normality: True.
+### Statistical Question: Do the values in the Average Tree Price column exhibit characteristics of a normal distribution?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Average Tree Price""], ""methods"": [""Anderson-Darling Test"", ""Shapiro-Wilk Test of Normality"", ""Kolmogorov-Smirnov Test for Normality""]}","[""Shapiro-Wilk Test of Normality""]","[""Average Tree Price""]"
+US Christmas Tree Sales Dataset,What method is used to evaluate the relationship between fluctuations in the quantity of trees sold and variations in sales revenue?,"[{""column_header"": ""Number of trees sold"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Sales"", ""is_strata"": false, ""is_control"": false}]",Correlation Analysis,medium,"[{""method"": ""Pearson Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Spearman Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kendall Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.58242}"", ""conclusion"": ""Strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: index; data_type: id; num_of_rows: 14; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 14; is_normality: False.
+column_header: Type of tree; data_type: categorical; num_of_rows: 14; is_normality: False.
+column_header: Number of trees sold; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Average Tree Price; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Sales; data_type: quantitative; num_of_rows: 14; is_normality: True.
+### Statistical Question: What method is used to evaluate the relationship between fluctuations in the quantity of trees sold and variations in sales revenue?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Number of trees sold"", ""Sales""], ""methods"": [""Kendall Correlation Coefficient""]}","[""Pearson Correlation Coefficient"", ""Spearman Correlation Coefficient"", ""Kendall Correlation Coefficient""]","[""Number of trees sold"", ""Sales""]"
+US Christmas Tree Sales Dataset,Does a significant correlation exist between the typical cost of Christmas trees and the overall income derived from their sales during the holiday season?,"[{""column_header"": ""Average Tree Price"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Sales"", ""is_strata"": false, ""is_control"": false}]",Correlation Analysis,medium,"[{""method"": ""Pearson Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Spearman Correlation Coefficient"", ""result"": ""{\""coefficient\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kendall Correlation Coefficient"", ""result"": ""{\""coefficient\"": -0.01099}"", ""conclusion"": ""Not strongly correlated""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: index; data_type: id; num_of_rows: 14; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 14; is_normality: False.
+column_header: Type of tree; data_type: categorical; num_of_rows: 14; is_normality: False.
+column_header: Number of trees sold; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Average Tree Price; data_type: quantitative; num_of_rows: 14; is_normality: True.
+column_header: Sales; data_type: quantitative; num_of_rows: 14; is_normality: True.
+### Statistical Question: Does a significant correlation exist between the typical cost of Christmas trees and the overall income derived from their sales during the holiday season?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Average Tree Price"", ""Sales""], ""methods"": [""Kendall Correlation Coefficient""]}","[""Pearson Correlation Coefficient"", ""Kendall Correlation Coefficient"", ""Spearman Correlation Coefficient""]","[""Average Tree Price"", ""Sales""]"
+University Rank Dataset,Do the fluctuations in the Research Quality Score compare to those in the Teaching Score?,"[{""column_header"": ""Research Quality Score"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Teaching Score"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -2.45461, \""p value\"": 0.0141}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 112.05843, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: rank; data_type: id; num_of_rows: 910; is_normality: False.
+column_header: ranking-institution-title; data_type: other; num_of_rows: 910; is_normality: False.
+column_header: location; data_type: other; num_of_rows: 910; is_normality: False.
+column_header: Overall scores; data_type: categorical; num_of_rows: 910; is_normality: False.
+column_header: Research Quality Score; data_type: quantitative; num_of_rows: 910; is_normality: False.
+column_header: Industry Score; data_type: quantitative; num_of_rows: 910; is_normality: False.
+column_header: International Outlook; data_type: quantitative; num_of_rows: 910; is_normality: False.
+column_header: Research Environment Score; data_type: quantitative; num_of_rows: 910; is_normality: False.
+column_header: Teaching Score; data_type: quantitative; num_of_rows: 910; is_normality: False.
+### Statistical Question: Do the fluctuations in the Research Quality Score compare to those in the Teaching Score?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Research Quality Score"", ""Teaching Score""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Pearson Correlation Coefficient"", ""Spearman Correlation Coefficient"", ""Kendall Correlation Coefficient""]","[""Research Quality Score"", ""Teaching Score""]"
+Used Car Dataset,"Is the torque generated by the car's engine, measured in Newton-meters (Nm), following an Exponential distribution? Is the Exponential distribution a suitable model for the torque data?","[{""column_header"": ""torque(Nm)"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test for Exponential distribution"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Non-compliance""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 1553; is_normality: False.
+column_header: car_name; data_type: other; num_of_rows: 1553; is_normality: False.
+column_header: registration_year; data_type: other; num_of_rows: 1553; is_normality: False.
+column_header: insurance_validity; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: fuel_type; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: seats; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: kms_driven; data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: ownsership; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: transmission; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: manufacturing_year; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: mileage(kmpl); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: engine(cc); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: max_power(bhp); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: torque(Nm); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: price(in lakhs); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+### Statistical Question: Is the torque generated by the car's engine, measured in Newton-meters (Nm), following an Exponential distribution? Is the Exponential distribution a suitable model for the torque data?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""torque(Nm)""], ""methods"": [""Kolmogorov-Smirnov Test for Exponential distribution""]}","[""Kolmogorov-Smirnov Test for Exponential distribution""]","[""torque(Nm)""]"
+Used Car Dataset,To what extent do the patterns of variance in mileage (in kilometers per liter) and max power (in brake horsepower) align?,"[{""column_header"": ""mileage(kmpl)"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""max_power(bhp)"", ""is_strata"": false, ""is_control"": false}]",Variance Test,medium,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 5.92119, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 7.02927, \""p value\"": 0.00806}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": \""null\"", \""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 1553; is_normality: False.
+column_header: car_name; data_type: other; num_of_rows: 1553; is_normality: False.
+column_header: registration_year; data_type: other; num_of_rows: 1553; is_normality: False.
+column_header: insurance_validity; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: fuel_type; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: seats; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: kms_driven; data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: ownsership; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: transmission; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: manufacturing_year; data_type: categorical; num_of_rows: 1553; is_normality: False.
+column_header: mileage(kmpl); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: engine(cc); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: max_power(bhp); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: torque(Nm); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+column_header: price(in lakhs); data_type: quantitative; num_of_rows: 1553; is_normality: False.
+### Statistical Question: To what extent do the patterns of variance in mileage (in kilometers per liter) and max power (in brake horsepower) align?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""mileage(kmpl)"", ""max_power(bhp)""], ""methods"": [""Mood Variance Test"", ""Levene Test""]}","[""Mood Variance Test"", ""Levene Test""]","[""mileage(kmpl)"", ""max_power(bhp)""]"
+Video Games Sales Dataset,"Is the distribution of units sold in the rest of the world, excluding North America, Europe, and Japan, in millions, close enough to a normal distribution for practical purposes?","[{""column_header"": ""Rest of World"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,medium,"[{""method"": ""Anderson-Darling Test"", ""result"": ""{\""AD results\"": \""{\\\""stat\\\"": 250.29313, \\\""crit\\\"": 0.575}\""}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Shapiro-Wilk Test of Normality"", ""result"": ""{\""p value\"": \""null\""}"", ""conclusion"": ""Not applicable""}, {""method"": ""Kolmogorov-Smirnov Test for Normality"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Non-normally distributed""}, {""method"": ""Lilliefors Test"", ""result"": ""{\""p value\"": 0.001}"", ""conclusion"": ""Non-normally distributed""}]","### Task Description: You need to select relevant columns and all applicable methods from provided list for the given statistical question.
+### Instruction: You should only reply with one answer in JSON format containing two keys: 'columns' and 'methods'. The value of 'columns' is a list of columns' headers relevant to the given statistical question, and the value of 'methods' is a list containing all methods you think applicable. For example: {""columns"": [""c1"", ""c2"", ""...""], ""methods"": [""m1"", ""m2"", ""...""]}. If you think there is a strata or control variable involved, put its column header in the last item of the columns list. Ensure your methods selection is only limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: index; data_type: id; num_of_rows: 1907; is_normality: False.
+column_header: Rank; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Game Title; data_type: other; num_of_rows: 1907; is_normality: False.
+column_header: Platform; data_type: categorical; num_of_rows: 1907; is_normality: False.
+column_header: Year; data_type: other; num_of_rows: 1907; is_normality: False.
+column_header: Genre; data_type: categorical; num_of_rows: 1907; is_normality: False.
+column_header: Publisher; data_type: categorical; num_of_rows: 1907; is_normality: False.
+column_header: North America; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Europe; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Japan; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Rest of World; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Global; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+column_header: Review; data_type: quantitative; num_of_rows: 1907; is_normality: False.
+### Statistical Question: Is the distribution of units sold in the rest of the world, excluding North America, Europe, and Japan, in millions, close enough to a normal distribution for practical purposes?
+### Response: The answer of relevant columns and applicable methods in JSON format is:","{""columns"": [""Rest of World""], ""methods"": [""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]}","[""Anderson-Darling Test"", ""Kolmogorov-Smirnov Test for Normality"", ""Lilliefors Test""]","[""Rest of World""]"

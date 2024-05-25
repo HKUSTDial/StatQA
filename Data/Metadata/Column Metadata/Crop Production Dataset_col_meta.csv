@@ -1,0 +1,15 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Crop Production Dataset,Year,Other,The year of the crop production record,4,False
+Crop Production Dataset,Nigeria,quant,Annual crop production in Nigeria,4,True
+Crop Production Dataset,Pakistan,quant,Annual crop production in Pakistan,4,True
+Crop Production Dataset,Japan,quant,Annual crop production in Japan,4,True
+Crop Production Dataset,United States,quant,Annual crop production in the United States,4,True
+Crop Production Dataset,Brazil,quant,Annual crop production in Brazil,4,True
+Crop Production Dataset,Philippines,quant,Annual crop production in the Philippines,4,True
+Crop Production Dataset,Myanmar,quant,Annual crop production in the Myanmar,4,True
+Crop Production Dataset,Thailand,quant,Annual crop production in the Thailand,4,True
+Crop Production Dataset,Vietnam,quant,Annual crop production in the Vietnam,4,True
+Crop Production Dataset,Indonesia,quant,Annual crop production in the Indonesia,4,True
+Crop Production Dataset,Bangladesh,quant,Annual crop production in the Bangladesh,4,True
+Crop Production Dataset,India,quant,Annual crop production in the India,4,True
+Crop Production Dataset,China,quant,Annual crop production in the China,4,True

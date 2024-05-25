@@ -1,0 +1,15 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Number of Equations and Citations for Evolutionary Biology Publications,rownames,id,id,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,journal,other,journal,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,authors,other,authors name,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,volume,other,volume,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,startpage,other,startpage,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,pages,quant,Number of pages.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,equations,quant,Number of equations in total.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,mainequations,quant,Number of equations in main text.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,appequations,quant,Number of equations in appendix.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,cites,quant,Number of citations in total.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,selfcites,quant,Number of citations by the authors themselves.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,othercites,quant,Number of citations by other authors.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,theocites,quant,Number of citations by theoretical papers.,649,False
+Number of Equations and Citations for Evolutionary Biology Publications,nontheocites,quant,Number of citations by nontheoretical papers.,649,False

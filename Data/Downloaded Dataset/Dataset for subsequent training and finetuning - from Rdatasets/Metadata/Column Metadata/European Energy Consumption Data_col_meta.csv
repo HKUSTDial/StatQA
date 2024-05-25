@@ -1,0 +1,4 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+European Energy Consumption Data,rownames,id,id,20,False
+European Energy Consumption Data,gdp,quant,Real gross domestic product,20,False
+European Energy Consumption Data,energy,quant,Aggregate energy consumption,20,False

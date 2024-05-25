@@ -1,0 +1,14 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+German Socio-Economic Panel 1994-2002,rownames,id,id,675,False
+German Socio-Economic Panel 1994-2002,school,cate,Child's secondary school level.,675,False
+German Socio-Economic Panel 1994-2002,birthyear,other,Birth year,675,False
+German Socio-Economic Panel 1994-2002,gender,cate,Gender,675,False
+German Socio-Economic Panel 1994-2002,kids,quant,Total number of kids living in household.,675,False
+German Socio-Economic Panel 1994-2002,parity,quant,Birth order.,675,False
+German Socio-Economic Panel 1994-2002,income,quant,Household income.,675,False
+German Socio-Economic Panel 1994-2002,size,quant,Household size,675,False
+German Socio-Economic Panel 1994-2002,state,other,factor indicating German federal state.,675,False
+German Socio-Economic Panel 1994-2002,marital,cate,mother's marital status.,675,False
+German Socio-Economic Panel 1994-2002,meducation,quant,Mother's educational years.,675,False
+German Socio-Economic Panel 1994-2002,memployment,cate,mother's employment level.,675,False
+German Socio-Economic Panel 1994-2002,year,other,Year of GSOEP wave,675,False

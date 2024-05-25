@@ -1,0 +1,11 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Travel Mode Choice Data,rownames,id,id,840,False
+Travel Mode Choice Data,individual,id,id,840,False
+Travel Mode Choice Data,mode,cate,travel mode,840,False
+Travel Mode Choice Data,choice,cate,have choice or not,840,False
+Travel Mode Choice Data,wait,quant,waiting time,840,False
+Travel Mode Choice Data,vcost,quant,Vehicle cost component.,840,False
+Travel Mode Choice Data,travel,quant,Travel time in the vehicle.,840,False
+Travel Mode Choice Data,gcost,quant,Generalized cost measure.,840,False
+Travel Mode Choice Data,income,quant,Household income.,840,False
+Travel Mode Choice Data,size,quant,Party size.,840,False

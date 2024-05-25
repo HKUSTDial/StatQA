@@ -1,0 +1,8 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Raman Ratings Dataset,Review #,quant,Row name,2580,False
+Raman Ratings Dataset,Brand,cate,Name of the ramen brand,2580,False
+Raman Ratings Dataset,Variety,other,Name of the ramen product variety,2580,False
+Raman Ratings Dataset,Style,cate,Type of ramen packaging ,2580,False
+Raman Ratings Dataset,Country,cate,Country,2580,False
+Raman Ratings Dataset,Stars,cate,Rating of the ramen quality,2580,False
+Raman Ratings Dataset,Top Ten,other,Indicator of whether the ramen product is listed in the top ten rankings,2580,False

@@ -1,0 +1,12 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Economics Journal Subscription Data,rownames,id,id,180,False
+Economics Journal Subscription Data,title,other,Journal title.,180,False
+Economics Journal Subscription Data,publisher,other,publisher,180,False
+Economics Journal Subscription Data,society,cate,Is the journal published by a scholarly society?,180,False
+Economics Journal Subscription Data,price,quant,Library subscription price.,180,False
+Economics Journal Subscription Data,pages,quant,Number of pages.,180,False
+Economics Journal Subscription Data,charpp,quant,Characters per page.,180,False
+Economics Journal Subscription Data,citations,quant,Total number of citations.,180,False
+Economics Journal Subscription Data,foundingyear,quant,Year journal was founded.,180,False
+Economics Journal Subscription Data,subs,quant,Number of library subscriptions.,180,False
+Economics Journal Subscription Data,field,other,field description.,180,False

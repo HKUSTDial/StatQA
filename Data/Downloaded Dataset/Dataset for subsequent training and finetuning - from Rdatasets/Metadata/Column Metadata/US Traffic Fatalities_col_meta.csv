@@ -1,0 +1,36 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+US Traffic Fatalities,rownames,id,id,336,False
+US Traffic Fatalities,state,other,states,336,False
+US Traffic Fatalities,year,other,year,336,False
+US Traffic Fatalities,spirits,quant,Spirits consumption.,336,False
+US Traffic Fatalities,unemp,quant,Unemployment rate.,336,False
+US Traffic Fatalities,income,quant,Per capita personal income in 1987 dollars.,336,False
+US Traffic Fatalities,emppop,quant,Employment/population ratio.,336,False
+US Traffic Fatalities,beertax,quant,Tax on case of beer.,336,False
+US Traffic Fatalities,baptist,quant,Percent of southern baptist.,336,False
+US Traffic Fatalities,mormon,quant,Percent of mormon.,336,False
+US Traffic Fatalities,drinkage,quant,Minimum legal drinking age.,336,False
+US Traffic Fatalities,dry,quant,Percent residing in dry countries.,336,False
+US Traffic Fatalities,youngdrivers,quant,Percent of drivers aged 15 to 24.,336,False
+US Traffic Fatalities,miles,quant,Average miles per driver.,336,False
+US Traffic Fatalities,breath,cate,Whether there is preliminary breath test law,336,False
+US Traffic Fatalities,jail,cate,Whether there is mandatory jail sentence,336,False
+US Traffic Fatalities,service,cate,Whether there is mandatory community service,336,False
+US Traffic Fatalities,fatal,quant,Number of vehicle fatalities.,336,False
+US Traffic Fatalities,nfatal,quant,Number of nighttime vehicle fatalities.,336,False
+US Traffic Fatalities,sfatal,quant,Number of single vehicle fatalities.,336,False
+US Traffic Fatalities,fatal1517,quant,"Number of vehicle fatalities, 15 to 17 year olds.",336,False
+US Traffic Fatalities,nfatal1517,cate,"Number of nighttime vehicle fatalities, 15 to 17 year olds.",336,False
+US Traffic Fatalities,fatal1820,quant,"Number of vehicle fatalities, 18 to 20 year olds.",336,False
+US Traffic Fatalities,nfatal1820,quant,"Number of nighttime vehicle fatalities, 18 to 20 year olds.",336,False
+US Traffic Fatalities,fatal2124,quant,"Number of vehicle fatalities, 21 to 24 year olds.",336,False
+US Traffic Fatalities,nfatal2124,quant,"Number of nighttime vehicle fatalities, 21 to 24 year olds.",336,False
+US Traffic Fatalities,afatal,quant,Number of alcohol-involved vehicle fatalities.,336,False
+US Traffic Fatalities,pop,quant,Population,336,False
+US Traffic Fatalities,pop1517,quant,"Population, 15 to 17 year olds.",336,False
+US Traffic Fatalities,pop1820,quant,"Population, 18 to 20 year olds.",336,False
+US Traffic Fatalities,pop2124,quant,"Population, 21 to 24 year olds.",336,False
+US Traffic Fatalities,milestot,quant,Total vehicle miles (millions).,336,False
+US Traffic Fatalities,unempus,quant,US unemployment rate.,336,False
+US Traffic Fatalities,emppopus,quant,US employment/population ratio.,336,False
+US Traffic Fatalities,gsp,quant,GSP rate of change.,336,False

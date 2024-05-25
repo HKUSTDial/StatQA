@@ -1,0 +1,13 @@
+dataset,column_header,data_type,column_description,num_of_rows,is_normality
+Stroke Prediction Dataset,id,id, unique identifier,5110,False
+Stroke Prediction Dataset,gender,cate," ""Male"", ""Female"" or ""Other""",5110,False
+Stroke Prediction Dataset,age,quant, age of the patient,5110,False
+Stroke Prediction Dataset,hypertension,cate," 0 if the patient doesn't have hypertension, 1 if the patient has hypertension",5110,False
+Stroke Prediction Dataset,heart_disease,cate," 0 if the patient doesn't have any heart diseases, 1 if the patient has a heart disease",5110,False
+Stroke Prediction Dataset,ever_married,cate," ""No"" or ""Yes""",5110,False
+Stroke Prediction Dataset,work_type,cate," ""children"", ""Govt_jov"", ""Never_worked"", ""Private"" or ""Self-employed""",5110,False
+Stroke Prediction Dataset,Residence_type,cate," ""Rural"" or ""Urban""",5110,False
+Stroke Prediction Dataset,avg_glucose_level,quant, average glucose level in blood,5110,False
+Stroke Prediction Dataset,bmi,quant, body mass index,5110,False
+Stroke Prediction Dataset,smoking_status,cate," ""formerly smoked"", ""never smoked"", ""smokes"" or ""Unknown""*",5110,False
+Stroke Prediction Dataset,stroke,cate, 1 if the patient had a stroke or 0 if not,5110,False
