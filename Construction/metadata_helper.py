@@ -1,7 +1,11 @@
 # -*- coding: gbk -*-
+import sys
+import os
+main_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, main_folder_path)
+
 import pandas as pd
 import numpy as np
-import os
 import utils
 import path
 

@@ -1,17 +1,17 @@
 dataset,column_header,data_type,column_description,num_of_rows,is_normality
-Lung Cancer Survey Dataset,GENDER,cate,Gender,309,FALSE
-Lung Cancer Survey Dataset,AGE,quant,Age,309,FALSE
-Lung Cancer Survey Dataset,SMOKING,cate,Smoking status,309,FALSE
-Lung Cancer Survey Dataset,YELLOW_FINGERS,cate,Presence of yellow fingers indicating smoking habit,309,FALSE
-Lung Cancer Survey Dataset,ANXIETY,cate,Presence of anxiety symptoms,309,FALSE
-Lung Cancer Survey Dataset,PEER_PRESSURE,cate,Experience of peer pressure related to smoking.,309,FALSE
-Lung Cancer Survey Dataset,CHRONIC DISEASE,cate,Presence of chronic disease,309,FALSE
-Lung Cancer Survey Dataset,FATIGUE ,cate,Presence of fatigue symptoms,309,FALSE
-Lung Cancer Survey Dataset,ALLERGY ,cate,Presence of allergy symptoms,309,FALSE
-Lung Cancer Survey Dataset,WHEEZING,cate,Presence of wheezing symptoms,309,FALSE
-Lung Cancer Survey Dataset,ALCOHOL CONSUMING,cate,Alcohol consumption status,309,FALSE
-Lung Cancer Survey Dataset,COUGHING,cate,Presence of coughing symptoms,309,FALSE
-Lung Cancer Survey Dataset,SHORTNESS OF BREATH,cate,Presence of shortness of breath symptoms,309,FALSE
-Lung Cancer Survey Dataset,SWALLOWING DIFFICULTY,cate,Presence of swallowing difficulty symptoms,309,FALSE
-Lung Cancer Survey Dataset,CHEST PAIN,cate,Presence of chest pain symptoms,309,FALSE
-Lung Cancer Survey Dataset,LUNG_CANCER,cate,Presence of lung cancer diagnosis,309,FALSE
+Lung Cancer Survey Dataset,GENDER,cate,Gender,309,False
+Lung Cancer Survey Dataset,AGE,quant,Age,309,False
+Lung Cancer Survey Dataset,SMOKING,cate,Smoking status,309,False
+Lung Cancer Survey Dataset,YELLOW_FINGERS,cate,Presence of yellow fingers indicating smoking habit,309,False
+Lung Cancer Survey Dataset,ANXIETY,cate,Presence of anxiety symptoms,309,False
+Lung Cancer Survey Dataset,PEER_PRESSURE,cate,Experience of peer pressure related to smoking.,309,False
+Lung Cancer Survey Dataset,CHRONIC DISEASE,cate,Presence of chronic disease,309,False
+Lung Cancer Survey Dataset,FATIGUE ,cate,Presence of fatigue symptoms,309,False
+Lung Cancer Survey Dataset,ALLERGY ,cate,Presence of allergy symptoms,309,False
+Lung Cancer Survey Dataset,WHEEZING,cate,Presence of wheezing symptoms,309,False
+Lung Cancer Survey Dataset,ALCOHOL CONSUMING,cate,Alcohol consumption status,309,False
+Lung Cancer Survey Dataset,COUGHING,cate,Presence of coughing symptoms,309,False
+Lung Cancer Survey Dataset,SHORTNESS OF BREATH,cate,Presence of shortness of breath symptoms,309,False
+Lung Cancer Survey Dataset,SWALLOWING DIFFICULTY,cate,Presence of swallowing difficulty symptoms,309,False
+Lung Cancer Survey Dataset,CHEST PAIN,cate,Presence of chest pain symptoms,309,False
+Lung Cancer Survey Dataset,LUNG_CANCER,cate,Presence of lung cancer diagnosis,309,False

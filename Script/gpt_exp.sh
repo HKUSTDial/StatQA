@@ -1,4 +1,5 @@
 # llama-3 3_8b_instruct ecxperiments script
+# llama-3 3_8b_instruct ecxperiments script
 
 cd ..
 

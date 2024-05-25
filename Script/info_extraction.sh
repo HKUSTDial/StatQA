@@ -1,5 +1,9 @@
 cd ..
 
+wait
+echo "datasets preprocess starts..."
+python Construction/dataset_preprocess.py
+echo "datasets preprocess ends..."
 
 echo "info extract starts..."
 python Extraction/correlation_info_extraction.py
