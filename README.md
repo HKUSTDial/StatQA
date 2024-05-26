@@ -108,7 +108,7 @@ sh Script\gpt_exp.sh
 
 ### Format Transformation for Training Set
 
-We use a similar procedure but different source tabular data to obtain the training set: ``
+We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`.
 
 ....
 
@@ -123,7 +123,7 @@ sh Script\answer_analysis.sh
 ```
 
 ## License
-
+APACHE LICENSE, VERSION 2.0.
 
 
 ## Citation
