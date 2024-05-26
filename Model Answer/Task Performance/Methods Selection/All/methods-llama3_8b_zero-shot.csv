@@ -1,0 +1,6 @@
+task,total_full_score,obtained_valid_score,score_rate
+Contingency Table Test,256,0,0.0
+Correlation Analysis,168,4,0.02381
+Descriptive Statistics,259,204,0.78764
+Distribution Compliance Test,236,44,0.18644
+Variance Test,244,65,0.26639

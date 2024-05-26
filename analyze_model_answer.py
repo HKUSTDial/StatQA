@@ -376,7 +376,6 @@ def plot_radar_chart_for_task_performance(work_dir: str, output_name: str, targe
     # for task, abbreviation in mappings.task_abbreviations.items():
     #     legend_elements.append(plt.Line2D([0], [0], color='black', marker='.', linestyle='None',
     #                                       markersize=12, label=f"{abbreviation}: {task}"))
-    
     ax.set_yticklabels([])
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(task_stats_df['Task Abbreviation'], fontsize=14)
@@ -399,92 +398,73 @@ def model_answer_integrate_analysis(answer_file_name: str):
     # Compare and count answer
     compare_and_count_answer(file_name=answer_file_name)
     print("[i] Answer extraction, comparison and counting completed!")
-    # # Plot confusion matrix for task classification
-    # plot_confusion_matrix_for_task_classification(file_name=answer_file_name, output_dir=(path.chart_dir+path.confusion_matrix_dir))
     # Calculate scores
     calculate_model_answer_score_for_row(file_name=answer_file_name)
     # Analyze task performance
     analyze_performanece_for_tasks(file_name=answer_file_name, target='methods')
     analyze_performanece_for_tasks(file_name=answer_file_name, target='columns')
     analyze_performanece_for_tasks(file_name=answer_file_name, target='overall')
-    
-    # # Calculate model answer accuracy
-    # print('---------------------------------------------------------------------------------')
-    # print('Task Classification Accuracy:')
-    # print(calculate_task_classification_accuracy(file_name=answer_file_name))
-    # print('---------------------------------------------------------------------------------')
+
 
 
 # main
 if __name__ == "__main__":
 
     # Model answer analysis
-    # model_answer_integrate_analysis(answer_file_name='random')
-
-    # # llama Few-shot
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_two-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_two-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_two-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_two-shot')
+    # llama Few-shot
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot')
+    model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot')
     
-    # # llama CoT
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot-CoT')
-
-    # # GPT
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot')
-
     # llama CoT
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot-CoT')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot-CoT')
 
+    # GPT
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot')
 
-    # # SFT
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_sft_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_sft_zero-shot')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_sft_zero-shot')
+    # GPT CoT
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot-CoT')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot-CoT')
+
+    # SFT
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_sft_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_sft_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_sft_zero-shot')
     
     # Human
-    # model_answer_integrate_analysis(answer_file_name='human_Stats Background_Closed-book')
-    # model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Closed-book')
-    # model_answer_integrate_analysis(answer_file_name='human_Stats Background_Open-book')
-    # model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Open-book')
-    # model_answer_integrate_analysis(answer_file_name='human_Stats Background_GPT-assisted')
-    # model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_GPT-assisted')
+    model_answer_integrate_analysis(answer_file_name='human_Stats Background_Closed-book')
+    model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Closed-book')
+    model_answer_integrate_analysis(answer_file_name='human_Stats Background_Open-book')
+    model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Open-book')
 
-    # # LLMs with stats prompt
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='gpt-4o_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='llama2_7b_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='llama2_13b_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_stats-prompt')
-    # model_answer_integrate_analysis(answer_file_name='llama3_8b_stats-prompt')
-    
-    # # LLMs with stats prompt and explain
-    # model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_stats-prompt-explain')
+    # LLMs with stats prompt: 1-shot+DK
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='llama2_7b_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='llama2_13b_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_stats-prompt')
+    model_answer_integrate_analysis(answer_file_name='llama3_8b_stats-prompt')
 
     pass

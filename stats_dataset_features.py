@@ -154,7 +154,7 @@ plt.legend(task_legend_labels + outer_legend_labels,
            ncol=2)
 # plt.show()
 plt.savefig(path.chart_dir + 'Dataset Notable Statistics/' + figure_name + ".pdf", format='pdf', bbox_inches='tight', dpi=600)
-print("[+] "+ figure_name +".png has been saved to " + path.chart_dir + '.')
+print("[+] "+ figure_name +" has been saved to " + path.chart_dir + '.')
 
 
 '''

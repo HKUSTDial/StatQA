@@ -22,19 +22,22 @@ def llama_answer_generation(model_type: str, dataset_name: str, output_name: str
     
     # Path settings
     if model_type == '2_7b':
-        model_path = "/data/zhuyizhang/Llama-2-7b-chat-hf"
+        model_path = "/your_path_to/Llama-2-7b-chat-hf"
         parallel_num = 4
     elif model_type == '2_13b':
-        model_path = "/data/zhuyizhang/Llama-2-13b-chat-hf"
+        model_path = "/your_path_to/Llama-2-13b-chat-hf"
         parallel_num = 8
     elif model_type == '3_8b_instruct':
-        model_path = "/data/zhuyizhang/Meta-Llama-3-8B-Instruct"
+        model_path = "/your_path_to/Meta-Llama-3-8B-Instruct"
         parallel_num = 8
     elif model_type == '3_8b':
-        model_path = "/data/zhuyizhang/Meta-Llama-3-8B"
+        model_path = "/your_path_to/Meta-Llama-3-8B"
+        parallel_num = 8
+    elif model_type == 'sft':
+        model_path = "/your_path_to/your_sft_model"
         parallel_num = 8
     else:
-        raise ValueError("[!] Invalid model type. Please choose from: 2_7b, 2_13b, 3_8b_instruct, and 3_8b.")
+        raise ValueError("[!] Invalid model type. Please choose from: 2_7b, 2_13b, 3_8b_instruct and 3_8b, or sft")
     
     # max token limit settings
     if trick == 'zero-shot-CoT' or trick == 'one-shot-CoT':
@@ -44,7 +47,7 @@ def llama_answer_generation(model_type: str, dataset_name: str, output_name: str
 
     answer_store_path = "Origin Answer/"
     prompt_dataset_path = prompt_dataset_path_test
-    file_path = prompt_dataset_path + dataset_name + ' test for ' + trick + '.csv'
+    file_path = prompt_dataset_path + dataset_name + ' for ' + trick + '.csv'
     output_path = model_ans_path + answer_store_path + output_name + model_type + '_' + trick + '.csv'
     answer_column_name = "model_answer"
 
@@ -111,7 +114,7 @@ if __name__ == "__main__":
     # Set the command line parameter parser
     parser = argparse.ArgumentParser(description='Generate answers using LLaMA.')
     parser.add_argument('--model_type', type=str, default='7b', help="llama model type: '7b' or '13b'")
-    parser.add_argument('--dataset_name', type=str, help='The name of the dataset file without extension')
+    parser.add_argument('--dataset_name', type=str, default='mini-StatQA',help='The name of the dataset file without extension')
     parser.add_argument('--output_name', type=str, default="llama", help='The base name for the output file')
     parser.add_argument('--trick', type=str, default='zero-shot', help="Tricks remark for the output file name.")
     

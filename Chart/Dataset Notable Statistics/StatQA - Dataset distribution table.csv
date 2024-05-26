@@ -1,33 +1,33 @@
 Abbreviation,Full Name,Count/Percentage
-CA,Correlation Analysis,56076/62136
-DS,Descriptive Statistics,2691/62136
-DCT,Distribution Compliance Test,1719/62136
-VT,Variance Test,1284/62136
-CTT,Contingency Table Test,366/62136
-PCC,Pearson Correlation Coefficient,263
-SCC,Spearman Correlation Coefficient,263
-KCC,Kendall Correlation Coefficient,56063
-PaCC,Partial Correlation Coefficient,13
-Mean,Mean,347
-Mode,Mode,312
-Quart,Quartile,348
-Med,Median,346
-SD,Standard Deviation,332
-Skew,Skewness,336
-Kurt,Kurtosis,340
-Range,Range,330
-KST-U,Kolmogorov-Smirnov Test for Uni. distr.,57
-KST-G,Kolmogorov-Smirnov Test for Gam. distr.,49
-KST,Kolmogorov-Smirnov Test,92
-KST-E,Kolmogorov-Smirnov Test for Exp. distr.,46
-ADT,Anderson-Darling Test,1475
-KST-N,Kolmogorov-Smirnov Test for Normality,1475
-LiT,Lilliefors Test,1247
+DS,Descriptive Statistics,2690/11623
+CTT,Contingency Table Test,2491/11623
+DCT,Distribution Compliance Test,2400/11623
+VT,Variance Test,2330/11623
+CA,Correlation Analysis,1712/11623
+Mode,Mode,309
+Range,Range,359
+Quart,Quartile,332
+Mean,Mean,341
+SD,Standard Deviation,325
+Skew,Skewness,318
+Med,Median,339
+Kurt,Kurtosis,367
+MHT,Mantel-Haenszel Test,783
+CIT,Chi-square Independence Test,1660
+FET,Fisher Exact Test,588
+KST-U,Kolmogorov-Smirnov Test for Uni. distr.,143
+KST,Kolmogorov-Smirnov Test,693
+KST-G,Kolmogorov-Smirnov Test for Gam. distr.,138
+KST-E,Kolmogorov-Smirnov Test for Exp. distr.,142
+ADT,Anderson-Darling Test,1284
+KST-N,Kolmogorov-Smirnov Test for Normality,1284
+LiT,Lilliefors Test,1056
 SWT,Shapiro-Wilk Test of Normality,228
-MoVT,Mood Variance Test,1284
-LeT,Levene Test,1284
-BT,Bartlett Test,780
-FTV,F-Test for Variance,780
-CIT,Chi-square Independence Test,239
-FET,Fisher Exact Test,111
-MHT,Mantel-Haenszel Test,47
+MoVT,Mood Variance Test,2330
+LeT,Levene Test,2330
+BT,Bartlett Test,1010
+FTV,F-Test for Variance,1010
+PaCC,Partial Correlation Coefficient,658
+PCC,Pearson Correlation Coefficient,604
+SCC,Spearman Correlation Coefficient,604
+KCC,Kendall Correlation Coefficient,1054

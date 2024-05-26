@@ -1,49 +1,24 @@
-# llama-3 3_8b_instruct ecxperiments script
-# llama-3 3_8b_instruct ecxperiments script
-
 cd ..
 
+# gpt-3.5
+python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "zero-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "one-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "zero-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "one-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "stats-prompt"
 
-# # llama 3_8b_instruct ecxperiments script
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark" --trick "zero-shot"
-
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark" --trick "one-shot"
-
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark" --trick "two-shot"
-
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark" --trick "zero-shot-CoT"
-
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark" --trick "one-shot-CoT"
-
-# # direct exp
-# wait
-# python llama_answer_vllm.py --model_type "3_8b_instruct" --dataset_name "Balanced Benchmark Llama " --trick "free direct-test"
-
-
-
-# llama 3_8b ecxperiments script
+# gpt-4
 wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark" --trick "zero-shot"
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4" --trick "zero-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4" --trick "one-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4" --trick "zero-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4" --trick "one-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4" --trick "stats-prompt"
 
+# gpt-4o
 wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark" --trick "one-shot"
-
-wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark" --trick "two-shot"
-
-wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark" --trick "zero-shot-CoT"
-
-wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark" --trick "one-shot-CoT"
-
-# direct exp
-wait
-python llama_answer_vllm.py --model_type "3_8b" --dataset_name "Balanced Benchmark Llama" --trick "free direct-test"
-
-python gpt_answer.py --selected_model "gpt-3.5-turbo" --trick "zero-shot"
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4o" --trick "zero-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4o" --trick "one-shot" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4o" --trick "zero-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4o" --trick "one-shot-CoT" &
+python Evaluation/gpt_evaluation.py --selected_model "gpt-4o" --trick "stats-prompt"

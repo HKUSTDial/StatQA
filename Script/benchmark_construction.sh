@@ -5,7 +5,7 @@ sleep 3s
 
 wait
 echo "preliminary question generation starts..."
-# python Construction/preliminary_question_generation.py
+python Construction/preliminary_question_generation.py
 wait
 python Construction/preliminary_question_generation_for_descriptive_stats.py
 echo "preliminary question generation ends..."

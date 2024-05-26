@@ -3,13 +3,11 @@ import sys
 import os
 
 from matplotlib.lines import Line2D
-# Get the path of the current file
 current_path = os.path.dirname(__file__)
-# Get the path to the home directory
 main_directory = os.path.abspath(os.path.join(current_path, '..', '..'))
 sys.path.append(main_directory)
 
-# import the necessary packages
+
 import math
 import json
 import utils

@@ -27,7 +27,7 @@ def gpt_answer(prompt):
     url = config_list[0]
     headers = {
         "Content-Type": "application/json",
-        "Authorization": config_list[1]
+        "Authorization": 'Bearer ' + config_list[1]
     }
     data = {
         "model": selected_model,
@@ -59,15 +59,14 @@ if __name__ == "__main__":
     parser.add_argument('--suffix', type=str, default='', help='Suffix for the dataset and output files.')
     
     args = parser.parse_args()
-    
     selected_model = args.selected_model
     trick = args.trick
-    dataset_name = 'Balanced Benchmark test for ' + trick
+    dataset_name = 'mini-StatQA for ' + trick
     suffix = args.suffix
 
-    input_csv_path = 'Dataset/' + dataset_name + f'{suffix}.csv'
-    output_csv_path = f'Model Answer/{selected_model}_{trick}{suffix}.csv'
-
+    # Path setting
+    input_csv_path = 'Data/Integrated Dataset/Dataset with Prompt/Test Set/' + dataset_name + f'{suffix}.csv'
+    output_csv_path = f'Model Answer/Origin Answer/{selected_model}_{trick}{suffix}.csv'
     if os.path.exists(output_csv_path):
         df_existing = pd.read_csv(output_csv_path)
         last_processed_row = len(df_existing)
@@ -76,21 +75,18 @@ if __name__ == "__main__":
         last_processed_row = 0
 
     df = pd.read_csv(input_csv_path)
-
     start_row = max(last_processed_row, 0)
     print(f"Starting from row: {start_row}")
-
     answers = []
     start_time = time.time()
 
+    # Generate answer
     for index, row in df.iterrows():
         if index < start_row:
             continue
-        
         prompt = row['prompt']
         answer = gpt_answer(prompt)
         answers.append(answer)
-        
         if (index + 1) % 5 == 0 or index == len(df) - 1:
             answer_slice = pd.Series(answers)
             slice_start = index + 1 - len(answers)

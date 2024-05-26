@@ -1,0 +1,43 @@
+model,overall_score_rate,Correlation Analysis,Contingency Table Test,Distribution Compliance Test,Variance Test,Descriptive Statistics
+overall-gpt-3.5-turbo_one-shot-CoT,0.39639,0.51786,0.10938,0.26695,0.2623,0.84556
+overall-gpt-3.5-turbo_one-shot,0.40757,0.53571,0.125,0.27542,0.2623,0.861
+overall-gpt-3.5-turbo_stats-prompt,0.49355,0.625,0.35547,0.38983,0.2623,0.85714
+overall-gpt-3.5-turbo_zero-shot-CoT,0.38177,0.45238,0.33594,0.25847,0.13934,0.72201
+overall-gpt-3.5-turbo_zero-shot,0.37403,0.47024,0.3125,0.26271,0.12705,0.70656
+overall-gpt-4o_one-shot-CoT,0.48667,0.67857,0.25781,0.28814,0.32787,0.91892
+overall-gpt-4o_one-shot,0.49355,0.69048,0.26562,0.30932,0.34426,0.89961
+overall-gpt-4o_stats-prompt,0.64832,0.6131,0.65234,0.59322,0.46311,0.89189
+overall-gpt-4o_zero-shot-CoT,0.44712,0.63095,0.20703,0.24576,0.32377,0.86486
+overall-gpt-4o_zero-shot,0.44282,0.625,0.19531,0.25,0.31557,0.86486
+overall-gpt-4_one-shot-CoT,0.47463,0.67262,0.30078,0.41949,0.11066,0.9112
+overall-gpt-4_one-shot,0.47979,0.67857,0.26562,0.44068,0.14754,0.9112
+overall-gpt-4_stats-prompt,0.53224,0.64881,0.4375,0.49576,0.20082,0.89575
+overall-gpt-4_zero-shot-CoT,0.43336,0.67857,0.23438,0.46186,0.01639,0.83784
+overall-gpt-4_zero-shot,0.4239,0.66667,0.20703,0.45763,0.02459,0.82625
+overall-human_Non-Stats Background_Closed-book,0.18103,0.05882,0.03846,0.08696,0.0,0.65385
+overall-human_Non-Stats Background_Open-book,0.34483,0.52941,0.0,0.30435,0.08333,0.84615
+overall-human_Stats Background_Closed-book,0.23276,0.29412,0.0,0.17391,0.0,0.69231
+overall-human_Stats Background_Open-book,0.53448,0.47059,0.23077,0.65217,0.375,0.92308
+overall-llama2_13b_one-shot-CoT,0.18659,0.07738,0.09766,0.10169,0.0123,0.58687
+overall-llama2_13b_one-shot,0.17971,0.09524,0.05469,0.09322,0.02049,0.58687
+overall-llama2_13b_stats-prompt,0.20292,0.08333,0.07031,0.16525,0.11475,0.52896
+overall-llama2_13b_zero-shot-CoT,0.09028,0.02381,0.0,0.09322,0.02869,0.27799
+overall-llama2_13b_zero-shot,0.09286,0.01786,0.00391,0.08475,0.03279,0.29344
+overall-llama2_7b_one-shot-CoT,0.14961,0.01786,0.04297,0.08898,0.20492,0.34363
+overall-llama2_7b_one-shot,0.14961,0.00595,0.0625,0.05932,0.19262,0.37066
+overall-llama2_7b_sft_zero-shot,0.66724,0.69048,0.35938,0.83475,0.54508,0.91892
+overall-llama2_7b_stats-prompt,0.16079,0.00595,0.07422,0.09322,0.18443,0.3861
+overall-llama2_7b_zero-shot-CoT,0.06363,0.0119,0.00781,0.02119,0.05738,0.19691
+overall-llama2_7b_zero-shot,0.08083,0.01786,0.01172,0.02119,0.06967,0.25483
+overall-llama3_8b_instruct_one-shot-CoT,0.28289,0.2619,0.16797,0.16102,0.09836,0.69498
+overall-llama3_8b_instruct_one-shot,0.28203,0.26786,0.12109,0.13559,0.09836,0.75676
+overall-llama3_8b_instruct_sft_zero-shot,0.75924,0.69643,0.6875,0.85169,0.57377,0.96139
+overall-llama3_8b_instruct_stats-prompt,0.27773,0.19643,0.22266,0.20339,0.08197,0.63707
+overall-llama3_8b_instruct_zero-shot-CoT,0.11608,0.10714,0.14844,0.0678,0.0,0.24324
+overall-llama3_8b_instruct_zero-shot,0.13672,0.10119,0.13281,0.05085,0.0123,0.35907
+overall-llama3_8b_one-shot-CoT,0.32244,0.14286,0.05859,0.19915,0.29098,0.8417
+overall-llama3_8b_one-shot,0.319,0.17857,0.08203,0.18644,0.2541,0.82625
+overall-llama3_8b_sft_zero-shot,0.77128,0.79762,0.65234,0.88559,0.55328,0.97297
+overall-llama3_8b_stats-prompt,0.36113,0.26786,0.20312,0.29237,0.15984,0.83012
+overall-llama3_8b_zero-shot-CoT,0.22012,0.0119,0.00391,0.15678,0.13934,0.7027
+overall-llama3_8b_zero-shot,0.2356,0.0119,0.0,0.16525,0.16393,0.74517
