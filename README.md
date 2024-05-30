@@ -2,7 +2,7 @@
 
 ## Overview
 
-
+Large Language Models (LLMs) have demonstrated impressive capabilities across a range of scientific tasks including mathematics, physics, and chemistry. Despite their successes, the effectiveness of LLMs in handling complex statistical scenarios remains underexplored. To bridge this gap, we introduce StatQA, a synthesized benchmark comprising 11,623 examples tailored to evaluate LLMs' proficiency in specialized statistical tasks and their applicability assessment capabilities particularly for hypothesis testing methods. Our systematic experiments, employing various prompting strategies on representative LLMs, indicate that even the most advanced models like GPT-4o achieve a maximum performance of only 64.83%, underscoring significant potential for further enhancement. Notably, while open-source LLMs show limited capability, fine-tuned models exhibit marked improvements, outperforming all prompt-based methods. Additionally, we conduct comparative human experiments with six participants, identifying a striking contrast in error types between LLMs and humans: LLMs primarily make applicability errors, whereas humans mostly make errors because of task confusion. This divergence in error patterns not only underscores distinct areas of proficiency and deficiency but also suggests areas where LLMs and human expertise could complement each other, inviting more in-depth investigation into their collaborative potential.
 
 ## Environment Setup
 

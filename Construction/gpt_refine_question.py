@@ -23,7 +23,7 @@ config_list = [line.strip() for line in config_content] # [url, authorization]
 
 # Set prompt template
 SYSTEM_PROMPT = "I'm a native English-speaking statistician. I will help you refine and improve expressions of statistical sentences without changing the original meaning. Please tell me the sentence you want to refine."
-INSTRUCTION_PROMPT = '''Suppose you're a native English-speaking statistician, and I will give you a sentence about a statistical problem. You need to improve the English expression of the given sentence to make it grammatically and semantically correct, statistically rigorous and more coherent in expression. The given sentence will contain the names of the variables to be analyzed, and you are encouraged to based on the decription, change them to a more natural expressions without affecting the meaning. You can be flexible in how you improve the expression, but you must not change the original meaning of the sentence.'''
+INSTRUCTION_PROMPT = '''Suppose you're a native English-speaking statistician, and I will give you a sentence about a statistical problem. You need to improve the English expression of the given sentence to make it grammatically and semantically correct, statistically rigorous and more coherent in expression. The given sentence will contain the names of the variables to be analyzed, and you are encouraged to based on the description, change them to more natural expressions without affecting the meaning. You can be flexible in how you improve the expression, but you must not change the original meaning of the sentence.'''
 
 
 '''

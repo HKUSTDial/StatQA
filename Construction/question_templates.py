@@ -156,7 +156,7 @@ other_distribution_compliance_templates = [
 variance_test_templates = [
     'Does the variability in {Column 1} match that of {Column 2}?',
     'Are the variances in {Column 1} and {Column 2} significantly different?',
-    'Can we assume there is no marjor difference in variances for {Column 1} and {Column 2}?',
+    'Can we assume there is no major difference in variances for {Column 1} and {Column 2}?',
     'Is there a homogeneity of variance between {Column 1} and {Column 2}?',
     'Do {Column 1} and {Column 2} show similar levels of data spread?',
     'Are the fluctuations in {Column 1} comparable to those in {Column 2}?',
