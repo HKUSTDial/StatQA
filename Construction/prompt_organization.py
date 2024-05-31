@@ -157,7 +157,7 @@ def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
                 + "\n### Classification List: \n" + PROMPT_CLASSIFICATION \
                 + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
                 + "\n### Statistical Question: " + refined_question \
-                + "\n### Response: " + PROMPT_COT + PROMPT_RESPONSE
+                + "\n### Response: " + PROMPT_COT + PROMPT_RESPONSE_EXPLAIN
     elif trick == 'one-shot-CoT':
         CoT_example = choice(COT_SHOT_LIST)
         organized_prompt = "### Task Description: " + PROMPT_TASK_DESCRIPTION \
@@ -166,7 +166,7 @@ def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
                 + "\n### Demonstration Example:\n<example start>\n" + CoT_example + "\n</example end>" \
                 + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
                 + "\n### Statistical Question: " + refined_question \
-                + "\n### Response: " + PROMPT_COT + PROMPT_RESPONSE
+                + "\n### Response: " + PROMPT_COT + PROMPT_RESPONSE_EXPLAIN
     elif trick == 'stats-prompt':
         shot_example = choice(FEW_SHOT_LIST)
         organized_prompt = "### Task Description: " + PROMPT_TASK_DESCRIPTION \

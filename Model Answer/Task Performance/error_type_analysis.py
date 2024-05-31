@@ -165,7 +165,7 @@ def plot_error_analysis(file_path, output_name: None, subplot_titles: None):
         ax = fig.add_subplot(gs[i])
         if not dataset.empty:
             # Replace model name
-            models = [model.replace('_', ' ').replace('zero', '0').replace('one', '1').replace('two', '2').replace(' Background', '').replace('instruct', 'inst').replace('human ', '').replace('llama2 ', '').replace('llama3 ', '').replace('gpt-3.5-turbo', 'ChatGPT').replace('gpt-4', 'GPT-4').replace('7b sft 0-shot', 'llama2-7b sft').replace('8b sft 0-shot', 'llama3-8b sft').replace('8b instr sft 0-shot', 'llama3-8b instr sft').replace('stats-prompt', '1-shot+DK')
+            models = [model.replace('_', ' ').replace('zero', '0').replace('one', '1').replace('two', '2').replace(' Background', '').replace('instruct', 'inst').replace('human ', '').replace('llama2 ', '').replace('llama3 ', '').replace('gpt-3.5-turbo', 'ChatGPT').replace('gpt-4', 'GPT-4').replace('7b sft 0-shot', 'llama2-7b sft').replace('8b sft 0-shot', 'llama3-8b sft').replace('8b inst sft 0-shot', 'llama3-8b inst sft').replace('stats-prompt', '1-shot+DK')
                       for model in dataset['Model'].dropna().unique()]
             error_types = ['Invalid Answer', 
                            'Column Selection Error (CSE)', 
@@ -226,14 +226,14 @@ if __name__ == '__main__':
     methods_list = [method.lower() for sublist in tasks_to_methods.values() for method in sublist]
     
     # Conduct statistics for error types and obtain a summary csv
-    # error_analysis_path = error_analysis(directory_path)
+    error_analysis_path = error_analysis(directory_path)
 
     # Plot bar chart for error analysis - for selected file order
-    plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary new.csv', 
-                        output_name='Error Analysis Bar Chart', 
-                        subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models', 'SFT', 'Human'])
-    plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary for CoT.csv', 
-                        output_name='Error Analysis Bar Chart for CoT',
-                        subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models'])
+    # plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary new.csv', 
+    #                     output_name='Error Analysis Bar Chart', 
+    #                     subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models', 'SFT', 'Human'])
+    # plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary for CoT.csv', 
+    #                     output_name='Error Analysis Bar Chart for CoT',
+    #                     subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models'])
 
 
