@@ -22,7 +22,7 @@ Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation,
 Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.'''
 
 PROMPT_RESPONSE = '''The answer of relevant columns and applicable methods in JSON format is:'''
-PROMPT_RESPONSE_EXPLAIN = '''The answer of relevant columns and applicable methods in JSON format and your reason:'''
+PROMPT_RESPONSE_EXPLAIN = '''The answer of relevant columns and applicable methods in JSON format and reason is:'''
 
 PROMPT_COT = '''Let's work this out in a step-by-step way to be sure we have the right answer. '''
 

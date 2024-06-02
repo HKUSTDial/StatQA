@@ -19,6 +19,13 @@ https://api.openai.com/v1/chat/completions
 yourapikey
 ```
 
+## Hardware Platfrom
+
+8 NVIDIA 4090: for experiments of LLaMA models' evaluation.
+
+NVIDIA A800 (80G): for fine-tuning.
+
+
 ## Benchmark
 
 For our benchmark StatQA and mini-StatQA, we provide both CSV and JSON formatted benchmark versions in `StatQA/` file. If you want to conduct evaluations using them, please go to the **Evaluation** section.
@@ -105,7 +112,6 @@ sh Script\gpt_exp.sh
 ```
 
 ## Fine-tuning
-
 ### Format Transformation for Training Set
 
 We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`.
