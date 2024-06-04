@@ -61,7 +61,7 @@ def benchmark_postprocessing(input_csv_path, output_csv_path):
     print('[+] Processed csv dataset saved.')
 
     # Convert DataFrame to JSON format
-    json_data = df.to_json(orient='records', lines=True, force_ascii=False)
+    json_data = df.to_json(orient='records', indent=4, force_ascii=False)
     with open(output_csv_path.replace('.csv', '.json'), 'w', encoding='utf-8') as json_file:
         json_file.write(json_data)
     print('[+] Processed json dataset saved.')

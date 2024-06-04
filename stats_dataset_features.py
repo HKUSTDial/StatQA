@@ -44,8 +44,8 @@ def adjust_text_size_outer(sizes, min_size=10, max_size=14):
     text_sizes = []
     for size in sizes:
         new_size = min_size + (size / max_size) * size_range
-        if new_size <= min_size:
-            new_size = 5
+        if size <= 5:
+            new_size = 10
         text_sizes.append(new_size)
     return text_sizes
 
