@@ -37,7 +37,7 @@ If you want to try the process of StatQA and mini-StatQA construction on your ow
 Preprocessing and information extraction:
 
 ```bash
-Script\info_extraction.sh
+sh Script\info_extraction.sh
 ```
 
 Benchmark construction:
@@ -118,7 +118,7 @@ sh Script\gpt_exp.sh
 ## Fine-tuning
 ### Format Transformation for Training Set
 
-We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`.
+We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`. Note that StatQA and mini-StatQA is exclusively reserved for testing and evaluation, and the dataset employed in fine-tuning is the training set
 
 ....
 
