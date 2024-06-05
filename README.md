@@ -121,8 +121,11 @@ We utilize [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tun
 
 Install the LLaMA-Factory environment:
 ```bash
+git submodule update --init  --recursive
 cd LLaMA-Factory
 pip install -e .[torch,metrics]
+
+cp -r ../Finetuning/LLaMA-Factory/* data/
 ```
 
 Fine-tuning LLaMA2-7B:
