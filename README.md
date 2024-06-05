@@ -78,9 +78,6 @@ elif model_type == '3_8b_instruct':
 elif model_type == '3_8b':
     model_path = "/your_path_to/Meta-Llama-3-8B"
     parallel_num = 8
-elif model_type == 'sft':
-    model_path = "/your_path_to/your_sft_model"
-    parallel_num = 8
 ```
 
 Then, you can perform evaluations for LLaMA-2/3 models by:
@@ -118,10 +115,51 @@ sh Script\gpt_exp.sh
 ## Fine-tuning
 ### Format Transformation for Training Set
 
-We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`. Note that StatQA and mini-StatQA is exclusively reserved for testing and evaluation, and the dataset employed in fine-tuning is the training set
+We use a similar procedure but different source tabular data to obtain the training set: `Data\Integrated Dataset\Dataset with Prompt\Training Set\Training Set for zero-shot.csv`. Note that StatQA and mini-StatQA is exclusively reserved for testing and evaluation, and the dataset employed in fine-tuning is the training set.
 
-....
+We utilize [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tuning our models.
 
+Install the LLaMA-Factory environment:
+```bash
+cd LLaMA-Factory
+pip install -e .[torch,metrics]
+```
+
+Fine-tuning LLaMA2-7B:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama2_7b_lora_sft.yaml
+```
+
+Fine-tuning LLaMA3-8B:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama3_8b_lora_sft.yaml
+```
+
+Fine-tuning LLaMA3-8B-Instruct:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama3_8b_instruct_lora_sft.yaml
+```
+
+Predicting LLaMA2-7B:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama2_7b_lora_sft_inference.yaml
+```
+
+Predicting LLaMA3-8B:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_8b_lora_sft_inference.yaml
+```
+
+Predicting LLaMA3-8B-Instruct:
+```bash
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_8b_instruct_lora_sft_inference.yaml
+```
+
+All predicted results on StatQA testing dataset will be in the path:
+```bash
+LLaMA-Factory/saves/{MODEL}/lora/predict/generated_predictions.jsonl
+```
+Note that {MODEL} can be one of "llama2-7b", "llama3-8b" and "llama3-8b-instruct".
 
 
 ## Analysis
