@@ -1,10 +1,12 @@
-# StatQA
+# StatQA: Are Language Models Good Statisticians?
+
+Official repository for the paper "*Are Language Models Good Statisticians?*".
 
 ![pipeline](/Chart/README/pipeline.png)
 
 ## Overview
 
-Large Language Models (LLMs) have demonstrated impressive capabilities across a range of scientific tasks including mathematics, physics, and chemistry. Despite their successes, the effectiveness of LLMs in handling complex statistical tasks remains systematically under-explored. To bridge this gap, we introduce StatQA, a new benchmark designed for statistical analysis tasks. StatQA comprises 11,623 examples tailored to evaluate LLMs' proficiency in specialized statistical tasks and their applicability assessment capabilities, particularly for hypothesis testing methods. We systematically experiment with representative LLMs using various prompting strategies and show that even state-of-the-art models such as GPT-4o achieve a best performance of only 64.83%, indicating significant room for improvement. Notably, while open-source LLMs (e.g. LLaMA-3) show limited capability, those fine-tuned ones exhibit marked improvements, outperforming all in-context learning-based methods (e.g. GPT-4o). Moreover, our comparative human experiments highlight a striking contrast in error types between LLMs and humans: LLMs primarily make applicability errors, whereas humans mostly make statistical task confusion errors. This divergence highlights distinct areas of proficiency and deficiency, suggesting that combining LLM and human expertise could lead to complementary strengths, inviting further investigation into their collaborative potential.
+Large Language Models (LLMs) have demonstrated impressive capabilities across a range of scientific tasks including mathematics, physics, and chemistry. Despite their successes, the effectiveness of LLMs in handling complex statistical tasks remains systematically under-explored. *To bridge this gap, we introduce StatQA, a new benchmark designed for statistical analysis tasks.* *StatQA comprises 11,623 examples tailored to evaluate LLMs' proficiency in specialized statistical tasks and their applicability assessment capabilities, particularly for hypothesis testing methods.* We systematically experiment with representative LLMs using various prompting strategies and show that even state-of-the-art models such as GPT-4o achieve a best performance of only 64.83%, indicating significant room for improvement. Notably, while open-source LLMs (*e.g. LLaMA-3*) show limited capability, those fine-tuned ones exhibit marked improvements, outperforming all in-context learning-based methods (*e.g. GPT-4o*). Moreover, our comparative human experiments highlight a striking contrast in error types between LLMs and humans: LLMs primarily make applicability errors, whereas humans mostly make statistical task confusion errors. This divergence highlights distinct areas of proficiency and deficiency, suggesting that combining LLM and human expertise could lead to complementary strengths, inviting further investigation into their collaborative potential.
 
 ## Environment Setup
 
@@ -21,7 +23,7 @@ https://api.openai.com/v1/chat/completions
 yourapikey
 ```
 
-## Hardware Platfrom
+## Hardware Platform
 
 8 NVIDIA 4090: for experiments of LLaMA models' evaluation.
 
@@ -173,9 +175,11 @@ To analyze LLMs' answers and evaluate their capabilities, you can run `Script\an
 sh Script\answer_analysis.sh
 ```
 
-![pipeline](/Chart/README/radar.png)
-
-![pipeline](/Chart/README/error_bar_chart.png)
-
 ## Citation
+
+If you find our work useful, please kindly cite:
+
+```latex
+...
+```
 

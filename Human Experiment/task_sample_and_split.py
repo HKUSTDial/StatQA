@@ -3,6 +3,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
+'''
+Use the Stratified Sampling method to sample from StatQA (10%) for human experiment
+'''
 def sample_testset_for_human(file_path, sample_prop=0.1):
     data = pd.read_csv(file_path)
     # Perform stratified sampling based on 'task' and 'difficulty'
@@ -14,14 +17,14 @@ def sample_testset_for_human(file_path, sample_prop=0.1):
     return sampled_file_path
 
 
-
+'''
+Split the sampled dataset into task blocks for human experiment
+'''
 def split_task_block(sampled_data_path, num_block=3):
     # Load the sampled dataset
     sampled_data = pd.read_csv(sampled_data_path)
-    
     # Shuffle the rows of the dataframe to ensure random splitting, with a fixed random state for reproducibility
     sampled_data = sampled_data.sample(frac=1, random_state=64).reset_index(drop=True)
-    
     # Calculate subset size
     subset_size = len(sampled_data) // num_block
     
@@ -33,10 +36,8 @@ def split_task_block(sampled_data_path, num_block=3):
             subset = sampled_data.iloc[start_idx:]
         else:
             subset = sampled_data.iloc[start_idx:start_idx + subset_size]
-        
         # Sort by the 'dataset' column within each subset
         subset = subset.sort_values(by='dataset')
-        
         # Define file path for this subset
         subset_file_path = f'Human Experiment/data/task_block_{i+1}.csv'
         subset.to_csv(subset_file_path, index=False)

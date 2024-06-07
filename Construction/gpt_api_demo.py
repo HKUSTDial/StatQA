@@ -9,7 +9,7 @@ import json
 
 
 '''
-Test connectivity
+Test connectivity of GPT API
 '''
 
 

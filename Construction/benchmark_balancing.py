@@ -162,9 +162,7 @@ def expand_dataset(file_path, output_path, sample_ratio_mapping):
             for index, row in task_difficulty_data.iterrows():
                 # Always include the original row in the expanded dataset
                 expanded_data_rows.append(row)
-                
                 processed_rows += 1
-                
                 # Only generate additional rows if the ratio is greater than 1
                 if ratio > 1:
                     for _ in range(int(ratio) - 1):  # Add n-1 modified rows

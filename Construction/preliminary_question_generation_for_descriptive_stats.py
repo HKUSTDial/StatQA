@@ -77,6 +77,7 @@ templates_dict = {
     'Kurtosis': qt.Kurtosis_templates
 }
 
+
 # main
 if __name__=='__main__':
     generate_questions_for_stats(sample_num=2, file_name='Descriptive statistics info extraction', templates_dict=templates_dict)

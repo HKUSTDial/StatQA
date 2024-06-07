@@ -6,9 +6,8 @@ sys.path.insert(0, main_folder_path)
 
 import pandas as pd
 import numpy as np
-from scipy.stats import anderson, shapiro, kstest, chi2_contingency
+from scipy.stats import anderson, shapiro, kstest
 from statsmodels.stats.diagnostic import lilliefors
-import glob
 import utils
 import json
 import path
@@ -55,8 +54,6 @@ def extract_normality_test_info(file_name: str, output_name: str, flag=0):
                 if col_data.std(ddof=1) < 1e-8:
                     continue
 
-                # col_data = utils.process_special_cont_data(col_data)
-
                 # Anderson-Darling test
                 ad_output = anderson(col_data)
                 ad_stat = ad_output.statistic
@@ -94,9 +91,6 @@ def extract_normality_test_info(file_name: str, output_name: str, flag=0):
                 sw_p = 'null'
                 ks_p = 'null'
                 lf_p = 'null'
-            # else:
-            #     # continous data, applicable, continue
-            #     continue
 
             # If stat < crit in Anderson-Darling test: Selected variables are normally distributed), vice versa
             # If any other test's p > 0.05 (Accept the null hypothesis, consider selected variables are normally distributed), vice versa

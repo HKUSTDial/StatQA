@@ -1,0 +1,33 @@
+Abbreviation,Full Name,Count/Percentage
+DS,Descriptive Statistics,259/1163
+CTT,Contingency Table Test,256/1163
+VT,Variance Test,244/1163
+DCT,Distribution Compliance Test,236/1163
+CA,Correlation Analysis,168/1163
+Kurt,Kurtosis,33
+Mean,Mean,37
+Range,Range,30
+Med,Median,36
+SD,Standard Deviation,39
+Quart,Quartile,35
+Mode,Mode,23
+Skew,Skewness,26
+CIT,Chi-square Independence Test,159
+FET,Fisher Exact Test,59
+MHT,Mantel-Haenszel Test,87
+MoVT,Mood Variance Test,244
+LeT,Levene Test,244
+BT,Bartlett Test,94
+FTV,F-Test for Variance,94
+KST,Kolmogorov-Smirnov Test,73
+ADT,Anderson-Darling Test,122
+KST-N,Kolmogorov-Smirnov Test for Normality,122
+LiT,Lilliefors Test,100
+SWT,Shapiro-Wilk Test of Normality,22
+KST-G,Kolmogorov-Smirnov Test for Gam. distr.,19
+KST-U,Kolmogorov-Smirnov Test for Uni. distr.,11
+KST-E,Kolmogorov-Smirnov Test for Exp. distr.,11
+PaCC,Partial Correlation Coefficient,75
+PCC,Pearson Correlation Coefficient,55
+SCC,Spearman Correlation Coefficient,55
+KCC,Kendall Correlation Coefficient,93

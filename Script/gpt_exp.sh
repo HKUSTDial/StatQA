@@ -1,4 +1,6 @@
 cd ..
+echo "[i] GPT experiments."
+sleep 5s
 
 # gpt-3.5
 python Evaluation/gpt_evaluation.py --selected_model "gpt-3.5-turbo" --trick "zero-shot" &

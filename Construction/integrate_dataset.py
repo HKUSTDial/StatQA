@@ -7,7 +7,6 @@ sys.path.insert(0, main_folder_path)
 import pandas as pd
 import numpy as np
 import utils
-import glob
 import json
 import path
 from mappings import *
@@ -59,8 +58,6 @@ def process_single_dataset(file_path, task):
                 is_normality_1 = selected_row1['is_normality'].iloc[0]
                 num_of_rows_2 = selected_row2['num_of_rows'].iloc[0]
                 is_normality_2 = selected_row2['is_normality'].iloc[0]
-                # print(type(int(num_of_rows_1)), type(bool(is_normality_1)))
-                # print('!!!!!!!'+file_path + "||" +selected_row2['dataset'].iloc[0]+'!!!!!!!')
                 column_data = json.dumps([{'column_header': row['Column 1'], 
                                         # 'data_type': type1,
                                         'is_strata': False,
@@ -297,7 +294,3 @@ if __name__ == '__main__':
 
     utils.random_select_mini_dataset(mini_input_file, n, mini_output_file)
     print('[+] Mini dev integrated dataset for test use saved at: ' + mini_output_file)
-
-    # reorganize and shuffle dataset
-    # utils.reorganize_shuffle_dataset(input_dir=path.integ_dataset_path, file_name='Integrated Dataset')
-    # utils.reorganize_shuffle_dataset(input_dir=path.integ_dataset_path, file_name='Integrated Dataset mini')

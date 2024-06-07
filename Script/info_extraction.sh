@@ -2,7 +2,7 @@ cd ..
 
 wait
 echo "datasets preprocess starts..."
-python Construction/dataset_preprocess.py
+python Construction/tabular_data_preprocess.py
 echo "datasets preprocess ends..."
 
 echo "info extract starts..."

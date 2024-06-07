@@ -4,7 +4,7 @@ import os
 main_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, main_folder_path)
 
-from scipy.stats import anderson, mood, levene, bartlett, f_oneway
+from scipy.stats import mood, levene, bartlett, f_oneway
 import pandas as pd
 import numpy as np
 import json
@@ -19,7 +19,7 @@ Prerequisite:
 - Bartlett's test: Two independent samples; normal distribution
 - F-test: Two independent consecutive samples; normal distribution
 
-Independence checks on continuous variables are not performed at this stage but this is assumed as a default.
+Independence checks on continuous variables is assumed as a default.
 '''
 def process_result(method_name, result):
     if result is not None:

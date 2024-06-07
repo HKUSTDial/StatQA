@@ -1,46 +1,30 @@
 # -*- coding: gbk -*-
+import sys
+import os
+from matplotlib.lines import Line2D
+current_path = os.path.dirname(__file__)
+main_directory = os.path.abspath(os.path.join(current_path, '..', '..'))
+sys.path.append(main_directory)
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from collections import Counter
 from sklearn.metrics import confusion_matrix
-# from matplotlib import gridspec
 from matplotlib.gridspec import GridSpec
 import seaborn as sns
 import json
-
-
-# Mapping statistical methods to their correspinding task type
-tasks_to_methods = {
-    'Correlation Analysis': [
-        'Pearson Correlation Coefficient', 'Spearman Correlation Coefficient', 
-        'Kendall Correlation Coefficient', 'Partial Correlation Coefficient'
-    ],
-    'Distribution Compliance Test': [
-        'Anderson-Darling Test', 'Shapiro-Wilk Test of Normality', 'Kolmogorov-Smirnov Test for Normality',
-        'Lilliefors Test', 'Kolmogorov-Smirnov Test', 'Kolmogorov-Smirnov Test for Uniform distribution', 
-        'Kolmogorov-Smirnov Test for Gamma distribution', 'Kolmogorov-Smirnov Test for Exponential distribution'
-    ],
-    'Contingency Table Test': [
-        'Chi-square Independence Test', 'Fisher Exact Test', 'Mantel-Haenszel Test'
-    ],
-    'Descriptive Statistics': [
-        'Mean', 'Median', 'Mode', 'Range', 'Quartile', 'Standard Deviation', 'Skewness', 'Kurtosis'
-    ],
-    'Variance Test': [
-        'Mood Variance Test', 'Levene Test', 'Bartlett Test', 'F-Test for Variance'
-    ]
-}
+from mappings import tasks_to_methods
 
 
 '''
 Analyzes csv files in a work directory to identify and calculate the proportion of four types of errors out of all errors (selection_overall = 0)
 Error Types:
-1. Invalid Answers (Only this one error type): The 'extracted_answer' does not contain any of the specified methods, indicating a misunderstanding or lack of knowledge.
-2. Column Selection Errors (Only this one error type): The 'columns_score' is 0, suggesting incorrect data column selection in the assessment.
-3. Statistical Task Confusion (Only this one error type): The 'methods_comparison_result' contains a 'Correct' count of 0 and non-zero 'Wrong' and 'Missed' counts, indicating confusion between statistical tasks.
-4. Applicability Errors (Only this one error type): The 'methods_comparison_result' has a 'Correct' count greater than 0 and non-zero 'Wrong' and 'Missed' counts, suggesting errors in applying the correct statistical methods despite some correct identifications.
-5. Mixed Errors (Multiple error types): Containing multiple error types.
+1. Invalid Answers
+2. Column Selection Errors
+3. Statistical Task Confusion
+4. Applicability Errors
+5. Mixed Errors
 '''
 def error_analysis(work_dir):
     summary_list = []
@@ -75,7 +59,6 @@ def error_analysis(work_dir):
                         'statistical_confusion': False,
                         'applicability_error': False
                     }
-
                     # Process JSON data for confusion and applicability errors
                     try:
                         methods_result = json.loads(row['methods_comparison_result'])
@@ -87,7 +70,6 @@ def error_analysis(work_dir):
                             errors['applicability_error'] = True
                     except json.JSONDecodeError:
                         errors['statistical_confusion'] = True
-
                     # Determine the error types, excluding invalid answers for mixed error calculation
                     error_count = sum(errors.values())
                     if error_count == 1:
@@ -98,7 +80,6 @@ def error_analysis(work_dir):
                         elif errors['applicability_error']:
                             applicability_errors += 1
                     elif error_count > 1:
-                        # mixed_errors += 1
                         if errors['column_error'] and errors['statistical_confusion']:
                             mixed_errors_column_statistical += 1
                         elif errors['column_error'] and errors['applicability_error']:
@@ -116,7 +97,6 @@ def error_analysis(work_dir):
                 'Column Selection Error (CSE)': round((column_errors / total_cnt), 5) if total_cnt else 0,
                 'Statistical Task Confusion (STC)': round((statistical_confusion / total_cnt), 5) if total_cnt else 0,
                 'Applicability Error (AE)': round((applicability_errors / total_cnt), 5) if total_cnt else 0,
-                # 'Mixed Error': round((mixed_errors / total_errors), 5) if total_errors else 0,
                 'Mixed Errors (CSE+STC)': round((mixed_errors_column_statistical / total_cnt), 5) if total_cnt else 0,
                 'Mixed Errors (CSE+AE)': round((mixed_errors_column_applicability / total_cnt), 5) if total_cnt else 0,
                 'Mixed Errors (STC+AE)': round((mixed_errors_statistical_applicability / total_cnt), 5) if total_cnt else 0,
@@ -154,12 +134,8 @@ def plot_error_analysis(file_path, output_name: None, subplot_titles: None):
 
     total_models = sum(model_counts)
     widths = [count / total_models for count in model_counts]
-
     fig = plt.figure(figsize=(20, 9.9))
     gs = GridSpec(1, len(datasets), width_ratios=widths)
-
-    # Custom subgraph title list
-    # subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models', 'SFT', 'Human']
 
     for i, dataset in enumerate(datasets):
         ax = fig.add_subplot(gs[i])
@@ -207,11 +183,7 @@ def plot_error_analysis(file_path, output_name: None, subplot_titles: None):
 
     # fig.suptitle('Error Type Analysis Across Experiments', fontsize=20)  # Set a large title for the entire picture
     handles, labels = ax.get_legend_handles_labels()
-    # fig.legend(handles, labels, loc='upper left', bbox_to_anchor=(1, 0.9), title="Error Types", fontsize=14, title_fontsize=16)
-    # fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, 1), title="Error Types", fontsize=14, title_fontsize=16, ncol=len(labels))
     fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, 1), fontsize=20, title_fontsize=18, ncol=len(labels)//2, columnspacing=1.0, handletextpad=0.5)
-
-    # plt.tight_layout(rect=[0, 0, 0.9, 0.98])  # Adjust layout to accommodate large headlines
     plt.tight_layout(rect=[0, 0, 1, 0.89]) 
     plt.subplots_adjust(right=1, wspace=0.0)
     plt.savefig(f'Chart/Error Analysis/{output_name}.pdf', format='pdf', bbox_inches='tight', dpi=500)
@@ -227,6 +199,8 @@ if __name__ == '__main__':
     
     # Conduct statistics for error types and obtain a summary csv
     error_analysis_path = error_analysis(directory_path)
+
+    print('''[i] You can select lines you want to plot in a new CSV file and separate them with blank lines to plot multiple stack bar chart subgraphs.''')
 
     # Plot bar chart for error analysis - for selected file order
     # plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary new.csv', 

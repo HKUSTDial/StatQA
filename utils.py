@@ -68,10 +68,6 @@ def check_column_types_for_a_file(csv_file):
             column_types.append("other") # other
     return column_types
 
-# print(check_column_types_for_a_file('Dataset\Lung Cancer Survey Dataset.csv'))
-# print(check_column_types_for_a_file('Dataset\Heart Failure Prediction Dataset.csv'))
-# print(check_column_types_for_a_file('Dataset\Crop Production Dataset.csv'))
-
 
 """
 Tries to get the data type of a column from its metadata.
@@ -246,23 +242,6 @@ def is_normality_ad(sample, alpha=0.05):
             return result.statistic < critical_values[i]
     return False  # If no significance level is found, return false
 
-'''Old extraction function'''
-# '''
-# Extract answer in json format, to facilitate the analysis on answers of LLMs.
-# '''
-# def extract_json_answer(s):
-#     start_index = s.find('{')
-#     end_index = s.rfind('}')
-#     if start_index != -1 and end_index != -1 and start_index < end_index:
-#         json_str = s[start_index:end_index+1]
-#         try:
-#             # Try to parse the json string to check if it's valid
-#             json.loads(json_str)
-#             return json_str
-#         except ValueError:
-#             return "Invalid Answer"
-#     else:
-#         return "Invalid Answer"
 
 '''
 New extraction function:
@@ -320,6 +299,7 @@ def calculate_radar_chart_average(values):
         return 0
     return sum(values) / len(values)
 
+
 """
 Given a dataset name, returns all information from the corresponding metadata file.
 Parameters:
@@ -366,8 +346,6 @@ def split_benchmark(dataset_name: str, test_ratio: float=0.1):
     train_df.to_csv(f"{path.integ_dataset_path + path.balance_path}{dataset_name} rest.csv", index=False)
     test_df.to_csv(f"{path.integ_dataset_path + path.balance_path}{dataset_name} test.csv", index=False)
     print(f"[+] Files saved in folder: {path.integ_dataset_path}{dataset_name}")
-
-# split_benchmark(dataset_name='Benchmark', test_ratio=0.1)
 
 
 '''

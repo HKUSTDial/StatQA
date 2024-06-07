@@ -8,7 +8,7 @@ finetuning_type: lora
 lora_target: q_proj,v_proj
 
 ### dataset
-dataset: statqa_train
+dataset: D_train_ft_train
 template: llama2
 cutoff_len: 4096
 max_samples: 30000

@@ -1,17 +1,11 @@
 # -*- coding: gbk -*-
 import sys
 import os
-
 from matplotlib.lines import Line2D
 current_path = os.path.dirname(__file__)
 main_directory = os.path.abspath(os.path.join(current_path, '..', '..'))
 sys.path.append(main_directory)
 
-
-import math
-import json
-import utils
-import path
 import mappings
 import pandas as pd
 import numpy as np
@@ -122,7 +116,6 @@ def plot_radar_chart_from_summary(csv_file_path: str, output_name: str, custom_c
 
 # main
 if __name__ == '__main__':
-    # custom_colors = ['#ffb8b8', '#D6A2E8', '#1B9CFC', '#48dbfb', '#98df8a', '#badc58', '#6ab04c','#8c7ae6', '#38ada9', '#fd9644', '#fdcb6e', '#ff6b81']
     custom_colors = ['#95a5a6',
                      '#f8a5c2',
                      '#1B9CFC', 

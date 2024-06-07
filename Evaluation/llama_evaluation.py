@@ -9,6 +9,7 @@ import pandas as pd
 import time
 import argparse 
 
+
 model_ans_path = "Model Answer/"
 prompt_dataset_path_test = "Data/Integrated Dataset/Dataset with Prompt/Test Set/"
 
@@ -33,11 +34,8 @@ def llama_answer_generation(model_type: str, dataset_name: str, output_name: str
     elif model_type == '3_8b':
         model_path = "/your_path_to/Meta-Llama-3-8B"
         parallel_num = 8
-    elif model_type == 'sft':
-        model_path = "/your_path_to/your_sft_model"
-        parallel_num = 8
     else:
-        raise ValueError("[!] Invalid model type. Please choose from: 2_7b, 2_13b, 3_8b_instruct and 3_8b, or sft")
+        raise ValueError("[!] Invalid model type. Please choose from: 2_7b, 2_13b, 3_8b_instruct and 3_8b")
     
     # max token limit settings
     if trick == 'zero-shot-CoT' or trick == 'one-shot-CoT':
@@ -96,13 +94,13 @@ def llama_answer_generation(model_type: str, dataset_name: str, output_name: str
 
         # Update csv dataset
         df.to_csv(output_path, index=False)
-        print(f"[+] (Current model: {model_type}, Trick: {trick}) Updated after processing batch starting from row {i}.")
+        print(f"[+] (Current model: {model_type}, Prompting stategy: {trick}) Updated after processing batch starting from row {i}.")
 
     print(f"[i] csv file is fully updated with llama model-{model_type}-{trick} answers.")
     # Generation end
     generation_end_time = time.time()
     generation_total_time = generation_end_time - generation_start_time
-    # Print relative information
+    # Print information
     print("----------------------------------------------------------------------------------")
     print(f"[i] Model loading time comsumption: {model_load_total_time} seconds.")
     print(f"[i] Generation time comsumption: {generation_total_time} seconds.")
@@ -113,10 +111,10 @@ def llama_answer_generation(model_type: str, dataset_name: str, output_name: str
 if __name__ == "__main__": 
     # Set the command line parameter parser
     parser = argparse.ArgumentParser(description='Generate answers using LLaMA.')
-    parser.add_argument('--model_type', type=str, default='7b', help="llama model type: '7b' or '13b'")
-    parser.add_argument('--dataset_name', type=str, default='mini-StatQA',help='The name of the dataset file without extension')
+    parser.add_argument('--model_type', type=str, default='2_7b', help="LLaMA-2/3 model type. Please choose from: '2_7b', '2_13b', '3_8b_instruct' and '3_8b'.")
+    parser.add_argument('--dataset_name', type=str, default='mini-StatQA', help='The name of the dataset file without extension')
     parser.add_argument('--output_name', type=str, default="llama", help='The base name for the output file')
-    parser.add_argument('--trick', type=str, default='zero-shot', help="Tricks remark for the output file name.")
+    parser.add_argument('--trick', type=str, default='zero-shot', help="Prompting Strategy. Please choose from: 'zero-shot', 'one-shot', 'zero-shot-CoT', 'one-shot-CoT' and 'stats-prompt' (introducing domain knowledge).")
     
     # Parse command arguments
     args = parser.parse_args()

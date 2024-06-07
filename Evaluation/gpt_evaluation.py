@@ -34,7 +34,7 @@ def gpt_answer(prompt):
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0
     }
-    # Try 3 times in case of accident like internet fault.
+    # Try several times in case of accident like internet disconnection.
     for attempt in range(max_try):
         try:
             response = requests.post(url, headers=headers, data=json.dumps(data))
@@ -48,7 +48,7 @@ def gpt_answer(prompt):
         if attempt < max_try - 1:
             print("[ ] Waiting 10 seconds before retrying...")
             time.sleep(10)
-    return "Error"  # If all 3 attempts fail, return "Error"
+    return "Error"  # If all attempts fail, return "Error"
 
 
 # main

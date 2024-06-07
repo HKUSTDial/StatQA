@@ -1,7 +1,8 @@
 cd ..
 
-echo "[i] The program may take a long time to run, so please be patient."
-sleep 3s
+echo "[i] The program may take a long time to run, and will consume API tokens, so please be patient or directly use dataset we provide."
+sleep 5s
+echo "Start!"
 
 wait
 echo "preliminary question generation starts..."

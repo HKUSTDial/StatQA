@@ -6,13 +6,10 @@ sys.path.insert(0, main_folder_path)
 
 import pandas as pd
 import numpy as np
-from scipy.stats import spearmanr, kendalltau
-from pingouin import partial_corr
-import glob
-from scipy.stats import chi2_contingency, fisher_exact
 import utils
 import json
 import path
+from scipy.stats import chi2_contingency, fisher_exact
 
 
 '''

@@ -5,12 +5,8 @@ main_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, main_folder_path)
 
 import argparse
-import ast
-import requests
 import json
-import math
 import utils
-import time
 import path
 import pandas as pd
 from random import choice, sample
@@ -95,19 +91,17 @@ def extract_refined_question(row_index):
 '''
 Organize prompt for row
 trick: input should be in string format, refer to tricks for LLMs:
-    1) 'zero-shot'; 2)'one-shot'; 3)'two-shot'; 4)'zero-shot-CoT'; 5)'one-shot-CoT'; 6) 'stats-prompt'.
+    1) 'zero-shot'; 2)'one-shot'; 3)'two-shot'; 4)'zero-shot-CoT'; 5)'one-shot-CoT'; 6) 'stats-prompt' (introducing domain knowledge).
 '''
 def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
     FEW_SHOT_LIST = [CA_EG, CTT_EG, DCT_EG, VT_EG, DS_EG]
     COT_SHOT_LIST = [COT_CA_EG, COT_CTT_EG, COT_DCT_EG, COT_VT_EG, COT_DS_EG]
-    # Sampled dataset (several head lines)
-    # sampled_dataset = read_dataset_sampled_lines(row_index=row_index, sample_rows_num=3)
     # Statistical question
     refined_question = extract_refined_question(row_index=row_index)
     # Extract all column metadata for the current dataset
     curr_dataset_meta_df = utils.get_metadata(dataset_name=curr_dataset)
     meta_info_list = []
-    
+    # Replace some string
     for i in range(curr_dataset_meta_df.shape[0]):
         row = curr_dataset_meta_df.iloc[i]
         col_meta_str = ''
@@ -122,7 +116,6 @@ def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
         # Merge the metadata into a list
         meta_info_list.append(col_meta_str)
     
-    # Without sampled dataset
     # Generate and organize prompt based on tricks
     if trick == 'zero-shot':
         organized_prompt = "### Task Description: " + PROMPT_TASK_DESCRIPTION \
@@ -176,20 +169,6 @@ def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
                 + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
                 + "\n### Statistical Question: " + refined_question \
                 + "\n### Response: " + PROMPT_RESPONSE
-    elif trick == 'zero-shot-explain':
-        organized_prompt = "### Task Description: " + PROMPT_TASK_DESCRIPTION_EXPLAIN \
-                + "\n### Instruction: "  + PROMPT_INSTRUCTION_EXPLAIN \
-                + "\n### Classification List: \n" + PROMPT_CLASSIFICATION \
-                + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
-                + "\n### Statistical Question: " + refined_question \
-                + "\n### Response: " + PROMPT_RESPONSE_EXPLAIN
-    elif trick == 'stats-prompt-explain':
-        organized_prompt = "### Task Description: " + PROMPT_TASK_DESCRIPTION \
-                + "\n### Instruction: "  + PROMPT_INSTRUCTION_EXPLAIN \
-                + "\n### Classification List: \n" + STATS_PROMPT \
-                + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
-                + "\n### Statistical Question: " + refined_question \
-                + "\n### Response: " + PROMPT_RESPONSE_EXPLAIN
     else:
         raise ValueError("[!] Invalid trick: " + trick)       
     return organized_prompt
@@ -239,9 +218,7 @@ if __name__ == "__main__":
                 # Optionally, assign a default value or error message to the 'prompt' column
                 df.at[row_index, 'prompt'] = "Error!"
         
-        # Remove some columns which is now useless after prompt generation
-        # df.drop(['origin_question'], axis=1, inplace=True)
-        # Rearrange the sequence of columns
+        # Remove some columns which is now useless after prompt generation, and rearrange the sequence of columns
         new_column_order = ['dataset', 'refined_question', 'relevant_column', 'task', 'difficulty','results', 'prompt']
         df = df[new_column_order]
         # Save the modified DataFrame to a new CSV file

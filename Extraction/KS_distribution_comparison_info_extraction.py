@@ -77,6 +77,7 @@ def extract_ks_test_info(file_name: str, output_name: str, flag=0):
         return None  # Return None to indicate that there was an error during the execution
 
 
+# main
 if __name__ == '__main__':
     # Get all dataset names
     dataset_names = utils.get_dataset_name_list(path.processed_dir)

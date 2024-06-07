@@ -61,8 +61,6 @@ def generate_preliminary_question(file_name: str, templates: list, column1_name:
 # main
 if __name__=='__main__':
     # Call the function and pass in the corresponding parameters
-    # generate_preliminary_question(file_name='Test', column1_name='Column 1', column2_name='Column 2')
-
     # Refer to extracted information and set the sample_num to make the dataset more balanced
 
     # Generate preliminary questions for correlation analysis (exclude partial correaltion)

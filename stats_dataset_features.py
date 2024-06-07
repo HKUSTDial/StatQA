@@ -1,14 +1,13 @@
 # -*- coding: gbk -*-
-import matplotlib.pyplot as plt
-import matplotlib
-import pandas as pd
 import json
 import path
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgba
 from mappings import *
 
-file_name = 'StatQA'
+file_name = 'mini-StatQA'
 file_path = path.integ_dataset_path + path.balance_path + file_name + '.csv'
 data = pd.read_csv(file_path)
 
@@ -45,7 +44,7 @@ def adjust_text_size_outer(sizes, min_size=10, max_size=14):
     for size in sizes:
         new_size = min_size + (size / max_size) * size_range
         if size <= 5:
-            new_size = 10
+            new_size = 12
         text_sizes.append(new_size)
     return text_sizes
 
@@ -102,8 +101,8 @@ for task in task_counts.index:
 outer_colors_alpha = [to_rgba(color, alpha=0.6) for color in outer_colors]
 
 # Inner and outer text size list
-inner_text_sizes = adjust_text_size_inner(inner_sizes, min_size=20, max_size=20)
-outer_text_sizes = adjust_text_size_outer(outer_sizes, min_size=14, max_size=18)
+inner_text_sizes = adjust_text_size_inner(inner_sizes, min_size=22, max_size=24)
+outer_text_sizes = adjust_text_size_outer(outer_sizes, min_size=20, max_size=22)
 
 
 # Draw chart for dataset distribution
@@ -140,6 +139,7 @@ for i, wedge in enumerate(outer_pie[0]):
     ax.text(x, y, outer_labels[i], ha='center', va='center', fontsize=outer_text_sizes[i], rotation=text_rotation, rotation_mode='anchor')
 
 
+
 '''
 Plot and save dataset distribution double layer donut chart
 '''
@@ -172,6 +172,7 @@ legend_df.to_csv(path.chart_dir + 'Dataset Notable Statistics/' + table_name, in
 print("[+] "+ table_name + " has been saved to " + path.chart_dir + '.')
 
 
+
 '''
 Calculate and plot difficulty distribution
 '''
@@ -201,5 +202,5 @@ ax.axis('equal')
 legend_labels = ['{0} ({1:.1f}%, {2})'.format(i,j,k) for i,j,k in zip(difficulty_counts.index, percentage, difficulty_counts)]
 plt.legend(loc="center left", bbox_to_anchor=(1, 0.5), title="Difficulty", labels=legend_labels, prop={'size': 10})
 plt.title('Difficulty Distribution', fontsize=18)
-plt.savefig(path.chart_dir + 'Dataset Notable Statistics/' +  file_name + " - Difficulty Distribution.png", bbox_inches='tight', dpi=300)
+plt.savefig(path.chart_dir + 'Dataset Notable Statistics/' +  file_name + " - Difficulty Distribution.pdf", format='pdf', bbox_inches='tight', dpi=300)
 print(f"[+] {file_name} - Difficulty Distribution chart saved to " + path.chart_dir)

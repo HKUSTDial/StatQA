@@ -56,8 +56,6 @@ def extract_partial_correlation_info(file_name: str, output_name: str, flag = 0)
                             elif flag == 1:
                                 cor_condition = (abs(partial_corr_value) <= 0.5)
                             # Use a dict to store the results: coefficent and p value
-                            # partial_conclusion = 'Strongly correlated' if (abs(partial_corr_value or 0) > 0.5 and (p_value <= 0.05)) else 'Not strongly correlated'
-                            # if partial_corr_value != 'null': partial_corr_value = round(partial_corr_value, 5)
                             if p_value == 'null' or partial_corr_value == 'null':
                                 partial_conclusion = 'Not applicable'
                             else:
@@ -93,6 +91,7 @@ def extract_partial_correlation_info(file_name: str, output_name: str, flag = 0)
         print(f"[!] Dataset: {file_name} Error: {e}")
         return None
 
+
 # main
 if __name__=='__main__':
     # Assuming utils.get_dataset_name_list() works similarly to the provided code
@@ -103,7 +102,7 @@ if __name__=='__main__':
         extract_partial_correlation_info(file_name=dataset_name, output_name='Partial correlation info extraction (Not strongly correlated)', flag=1)
     print('End.')
     # Because the partial correlation subset is overly large compared with others
-    # perform csv reduce to keep balance
+    # perform csv thinening to reduce and to keep balance
     utils.thinen_csv_rows(n=2, file_name='Partial correlation info extraction (Strongly correlated)')
     utils.thinen_csv_rows(n=2, file_name='Partial correlation info extraction (Not strongly correlated)')
     print('Thinened.')

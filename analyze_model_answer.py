@@ -198,7 +198,7 @@ Score policy for columns:
 - Add one point if all correct, otherwise, zero point. Therefore, score ratio for columns equals to accuracy of columns selection.
 '''
 # Score policy
-def model_answer_score_policy(row, target: str, method_metric='jaccard'):
+def model_answer_score_policy(row, target: str, method_metric='acc'):
     if target == 'methods':
         target_header = 'methods_comparison_result'
         comparison_result = row[target_header]

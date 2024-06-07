@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 
+
 '''
 Define a function to compute the overall score_rate of the model: 
 the total number of correct choices divided by the total number of rows
@@ -68,7 +69,7 @@ def analyze_directory_data(perf_type: str):
     print(f"[+] Summary file has been created at {summary_csv_path}.")
 
 
-
+# main
 if __name__ == '__main__':
     analyze_directory_data('overall')
     analyze_directory_data('methods')

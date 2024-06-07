@@ -8,7 +8,7 @@ do_predict: true
 finetuning_type: lora
 
 ### dataset
-dataset: statqa_test
+dataset: mini-StatQA_ft_test
 template: llama2
 cutoff_len: 4096
 overwrite_cache: true

@@ -11,6 +11,7 @@ import json
 import path
 
 
+
 """
 Format float value to 5 decimal places if it's a float, otherwise return the original value.
 """
@@ -97,7 +98,7 @@ def extract_descriptive_stats_info(file_name: str, output_name: str):
         return None
 
 
-# Main execution
+# main
 if __name__=='__main__':
     dataset_names = utils.get_dataset_name_list(path.processed_dir)
     for dataset_name in dataset_names:
