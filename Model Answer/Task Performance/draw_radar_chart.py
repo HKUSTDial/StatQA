@@ -29,7 +29,7 @@ Parameters:
 def process_filename_for_radar_chart_legend(file_path):
     filename = file_path.split('/')[-1]  # Extract the filename from the path
     processed_name_1 = filename.replace('.csv', '').replace('_', ' ').replace('methods-','').replace('columns-','').replace('overall-','')
-    processed_name_2 = processed_name_1.replace('zero', '0').replace('one', '1').replace('two', '2').replace('Non-Stats Background', 'Non-Stats').replace('Stats Background', 'Stats').replace('instruct', 'inst').replace('gpt-3.5-turbo', 'ChatGPT').replace('gpt-4', 'GPT-4')
+    processed_name_2 = processed_name_1.replace('zero', '0').replace('one', '1').replace('two', '2').replace('Non-Stats Background', 'Non-Stats').replace('Stats Background', 'Stats').replace('instruct', 'inst').replace('gpt-3.5-turbo', 'GPT-3.5-Turbo').replace('gpt-4', 'GPT-4')
     processed_name_3 = processed_name_2.replace(' stats-prompt', '').replace(' 1-shot-CoT', '').replace(' 0-shot', '').replace(' Open-book', '')
     return processed_name_3
 

@@ -92,12 +92,6 @@ if __name__ == '__main__':
     non_stats_merged_path_open_book = merge_human_answer_by_prefix(work_dir=work_dir, 
                                                          prefix='answer_Non-Stats Background_Open-book', 
                                                          suffixes=non_stats_suffixes)
-    stats_merged_path_gpt_assisted = merge_human_answer_by_prefix(work_dir=work_dir, 
-                                                     prefix='answer_Stats Background_GPT-assisted', 
-                                                     suffixes=stats_suffixes)
-    non_stats_merged_path_gpt_assisted = merge_human_answer_by_prefix(work_dir=work_dir, 
-                                                         prefix='answer_Non-Stats Background_GPT-assisted', 
-                                                         suffixes=non_stats_suffixes)
 
     # Integrate for the merged human answer
     # Save to ../Model Answer/Origin Answer/ for subsequent processing
@@ -105,5 +99,3 @@ if __name__ == '__main__':
     integrate_human_answer(non_stats_merged_path_closed_book)
     integrate_human_answer(stats_merged_path_open_book)
     integrate_human_answer(non_stats_merged_path_open_book)
-    integrate_human_answer(stats_merged_path_gpt_assisted)
-    integrate_human_answer(non_stats_merged_path_gpt_assisted)

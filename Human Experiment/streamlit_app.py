@@ -1,3 +1,8 @@
+import sys
+import os
+main_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, main_folder_path)
+
 import json
 import streamlit as st
 import pandas as pd
@@ -44,7 +49,7 @@ def login():
         st.write("This platfrom is designed to study human's understanding and ability to answer statistical questions. All tests will be anonymous. Your real, honest and independent answers will be greatly appreciated.")
         with st.form("login_form"):
             group = st.selectbox("Experimental Group", ["Stats Background", "Non-Stats Background"])
-            mode = st.selectbox("Test Mode", ["Closed-book", "GPT-assisted", "Open-book"])
+            mode = st.selectbox("Test Mode", ["Closed-book", "Open-book"])
             block = st.selectbox("Task Block ID", [0, 1, 2, 3])
             password = st.text_input("Password", type="password")
             submitted = st.form_submit_button("Login")
@@ -167,8 +172,7 @@ def display_sidebar():
 # Obtain metadata based on dataset name for GUI display
 def get_metadata_for_gui(dataset_name):
     # Construct the path to the metadata file based on the dataset name
-    # metadata_file_path = f'../Data/Metadata/Column Metadata/{dataset_name}_col_meta.csv'
-    metadata_file_path = f'Data/Metadata/Column Metadata/{dataset_name}_col_meta.csv'
+    metadata_file_path = f'../Data/Metadata/Column Metadata/{dataset_name}_col_meta.csv'
     # Load and return the metadata file
     metadata_df = pd.read_csv(metadata_file_path)
     return metadata_df

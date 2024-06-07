@@ -8,7 +8,7 @@ def sample_testset_for_human(file_path, sample_prop=0.1):
     # Perform stratified sampling based on 'task' and 'difficulty'
     stratified_sample = data.groupby(['task', 'difficulty'], group_keys=False).apply(lambda x: x.sample(frac=sample_prop, random_state=64))
     # Save the stratified sample to a new CSV file
-    sampled_file_path = 'data/Sampled Benchmark.csv'
+    sampled_file_path = 'Human Experiment/data/StatQA for Human Exp.csv'
     stratified_sample.to_csv(sampled_file_path, index=False)
     print('[+] Sampled dataset saved to', sampled_file_path)
     return sampled_file_path
@@ -38,7 +38,7 @@ def split_task_block(sampled_data_path, num_block=3):
         subset = subset.sort_values(by='dataset')
         
         # Define file path for this subset
-        subset_file_path = f'data/task_block_{i+1}.csv'
+        subset_file_path = f'Human Experiment/data/task_block_{i+1}.csv'
         subset.to_csv(subset_file_path, index=False)
         subset_file_paths.append(subset_file_path)
     
@@ -48,7 +48,7 @@ def split_task_block(sampled_data_path, num_block=3):
 
 if __name__ == '__main__':
     # Load the dataset
-    file_path = 'data/Balanced Benchmark for Human.csv'
+    file_path = 'Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.csv'
     sampled_file_path = sample_testset_for_human(file_path=file_path, sample_prop=0.1)
     # Call the function and print the file paths of the subsets
     subset_paths = split_task_block(sampled_data_path=sampled_file_path, num_block=3)
