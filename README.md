@@ -1,6 +1,6 @@
 # StatQA: Are Large Language Models Good Statisticians?
 
-Official repository for the paper *“Are Large Language Models Good Statisticians?”*.
+Official repository for the paper *“Are Large Language Models Good Statisticians?”*. [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
 
 ![pipeline](/Chart/README/pipeline.png)
 
@@ -164,6 +164,13 @@ sh Script\answer_analysis.sh
 If you find our work useful or inspiring, please kindly cite:
 
 ```latex
-...
+@misc{zhu2024large,
+      title={Are Large Language Models Good Statisticians?}, 
+      author={Yizhang Zhu and Shiyin Du and Boyan Li and Yuyu Luo and Nan Tang},
+      year={2024},
+      eprint={2406.07815},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
