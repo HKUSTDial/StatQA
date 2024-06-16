@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgba
 from mappings import *
 
-file_name = 'mini-StatQA'
+file_name = 'StatQA'
 file_path = path.integ_dataset_path + path.balance_path + file_name + '.csv'
 data = pd.read_csv(file_path)
 

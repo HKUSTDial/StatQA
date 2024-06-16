@@ -516,15 +516,15 @@
     },
     "folder": "python"
   },
-  "statqa_train": {
-    "file_name": "statqa_train.json",
+  "D_train_ft_train": {
+    "file_name": "D_train_ft_train.json",
     "columns": {
       "prompt": "prompt",
       "response": "ground_truth"
     }
   },
-  "statqa_test": {
-    "file_name": "statqa_test.json",
+  "mini-StatQA_ft_test": {
+    "file_name": "mini-StatQA_ft_test.json",
     "columns": {
       "prompt": "prompt",
       "response": "ground_truth"
