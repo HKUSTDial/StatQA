@@ -1,6 +1,8 @@
 # StatQA: Are Large Language Models Good Statisticians?
 
-Official repository for the paper *“Are Large Language Models Good Statisticians?”*. [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
+Official repository for the paper *“Are Large Language Models Good Statisticians?”*.
+
+For more details, please refer to our paper: [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
 
 ![pipeline](/Chart/README/pipeline.png)
 
@@ -12,9 +14,13 @@ Large Language Models (LLMs) have demonstrated impressive capabilities across a 
 
 ## 🛠️Environment Setup
 
-Install required python libraries from requirements.txt:
+We recommend you to create a conda virtual environment to run our project. 
+
+Firstly, create environment and install required python libraries from requirements.txt:
 
 ```bash
+conda create --name newEnv python=3.11
+conda activate newEnv
 pip install -r requirements.txt
 ```
 
@@ -27,7 +33,7 @@ yourapikey
 
 ## 💻Hardware Platform
 
-8 NVIDIA 4090: for experiments of LLaMA models' evaluation.
+8 NVIDIA 4090s: for experiments of LLaMA models' evaluation.
 
 NVIDIA A800 (80G): for fine-tuning.
 
@@ -50,7 +56,7 @@ Benchmark construction:
 sh Script\benchmark_construction.sh
 ```
 
-Obtained StatQA and mini-StatQA benchmark will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take hours and consume your API tokens, so please be patient or directly use the benchmark we already offered.
+Obtained StatQA and mini-StatQA benchmark will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take many hours and consume considerable API tokens, so please be patient or you can directly use the benchmark we already offered in `StatQA/`.
 
 ## 🧪Evaluation
 
