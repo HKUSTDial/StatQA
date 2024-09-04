@@ -136,14 +136,24 @@ pip install -e .[torch,metrics]
 cp -r ../Finetuning/LLaMA-Factory/* data/
 ```
 
-Fine-tuning LLaMA2-7B, LLaMA3-8B, and LLaMA3-8B-Instruct:
+Before you start fine-tuning, please make sure that the model path and save path are set correctly in `.yaml` files under `Finetuning/Config/`. For example:
+
+```yaml
+### model
+model_name_or_path: your_path/Llama-2-7b-hf
+### output
+output_dir: your_path/saves/llama2-7b/lora/sft
+```
+
+We use an A800 (80G) to fine-tune LLaMA2-7B, LLaMA3-8B, and LLaMA3-8B-Instruct:
+
 ```bash
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama2_7b_lora_sft.yaml
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama3_8b_lora_sft.yaml
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama3_8b_instruct_lora_sft.yaml
 ```
 
-Predicting and generate responses from LLaMA2-7B, LLaMA3-8B, and LLaMA3-8B-Instruct:
+To generate responses from fine-tuned LLaMA2-7B, LLaMA3-8B, and LLaMA3-8B-Instruct:
 ```bash
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama2_7b_lora_sft_inference.yaml
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_8b_lora_sft_inference.yaml
@@ -155,6 +165,8 @@ All predicted results on the mini-StatQA testing dataset will be in the path:
 LLaMA-Factory/saves/{MODEL}/lora/predict/generated_predictions.jsonl
 ```
 Note that `{MODEL}` can be one of "llama2-7b", "llama3-8b" and "llama3-8b-instruct".
+
+**⚠Attention:** You may encounter some errors to run these commands directly on RTX 4000 series GPUs like RTX 4090 because of some hardware limitations. Therefore, we also provide a `bash` script for uses who want to fine-tune models with our dataset on RTX 4000 GPUs, please refer to `Finetuning/LLaMA-Factory/sft_rtx4000.sh`.
 
 
 ## 📊Analysis
