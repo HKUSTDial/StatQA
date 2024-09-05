@@ -155,9 +155,9 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli train ../Finetuning/Config/llama3_8b_ins
 
 To generate responses from fine-tuned LLaMA2-7B, LLaMA3-8B, and LLaMA3-8B-Instruct:
 ```bash
-CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama2_7b_lora_sft_inference.yaml
-CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_8b_lora_sft_inference.yaml
-CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_8b_instruct_lora_sft_inference.yaml
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli chat ../Finetuning/Config/llama2_7b_lora_sft_inference.yaml
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli chat ../Finetuning/Config/llama3_8b_lora_sft_inference.yaml
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli chat ../Finetuning/Config/llama3_8b_instruct_lora_sft_inference.yaml
 ```
 
 All predicted results on the mini-StatQA testing dataset will be in the path:
