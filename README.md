@@ -6,6 +6,12 @@ For more details, please refer to our paper: [📃[Paper Link]](https://arxiv.or
 
 ![pipeline](/Chart/README/pipeline.png)
 
+## 🔥News
+
+[Sept 26, 2024] 🎉 Our paper is accepted by *NeurIPS'24 Dataset and Benchmark Track*!
+
+[May 26, 2024] 🤗 StatQA is released!
+
 ## 📜Overview
 
 Large Language Models (LLMs) have demonstrated impressive capabilities across a range of scientific tasks including mathematics, physics, and chemistry. Despite their successes, the effectiveness of LLMs in handling complex statistical tasks remains systematically under-explored. *To bridge this gap, we introduce StatQA, a new benchmark designed for statistical analysis tasks.* *StatQA comprises 11,623 examples tailored to evaluate LLMs' proficiency in specialized statistical tasks and their applicability assessment capabilities, particularly for hypothesis testing methods.* We systematically experiment with representative LLMs using various prompting strategies and show that even state-of-the-art models such as GPT-4o achieve a best performance of only 64.83%, indicating significant room for improvement. Notably, while open-source LLMs (*e.g. LLaMA-3*) show limited capability, those fine-tuned ones exhibit marked improvements, outperforming all in-context learning-based methods (*e.g. GPT-4o*). Moreover, our comparative human experiments highlight a striking contrast in error types between LLMs and humans: LLMs primarily make applicability errors, whereas humans mostly make statistical task confusion errors. This divergence highlights distinct areas of proficiency and deficiency, suggesting that combining LLM and human expertise could lead to complementary strengths, inviting further investigation into their collaborative potential.
@@ -56,7 +62,7 @@ Benchmark construction:
 sh Script\benchmark_construction.sh
 ```
 
-Obtained StatQA and mini-StatQA benchmark will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take many hours and consume considerable API tokens, so please be patient or you can directly use the benchmark we already offered in `StatQA/`.
+Obtained StatQA and mini-StatQA benchmarks will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take many hours and consume considerable API tokens, so please be patient or you can directly use the benchmark we already offered in `StatQA/`.
 
 ## 🧪Evaluation
 
@@ -125,7 +131,7 @@ sh Script\gpt_exp.sh
 
 We use a similar procedure but different source tabular data to obtain the training set: `Data/Integrated Dataset/Dataset with Prompt/Training Set/D_train for zero-shot.csv`.  The converted format for fine-tuning the data is stored in `Finetuning/LLaMA-Factory/`.
 
-We utilize [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tuning our models.
+We utilize [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tune our models.
 
 Install the LLaMA-Factory environment:
 ```bash
@@ -166,7 +172,7 @@ LLaMA-Factory/saves/{MODEL}/lora/predict/generated_predictions.jsonl
 ```
 Note that `{MODEL}` can be one of "llama2-7b", "llama3-8b" and "llama3-8b-instruct".
 
-**⚠Attention:** You may encounter some errors to run these commands directly on RTX 4000 series GPUs like RTX 4090 because of some hardware limitations. Therefore, we also provide a `bash` script for uses who want to fine-tune models with our dataset on RTX 4000 GPUs, please refer to `Finetuning/LLaMA-Factory/sft_rtx4000.sh`.
+**⚠Attention:** You may encounter some errors to run these commands directly on RTX 4000 series GPUs like RTX 4090 because of some hardware limitations. Therefore, we also provide a `bash` script for users who want to fine-tune models with our dataset on RTX 4000 GPUs, please refer to `Finetuning/LLaMA-Factory/sft_rtx4000.sh`.
 
 
 ## 📊Analysis
