@@ -1,14 +1,14 @@
 # StatQA: Are Large Language Models Good Statisticians?
 
+[🏠[Project Homepage]](https://statqa.github.io/)  [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
+
 Official repository for the paper *“Are Large Language Models Good Statisticians?”*.
 
-For more details, please refer to our paper: [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
-
-![pipeline](/Chart/README/pipeline.png)
+![pipeline](/Chart/README/StatQA_cover.png)
 
 ## 🔥News
 
-[Sept 26, 2024] 🎉 Our paper is accepted by *NeurIPS'24 Dataset and Benchmark Track*!
+[Sept 26, 2024] 🎉 Our paper has been accepted by *NeurIPS'24 Dataset and Benchmark Track*!
 
 [May 26, 2024] 🤗 StatQA is released!
 
