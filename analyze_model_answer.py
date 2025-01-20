@@ -467,4 +467,13 @@ if __name__ == "__main__":
     model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_stats-prompt')
     model_answer_integrate_analysis(answer_file_name='llama3_8b_stats-prompt')
 
+    # APrompt
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-4o-mini-2024-07-18_zero-shot')
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot-aprompt-4o-mini')
+    model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot-aprompt-4o')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-aprompt-4o')
+    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-aprompt-4o-mini')
+
     pass

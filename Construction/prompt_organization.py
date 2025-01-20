@@ -169,6 +169,22 @@ def prompt_organization(row_index, curr_dataset: str, trick: str)->str:
                 + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
                 + "\n### Statistical Question: " + refined_question \
                 + "\n### Response: " + PROMPT_RESPONSE
+    elif trick == 'zero-shot-aprompt-4o-mini':
+        organized_prompt = APROMPT_4O_MINI_START \
+                + "\n### Task Description: " + APROMPT_4O_MINI_DESCRIPTION \
+                + "\n### Instruction: "  + APROMPT_4O_MINI_INSTRUCTION \
+                + "\n### Classification List: \n" + APROMPT_4O_MINI_CLASSIFICATION \
+                + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
+                + "\n### Statistical Question: " + refined_question \
+                + "\n### Response: " + APROMPT_4O_MINI_RESPONSE
+    elif trick == 'zero-shot-aprompt-4o':
+        organized_prompt = "### Task Description: " + APROMPT_4O_DESCRIPTION \
+                + "\n### Instruction: "  + APROMPT_4O_INSTRUCTION \
+                + "\n### Classification List: \n" + APROMPT_4O_CLASSIFICATION \
+                + "\n### Reasoning Process: " + APROMPT_4O_REASONING \
+                + "\n### Column Information: \n" + '\n'.join(meta_info_list) \
+                + "\n### Statistical Question: " + refined_question \
+                + "\n### Response: " + APROMPT_4O_RESPONSE
     else:
         raise ValueError("[!] Invalid trick: " + trick)       
     return organized_prompt

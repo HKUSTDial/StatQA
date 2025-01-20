@@ -27,6 +27,75 @@ PROMPT_RESPONSE_EXPLAIN = '''The answer of relevant columns and applicable metho
 PROMPT_COT = '''Let's work this out in a step-by-step way to be sure we have the right answer. '''
 
 
+'''------------------------------------------------------------------------
+APrompt wording by gpt-4o-mini-2024-07-18
+'''
+APROMPT_4O_MINI_START = '''Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.'''
+
+APROMPT_4O_MINI_DESCRIPTION  = '''Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.'''
+
+APROMPT_4O_MINI_INSTRUCTION = '''Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    "columns": ["c1", "c2", "..."], 
+    "methods": ["m1", "m2", "..."], 
+    "justification": "Provide a detailed explanation for your selections here, including any confounding factors.", 
+    "confounding_variables": ["confounder1", "confounder2"], 
+    "limitations": "Discuss limitations such as sample size or data quality.", 
+    "data_types": {"c1": "quantitative", "c2": "categorical"}, 
+    "expected_relationship": "Hypothesis about the relationship.", 
+    "method_justification": "Explain why each method is suitable for the analysis.", 
+    "contextual_factors": "Discuss any external factors that may influence the results.", 
+    "summary": "Summarize the expected outcomes of the analysis."
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+'''
+
+APROMPT_4O_MINI_CLASSIFICATION = '''- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.'''
+APROMPT_4O_MINI_RESPONSE = '''The answer of relevant columns and applicable methods in JSON format is:'''
+
+
+'''------------------------------------------------------------------------
+APrompt wording by gpt-4o-2024-08-06
+'''
+APROMPT_4O_DESCRIPTION = '''Conduct a comprehensive analysis of the provided statistical question and associated data columns, ensuring a meticulous selection of relevant columns and applicable methods from the provided list.'''
+
+APROMPT_4O_INSTRUCTION = '''Follow a detailed, step-by-step reasoning process to develop your answer, ensuring clarity and thoroughness. Begin by exploring the data through exploratory data analysis (EDA), identifying key characteristics, and considering necessary data preprocessing steps such as handling missing values or normalizing data. Include a step to verify data integrity and assess potential biases. Use data visualization techniques, such as scatter plots or histograms, to visualize relationships and distributions. Your response should be structured in JSON format with two keys: 'columns' and 'methods'. 'Columns' should list headers relevant to the statistical question, and 'methods' should include all suitable methods. If a strata or control variable is present, place its column header as the last item in the columns list. Ensure method selection is strictly from the provided classification list, with rigorous justification for each choice, considering the dataset's size, distribution characteristics, and both parametric and non-parametric methods as necessary. Incorporate examples or scenarios where each method would be appropriate to ensure accuracy. Explicitly evaluate potential mismatches between data characteristics and method assumptions, suggest alternative methods or data transformations where necessary, and consider the implications of sample size on method choice.'''
+
+APROMPT_4O_CLASSIFICATION = '''- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.'''
+
+APROMPT_4O_REASONING = '''1. Conduct exploratory data analysis (EDA) to identify key characteristics of the data, such as distribution, outliers, and missing values.
+2. Verify data integrity and assess potential biases before proceeding with further analysis.
+3. Use data visualization techniques to explore relationships and patterns between the variables of interest.
+4. Identify which columns are quantitative and crucial to the statistical question, focusing on their relevance to each other and the statistical question.
+5. Assess the distribution characteristics of the data, including any indicators of normality or non-normality, and consider the impacts on statistical method selection.
+6. Consider any necessary data preprocessing steps to ensure the validity and reliability of the analysis.
+7. Select appropriate methods, weighing both parametric and non-parametric options based on data characteristics, such as distribution and sample size. Consider incorporating distribution compliance tests or descriptive statistics if relevant to the analysis.
+8. Provide a comprehensive justification for your selection of columns and methods, incorporating detailed reasoning and examples of when each method is most applicable.
+9. Evaluate potential mismatches between data characteristics and method assumptions, suggesting alternative methods or data transformations where necessary.
+10. Consider the implications of sample size on method choice to ensure robust and accurate results.'''
+
+APROMPT_4O_RESPONSE = '''The answer of relevant columns and applicable methods in JSON format is:'''
 
 
 '''------------------

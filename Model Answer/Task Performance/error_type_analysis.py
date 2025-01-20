@@ -209,5 +209,8 @@ if __name__ == '__main__':
     # plot_error_analysis('Model Answer/Task Performance/selected error_analysis_summary for CoT.csv', 
     #                     output_name='Error Analysis Bar Chart for CoT',
     #                     subplot_titles = ['LLaMA-2', 'LLaMA-3', 'GPT Models'])
+    plot_error_analysis('Model Answer\Task Performance\Selected Performance\error_analysis_summary_aprompt.csv', 
+                        output_name='Error Analysis Bar Chart for APrompt',
+                        subplot_titles = ['Backbone: GPT-4o-mini', 'Backbone: GPT-4o'])
 
 

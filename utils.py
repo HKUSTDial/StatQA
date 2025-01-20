@@ -249,23 +249,26 @@ Extracts and returns the first JSON object found within the first pair of braces
 If the substring enclosed by the first pair of braces is a valid JSON, it returns this substring.
 If there are no braces or the JSON is invalid, it returns "Invalid Answer".
 '''
-def extract_json_answer(input_string): # New extraction function: 
-    # Find the position of the first opening brace
-    start_index = input_string.find('{')
-    # Find the position of the first closing brace starting from just after the first opening brace
-    end_index = input_string.find('}', start_index)
-    if start_index != -1 and end_index != -1 and start_index < end_index:
-        # Extract the substring that includes the first set of braces
-        json_str = input_string[start_index:end_index+1]
-        try:
-            # Attempt to parse the JSON string to check its validity
-            json.loads(json_str)
-            return json_str
-        except ValueError:
-            # Return an error message if the JSON is not valid
-            return "Invalid Answer"
-    else:
-        # Return an error message if no valid braces are found
+def extract_json_answer(input_string):
+    try:
+        # Find all potential JSON objects in the string
+        json_pattern = r'{[^{}]*(?:{[^{}]*})*[^{}]*}'
+        matches = re.finditer(json_pattern, input_string)
+        
+        for match in matches:
+            json_str = match.group()
+            try:
+                # Parse the JSON string to check its validity
+                json_obj = json.loads(json_str)
+                # Check if it contains both required keys
+                if 'columns' in json_obj and 'methods' in json_obj:
+                    return json_str
+            except ValueError:
+                continue
+        
+        # If no valid JSON with required keys is found
+        return "Invalid Answer"
+    except Exception:
         return "Invalid Answer"
 
 

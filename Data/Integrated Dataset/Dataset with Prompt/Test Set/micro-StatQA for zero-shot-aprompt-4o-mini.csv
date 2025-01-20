@@ -1,0 +1,731 @@
+dataset,refined_question,relevant_column,task,difficulty,results,prompt
+Dataset for Admission in the University,Is the variability in GRE scores not significantly different from that in Letter of Recommendation?,"[{""column_header"": ""GRE Score"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""LOR "", ""is_strata"": false, ""is_control"": false}]",Variance Test,hard,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 735.69701, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Serial No.; data_type: id; num_of_rows: 400; is_normality: False.
+column_header: GRE Score; data_type: quantitative; num_of_rows: 400; is_normality: False.
+column_header: TOEFL Score; data_type: quantitative; num_of_rows: 400; is_normality: False.
+column_header: University Rating; data_type: categorical; num_of_rows: 400; is_normality: False.
+column_header: SOP; data_type: quantitative; num_of_rows: 400; is_normality: False.
+column_header: LOR ; data_type: quantitative; num_of_rows: 400; is_normality: False.
+column_header: CGPA; data_type: quantitative; num_of_rows: 400; is_normality: True.
+column_header: Research; data_type: categorical; num_of_rows: 400; is_normality: False.
+column_header: Chance of Admit ; data_type: quantitative; num_of_rows: 400; is_normality: False.
+### Statistical Question: Is the variability in GRE scores not significantly different from that in Letter of Recommendation?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Crop Production Dataset,Are the variations in yearly crop yields in the United States similar to those in Bangladesh?,"[{""column_header"": ""United States"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Bangladesh"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 11.46874, \""p value\"": 0.01474}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 6.7422, \""p value\"": 0.00942}"", ""conclusion"": ""Variance significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 26.73523, \""p value\"": 0.00207}"", ""conclusion"": ""Variance significantly difference between them""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Are the variations in yearly crop yields in the United States similar to those in Bangladesh?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Bank Customer Churn Prediction Dataset,Do the observed frequencies of gender and active membership conform to the assumption of independence?,"[{""column_header"": ""Gender"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""IsActiveMember"", ""is_strata"": false, ""is_control"": false}]",Contingency Table Test,easy,"[{""method"": ""Chi-square Independence Test"", ""result"": ""{\""p value\"": 0.02593}"", ""conclusion"": ""Not independent""}, {""method"": ""Fisher Exact Test"", ""result"": ""{\""p value\"": 0.02573}"", ""conclusion"": ""Not independent""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: RowNumber; data_type: id; num_of_rows: 10002; is_normality: False.
+column_header: CustomerId; data_type: id; num_of_rows: 10002; is_normality: False.
+column_header: Surname; data_type: other; num_of_rows: 10002; is_normality: False.
+column_header: CreditScore; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: Geography; data_type: categorical; num_of_rows: 10002; is_normality: False.
+column_header: Gender; data_type: categorical; num_of_rows: 10002; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: Tenure; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: Balance; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: NumOfProducts; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: HasCrCard; data_type: categorical; num_of_rows: 10002; is_normality: False.
+column_header: IsActiveMember; data_type: categorical; num_of_rows: 10002; is_normality: False.
+column_header: EstimatedSalary; data_type: quantitative; num_of_rows: 10002; is_normality: False.
+column_header: Exited; data_type: categorical; num_of_rows: 10002; is_normality: False.
+### Statistical Question: Do the observed frequencies of gender and active membership conform to the assumption of independence?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Lung Cancer Survey Dataset,How does the relationship between the presence of shortness of breath and the diagnosis of lung cancer change when considering different categories of yellow fingers indicating smoking habit?,"[{""column_header"": ""SHORTNESS OF BREATH"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""LUNG_CANCER"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""YELLOW_FINGERS"", ""is_strata"": true, ""is_control"": false}]",Contingency Table Test,easy,"[{""method"": ""Mantel-Haenszel Test"", ""result"": ""{\""p value\"": 0.14644}"", ""conclusion"": ""Independent""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: GENDER; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: AGE; data_type: quantitative; num_of_rows: 309; is_normality: False.
+column_header: SMOKING; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: YELLOW_FINGERS; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: ANXIETY; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: PEER_PRESSURE; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: CHRONIC DISEASE; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: FATIGUE ; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: ALLERGY ; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: WHEEZING; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: ALCOHOL CONSUMING; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: COUGHING; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: SHORTNESS OF BREATH; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: SWALLOWING DIFFICULTY; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: CHEST PAIN; data_type: categorical; num_of_rows: 309; is_normality: False.
+column_header: LUNG_CANCER; data_type: categorical; num_of_rows: 309; is_normality: False.
+### Statistical Question: How does the relationship between the presence of shortness of breath and the diagnosis of lung cancer change when considering different categories of yellow fingers indicating smoking habit?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+FIFA Official Dataset 2023,Can the Kolmogorov-Smirnov test detect any differences between the distributions of age and potential ratings?,"[{""column_header"": ""Age"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Potential"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Distribution significantly different""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 17660; is_normality: False.
+column_header: Name; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Age; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Photo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Nationality; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Flag; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Overall; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Potential; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Club; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Club Logo; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Value; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Wage; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Special; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Preferred Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: International Reputation; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Weak Foot; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Skill Moves; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Work Rate; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Body Type; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Real Face; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Position; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Joined; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Loaned From; data_type: other; num_of_rows: 17660; is_normality: False.
+column_header: Contract Valid Until; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Height; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Weight; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Release Clause; data_type: quantitative; num_of_rows: 17660; is_normality: False.
+column_header: Kit Number; data_type: categorical; num_of_rows: 17660; is_normality: False.
+column_header: Best Overall Rating; data_type: other; num_of_rows: 17660; is_normality: False.
+### Statistical Question: Can the Kolmogorov-Smirnov test detect any differences between the distributions of age and potential ratings?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Student Information and Grades Dataset,What does the mean age of the students indicate?,"[{""column_header"": ""Student_Age"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Mean"", ""result"": ""19.68276"", ""conclusion"": ""19.68276""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Unnamed: 0; data_type: id; num_of_rows: 145; is_normality: False.
+column_header: Id; data_type: id; num_of_rows: 145; is_normality: False.
+column_header: Student_Age; data_type: quantitative; num_of_rows: 145; is_normality: False.
+column_header: Sex; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: High_School_Type; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Scholarship; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Additional_Work; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Sports_activity; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Transportation; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Weekly_Study_Hours; data_type: quantitative; num_of_rows: 145; is_normality: False.
+column_header: Attendance; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Reading; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Notes; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Listening_in_Class; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Project_work; data_type: categorical; num_of_rows: 145; is_normality: False.
+column_header: Grade; data_type: categorical; num_of_rows: 145; is_normality: False.
+### Statistical Question: What does the mean age of the students indicate?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Green House Gas Produce by Different Industry,What is the magnitude of the peak for greenhouse gas emissions in 2015 (F2015)?,"[{""column_header"": ""F2015"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Kurtosis"", ""result"": ""95.77956"", ""conclusion"": ""95.77956""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Country; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: ISO2; data_type: other; num_of_rows: 1186; is_normality: False.
+column_header: ISO3; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: Industry; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: Gas_Type; data_type: categorical; num_of_rows: 1186; is_normality: False.
+column_header: F2010; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2011; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2012; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2013; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2014; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2015; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2016; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2017; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2018; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2019; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2020; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2021; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+column_header: F2022; data_type: quantitative; num_of_rows: 1186; is_normality: False.
+### Statistical Question: What is the magnitude of the peak for greenhouse gas emissions in 2015 (F2015)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Heart Failure Prediction Dataset,Do the age of the patient and the maximum heart rate achieved exhibit similar variance characteristics?,"[{""column_header"": ""Age"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""MaxHR"", ""is_strata"": false, ""is_control"": false}]",Variance Test,hard,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": -0.015, \""p value\"": 0.98803}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 681.28769, \""p value\"": 0.0}"", ""conclusion"": ""Variance significantly difference between them""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Age; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Sex; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: ChestPainType; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingBP; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: Cholesterol; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: FastingBS; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: RestingECG; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: MaxHR; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ExerciseAngina; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: Oldpeak; data_type: quantitative; num_of_rows: 918; is_normality: False.
+column_header: ST_Slope; data_type: categorical; num_of_rows: 918; is_normality: False.
+column_header: HeartDisease; data_type: categorical; num_of_rows: 918; is_normality: False.
+### Statistical Question: Do the age of the patient and the maximum heart rate achieved exhibit similar variance characteristics?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Customer Personality Analysis Dataset,Is there a relationship between variations in customers accepting the offer in the 2nd campaign (AcceptedCmp2) and their acceptance of the offer in the last campaign (Response)?,"[{""column_header"": ""AcceptedCmp2"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Response"", ""is_strata"": false, ""is_control"": false}]",Contingency Table Test,hard,"[{""method"": ""Fisher Exact Test"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Not independent""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: Is there a relationship between variations in customers accepting the offer in the 2nd campaign (AcceptedCmp2) and their acceptance of the offer in the last campaign (Response)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Jobs and Salaries Dataset,"Is the salary data, expressed in United States Dollars (USD), consistent with a Gamma distribution?","[{""column_header"": ""salary_in_usd"", ""is_strata"": false, ""is_control"": false}]",Distribution Compliance Test,easy,"[{""method"": ""Kolmogorov-Smirnov Test for Gamma distribution"", ""result"": ""{\""p value\"": 0.0}"", ""conclusion"": ""Non-compliance""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: work_year; data_type: quantitative; num_of_rows: 9355; is_normality: False.
+column_header: job_title; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: job_categoricalgory; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: salary_currency; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: salary; data_type: quantitative; num_of_rows: 9355; is_normality: False.
+column_header: salary_in_usd; data_type: quantitative; num_of_rows: 9355; is_normality: False.
+column_header: employee_residence; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: experience_level; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: employment_type; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: work_setting; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: company_location; data_type: categorical; num_of_rows: 9355; is_normality: False.
+column_header: company_size; data_type: categorical; num_of_rows: 9355; is_normality: False.
+### Statistical Question: Is the salary data, expressed in United States Dollars (USD), consistent with a Gamma distribution?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Income and Happiness Score Dataset,Could you compute the standard deviation of Gross Domestic Product (GDP)?,"[{""column_header"": ""GDP"", ""is_strata"": false, ""is_control"": false}]",Descriptive Statistics,easy,"[{""method"": ""Standard Deviation"", ""result"": ""0.38584"", ""conclusion"": ""0.38584""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: country; data_type: other; num_of_rows: 111; is_normality: False.
+column_header: adjusted_satisfaction; data_type: quantitative; num_of_rows: 111; is_normality: True.
+column_header: avg_satisfaction; data_type: quantitative; num_of_rows: 111; is_normality: True.
+column_header: std_satisfaction; data_type: quantitative; num_of_rows: 111; is_normality: True.
+column_header: avg_income; data_type: quantitative; num_of_rows: 111; is_normality: False.
+column_header: median_income; data_type: quantitative; num_of_rows: 111; is_normality: False.
+column_header: income_inequality; data_type: quantitative; num_of_rows: 111; is_normality: False.
+column_header: region; data_type: categorical; num_of_rows: 111; is_normality: False.
+column_header: happyScore; data_type: quantitative; num_of_rows: 111; is_normality: False.
+column_header: GDP; data_type: quantitative; num_of_rows: 111; is_normality: False.
+column_header: country.1; data_type: other; num_of_rows: 111; is_normality: False.
+### Statistical Question: Could you compute the standard deviation of Gross Domestic Product (GDP)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Crop Production Dataset,Can we assume that there is no significant difference in the variances of annual crop production between Vietnam and Indonesia?,"[{""column_header"": ""Vietnam"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Indonesia"", ""is_strata"": false, ""is_control"": false}]",Variance Test,easy,"[{""method"": ""Mood Variance Test"", ""result"": ""{\""stat\"": 0.0, \""p value\"": 1.0}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Levene Test"", ""result"": ""{\""stat\"": 0.9932, \""p value\"": 0.35744}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""Bartlett Test"", ""result"": ""{\""stat\"": 0.8296, \""p value\"": 0.36239}"", ""conclusion"": ""Variance not significantly difference between them""}, {""method"": ""F-Test for Variance"", ""result"": ""{\""stat\"": 10.016, \""p value\"": 0.01945}"", ""conclusion"": ""Variance significantly difference between them""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: Year; data_type: Other; num_of_rows: 4; is_normality: False.
+column_header: Nigeria; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Pakistan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Japan; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: United States; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Brazil; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Philippines; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Myanmar; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Thailand; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Vietnam; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Indonesia; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: Bangladesh; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: India; data_type: quantitative; num_of_rows: 4; is_normality: True.
+column_header: China; data_type: quantitative; num_of_rows: 4; is_normality: True.
+### Statistical Question: Can we assume that there is no significant difference in the variances of annual crop production between Vietnam and Indonesia?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
+Customer Personality Analysis Dataset,How do the variables MntFishProducts and NumStorePurchases interact after accounting for the number of days since the customer's last purchase (Recency)?,"[{""column_header"": ""MntFishProducts"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""NumStorePurchases"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""Recency"", ""is_strata"": false, ""is_control"": true}]",Correlation Analysis,easy,"[{""method"": ""Partial Correlation Coefficient"", ""result"": ""{\""coefficient\"": 0.45985, \""p value\"": 0.0}"", ""conclusion"": ""Not strongly correlated""}]","Analyze the statistical relationship between the specified variables, ensuring to select and justify appropriate analytical methods based on the context, data types, and research objectives involved. Provide a comprehensive analysis that considers potential limitations, confounding variables, and the implications of the chosen methods on the results.
+### Task Description: Identify the relevant columns and select all applicable statistical methods from the provided classification list for the given statistical question.
+### Instruction: Your response should be in JSON format containing ten keys: 'columns', 'methods', 'justification', 'confounding_variables', 'limitations', 'data_types', 'expected_relationship', 'method_justification', 'contextual_factors', and 'summary'. 
+- The 'columns' key should contain a list of column headers pertinent to the statistical question. 
+- The 'methods' key should list all applicable methods based on the classification list.
+- The 'justification' key must provide a detailed rationale for each column chosen, clearly linking them to the context of the question while addressing any identified confounding variables.
+- The 'confounding_variables' key should enumerate any recognized confounding variables that could affect the relationship between the primary variables.
+- The 'limitations' key should outline any potential limitations of the selected methods or analysis, including considerations about sample size and data integrity.
+- The 'data_types' key should specify the types of data for each selected column, as this may influence method selection.
+- The 'expected_relationship' key should provide a hypothesis or expectation regarding the nature of the relationship between the variables.
+- The 'method_justification' key should include a detailed explanation for the selection of each method, considering the data types involved and the underlying assumptions of the methods.
+- The 'contextual_factors' key should elaborate on any external factors or conditions that may influence the analysis and interpretation of the results.
+- The 'summary' key should encapsulate a brief conclusion summarizing the expected findings or outcomes of the analysis.
+
+Example: 
+{
+    ""columns"": [""c1"", ""c2"", ""...""], 
+    ""methods"": [""m1"", ""m2"", ""...""], 
+    ""justification"": ""Provide a detailed explanation for your selections here, including any confounding factors."", 
+    ""confounding_variables"": [""confounder1"", ""confounder2""], 
+    ""limitations"": ""Discuss limitations such as sample size or data quality."", 
+    ""data_types"": {""c1"": ""quantitative"", ""c2"": ""categorical""}, 
+    ""expected_relationship"": ""Hypothesis about the relationship."", 
+    ""method_justification"": ""Explain why each method is suitable for the analysis."", 
+    ""contextual_factors"": ""Discuss any external factors that may influence the results."", 
+    ""summary"": ""Summarize the expected outcomes of the analysis.""
+}. 
+
+If a strata or control variable is involved, include its column header as the last item in the 'columns' list. Ensure your method selections are strictly from the provided classification list.
+
+### Classification List: 
+- Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+- Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+- Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+- Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+- Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.
+### Column Information: 
+column_header: ID; data_type: id; num_of_rows: 2240; is_normality: False.
+column_header: Year_Birth; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Education; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Marital_Status; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Income; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Kidhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Teenhome; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Dt_Customer; data_type: other; num_of_rows: 2240; is_normality: False.
+column_header: Recency; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntWines; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFruits; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntMeatProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntFishProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntSweetProducts; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: MntGoldProds; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumDealsPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumCatalogPurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumStorePurchases; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: NumWebVisitsMonth; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp3; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp4; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp5; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp1; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: AcceptedCmp2; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Complain; data_type: categorical; num_of_rows: 2240; is_normality: False.
+column_header: Z_CostContact; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Z_Revenue; data_type: quantitative; num_of_rows: 2240; is_normality: False.
+column_header: Response; data_type: categorical; num_of_rows: 2240; is_normality: False.
+### Statistical Question: How do the variables MntFishProducts and NumStorePurchases interact after accounting for the number of days since the customer's last purchase (Recency)?
+### Response: The answer of relevant columns and applicable methods in JSON format is:"
